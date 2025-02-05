@@ -1,0 +1,42 @@
+// Estilos del header
+.header-area {
+    .main-menu {
+        a {
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: #B2B2B2 !important;
+            }
+        }
+    }
+}
+
+// Menú móvil
+.mobile-menu-nav {
+    a {
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #B2B2B2 !important;
+        }
+    }
+}
+
+// Botón de menú móvil
+.mobile-menu-toggle {
+    &:hover {
+        span {
+            background-color: #B2B2B2;
+        }
+    }
+}
+
+// Dropdown menus
+.dropdown-menu {
+    a {
+        &:hover {
+            color: #B2B2B2 !important;
+            background-color: rgba(151, 71, 255, 0.1);
+        }
+    }
+} 
