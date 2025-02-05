@@ -21,9 +21,138 @@
 
 -----------------------------------------------------------------------------------*/
 
+@import "variables";
 @import "./bootstrap/functions";
 @import "./bootstrap/variables";
 @import "./01-helpers/index";
 @import "./02-basic/index";
 @import "./03-layout/index";
 @import "./04-modules/index";
+
+// Componentes
+@import "header";
+@import "footer";
+
+// Mixins básicos
+@mixin transition($property: all, $duration: 0.3s, $timing: ease-in-out) {
+    transition: $property $duration $timing;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Puedes agregar más mixins según necesites
+
+// Bordes redondeados globales
+.hero-slide-thumb,
+.about-thumb,
+.service-item,
+.feature-item,
+.product-banner-item,
+.testimonial-item {
+    img {
+        border-radius: 16px;
+    }
+    
+    // Para contenedores con overlay
+    &.position-relative {
+        border-radius: 16px;
+        overflow: hidden;
+        
+        .overlay-text {
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+        }
+    }
+}
+
+// Reemplazar todos los hovers rojos por morado
+a {
+    &:hover {
+        color: #B2B2B2 !important;
+    }
+}
+
+.btn-hover-dark {
+    &:hover {
+        background-color: #B2B2B2 !important;
+        border-color: #B2B2B2 !important;
+    }
+}
+
+.header-action-item {
+    &:hover {
+        color: #B2B2B2 !important;
+    }
+}
+
+.main-nav {
+    li {
+        a {
+            &:hover {
+                color: #B2B2B2 !important;
+            }
+        }
+    }
+}
+
+.mobile-menu-nav {
+    li {
+        a {
+            &:hover {
+                color: #B2B2B2 !important;
+            }
+        }
+    }
+}
+
+.footer-widget-nav {
+    li {
+        a {
+            &:hover {
+                color: #B2B2B2 !important;
+            }
+        }
+    }
+}
+
+.widget-social {
+    a {
+        &:hover {
+            color: #B2B2B2 !important;
+        }
+    }
+}
+
+.scroll-to-top {
+    &:hover {
+        background-color: #B2B2B2 !important;
+    }
+}
+
+// Para links y botones genéricos
+.link-hover, 
+.btn-hover {
+    &:hover {
+        color: #B2B2B2 !important;
+    }
+}
+
+// Para efectos de hover en cards o elementos
+.card:hover,
+.product-item:hover,
+.service-item:hover {
+    border-color: #B2B2B2 !important;
+    
+    .title, .icon {
+        color: #B2B2B2 !important;
+    }
+}
+
+// Asegurarnos que no queden referencias al color anterior
+$color-primary: #B2B2B2;
+$color-hover: #B2B2B2;
+$color-active: #B2B2B2;

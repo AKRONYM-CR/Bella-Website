@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Bella</title>
+    <title>Términos y Condiciones - Bella</title>
     <meta name="robots" content="noindex, follow" />
-    <meta name="description"
-        content="Bella: Conecta con cirujanos plásticos de clase mundial y accede a beneficios exclusivos en procedimientos estéticos. Disfruta de promociones únicas diseñadas para quienes buscan calidad, prestigio y resultados excepcionales." />
-
+    <meta name="description" content="Términos y condiciones de uso de la plataforma Bella para servicios de cirugía plástica y estética." />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="keywords"
-        content="Bella, servicios médicos estéticos, cirujanos plásticos, procedimientos cosméticos, cupones exclusivos, promociones estéticas, cirugía plástica, belleza premium, tratamientos médicos, estética de lujo, app médica, médicos certificados, salud y belleza" />
-    <meta name="author" content="Akronym" />
+    <meta name="author" content="Bella" />
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="./assets/images/logo.png">
@@ -44,54 +40,99 @@
             --theme-dark: #8AB5B9;
         }
 
-        /* Estilos de las tarjetas de contacto */
-        .contact-card {
+        /* Header y navegación */
+        .page-header-area {
+            background: linear-gradient(145deg, var(--theme-color) 0%, var(--theme-dark) 100%);
+            padding: 4rem 0;
+            margin-bottom: 3rem;
+        }
+
+        /* Contenido principal */
+        .terms-content {
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(159, 200, 204, 0.1);
+            padding: 2rem;
+        }
+
+        .terms-section {
+            border-bottom: 1px solid var(--theme-light);
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .terms-section h3 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            position: relative;
+            padding-left: 1rem;
+            border-left: 4px solid var(--theme-color);
+        }
+
+        .terms-section p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        /* Listas */
+        .terms-section ul.list-unstyled li {
+            position: relative;
+            padding: 0.75rem 0;
+            padding-left: 1.5rem;
             transition: all 0.3s ease;
-            border: 2px solid transparent;
         }
 
-        .contact-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--theme-color);
-            box-shadow: 0 10px 20px rgba(159, 200, 204, 0.2) !important;
+        .terms-section ul.list-unstyled li:before {
+            content: "•";
+            color: var(--theme-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
         }
 
-        .contact-card i {
-            color: var(--theme-color) !important;
+        .terms-section ul.list-unstyled li:hover {
+            transform: translateX(5px);
+            color: var(--theme-color);
         }
 
-        /* Estilos del formulario */
-        .form-control:focus {
-            border-color: var(--theme-color);
-            box-shadow: 0 0 0 0.25rem var(--theme-light);
-        }
-
-        .btn-dark {
-            background-color: var(--theme-color);
-            border-color: var(--theme-color);
-        }
-
-        .btn-dark:hover {
-            background-color: var(--theme-dark);
-            border-color: var(--theme-dark);
-        }
-
-        /* Estilos del acordeón */
-        .accordion-button:not(.collapsed) {
+        /* Secciones alternas */
+        .terms-section:nth-child(even) {
             background-color: var(--theme-light);
-            color: var(--theme-color);
+            margin: 1rem -2rem;
+            padding: 2rem;
+            border-radius: 8px;
         }
 
-        .accordion-button:focus {
-            border-color: var(--theme-color);
-            box-shadow: 0 0 0 0.25rem var(--theme-light);
+        /* Sección de contacto */
+        .terms-section:last-child {
+            background: var(--theme-light);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-bottom: none;
         }
 
-        .accordion-button::after {
-            color: var(--theme-color);
+        .terms-section:last-child ul.list-unstyled li {
+            background: white;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 0.5rem;
+            border: 1px solid var(--theme-medium);
         }
 
-        /* Newsletter section */
+        /* Navegación */
+        .breadcrumb-area .breadcrumb li a:hover {
+            color: white;
+        }
+
+        .breadcrumb-sep {
+            color: rgba(255,255,255,0.6) !important;
+        }
+
+        /* Newsletter */
         .newsletter-content-wrap {
             background-color: var(--theme-color) !important;
         }
@@ -100,43 +141,34 @@
             color: var(--theme-color);
         }
 
-        .form-select {
-            transition: all 0.3s ease;
-        }
-        
-        .form-select:focus {
-            border-color: var(--theme-color);
-            box-shadow: 0 0 0 0.25rem var(--theme-light);
-        }
-        
-        .form-select:hover {
-            border-color: var(--theme-color);
-        }
-        
-        /* Estilo para el placeholder del select */
-        .form-select option[value=""][disabled] {
-            color: #6c757d;
-        }
-        
-        /* Ajustar altura y padding de todos los inputs para consistencia */
-        .form-control, .form-select {
-            padding: 0.75rem 1rem;
-            height: auto;
-            border-radius: 8px;
+        /* Responsive */
+        @media (max-width: 768px) {
+            .terms-content {
+                padding: 1rem;
+            }
+
+            .terms-section h3 {
+                font-size: 1.25rem;
+            }
+
+            .terms-section:nth-child(even) {
+                margin: 1rem -1rem;
+                padding: 1rem;
+            }
         }
 
-        .nice-select {
-            width: 100% !important;
-            height: auto !important;
+        /* Efectos hover */
+        .terms-section a:hover {
+            color: var(--theme-color);
         }
 
-        .nice-select .list {
-            width: 100% !important;
+        .widget-social a:hover {
+            color: var(--theme-color) !important;
         }
 
-        .nice-select .current {
-            width: 100% !important;
-            display: block;
+        /* Scroll to top */
+        #scroll-to-top:hover {
+            background-color: var(--theme-color);
         }
     </style>
 
@@ -154,29 +186,28 @@
                     <div class="col-5 col-sm-4 col-lg-1">
                         <div class="header-logo">
                             <a href="index.html">
-                                <img class="logo-main" src="assets/images/logo.png" width="95" height="68" alt="Logo" />
+                                <img class="logo-main" src="assets/images/logo.png" width="95" height="68"
+                                    alt="Logo" />
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-7 d-none d-lg-block">
                         <div class="header-navigation">
                             <ul class="main-nav justify-content-start">
-                                <li><a href="index.html">Inicio</a></li>
+                                 <li><a href="index.html">Inicio</a></li>
                                 <li><a href="about-us.html">Conocenos</a></li>
-                                <li><a class="text-nowrap" href="product.html">Beneficios Exclusivos</a></li>
+                               <li ><a class="text-nowrap" href="product.html">Beneficios Exclusivos</a></li >
                                 <li><a href="testimonials.html">Testimonios</a>
-
+                                 
                                 <li><a href="contact.html">Contactanos</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-7 col-sm-6 col-lg-3">
-                        <div class="header-action justify-content-end">
+                          <div class="header-action justify-content-end">
                             <div class="d-flex flex-nowrap">
-                                <a class="m-1" href="www.apple.com/store" target="_blank"><img width="114"
-                                        src="assets/images/icons/appstore.svg" alt=""></a>
-                                <a class="m-1" href="https://play.google.com/store" target="_blank"><img width="130"
-                                        src="assets/images/icons/playstore.png" alt=""></a>
+                            <a class="m-1" href="www.apple.com/store" target="_blank"><img width="114" src="assets/images/icons/appstore.svg" alt=""></a>
+                            <a class="m-1" href="https://play.google.com/store" target="_blank"><img width="130" src="assets/images/icons/playstore.png" alt=""></a>
                             </div>
                             <button class="header-menu-btn" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#AsideOffcanvasMenu" aria-controls="AsideOffcanvasMenu">
@@ -193,18 +224,18 @@
 
         <main class="main-content">
 
-            <!--== Start Page Header ==-->
+            <!--== Start Page Header Area Wrapper ==-->
             <div class="page-header-area">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 text-center">
                             <div class="page-header-content">
-                                <h2 class="title">Contacto</h2>
+                                <h2 class="title">Política de Privacidad</h2>
                                 <nav class="breadcrumb-area">
                                     <ul class="breadcrumb">
                                         <li><a href="index.html">Inicio</a></li>
                                         <li class="breadcrumb-sep">/</li>
-                                        <li>Contacto</li>
+                                        <li>Política de Privacidad</li>
                                     </ul>
                                 </nav>
                             </div>
@@ -212,176 +243,107 @@
                     </div>
                 </div>
             </div>
-            <!--== End Page Header ==-->
+            <!--== End Page Header Area Wrapper ==-->
 
-            <!--== Start Contact Section ==-->
+            <!--== Start Privacy Content ==-->
             <section class="section-space">
                 <div class="container">
-                    <!-- Info Cards Row -->
-                    <div class="row mb-5">
-                        <div class="col-md-4 mb-4 mb-md-0">
-                            <div class="contact-card text-center p-4 h-100 bg-light rounded-4">
-                                <i class="fa fa-phone fa-3x mb-3"></i>
-                                <h4>Llámanos</h4>
-                                <p class="mb-0">+52 (55) 1234-5678</p>
-                                <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4 mb-md-0">
-                            <div class="contact-card text-center p-4 h-100 bg-light rounded-4">
-                                <i class="fa fa-envelope fa-3x mb-3"></i>
-                                <h4>Escríbenos</h4>
-                                <p class="mb-0">info@bella.com</p>
-                                <p>soporte@bella.com</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="contact-card text-center p-4 h-100 bg-light rounded-4">
-                                <i class="fa fa-comments fa-3x mb-3"></i>
-                                <h4>Síguenos</h4>
-                                <div class="social-links mt-2">
-                                    <a href="https://instagram.com" target="_blank" class="mx-2" style="color: var(--theme-color);">
-                                        <i class="fa fa-instagram fa-lg"></i>
-                                    </a>
-                                    <a href="https://facebook.com" target="_blank" class="mx-2" style="color: var(--theme-color);">
-                                        <i class="fa fa-facebook fa-lg"></i>
-                                    </a>
-                                    <a href="https://twitter.com" target="_blank" class="mx-2" style="color: var(--theme-color);">
-                                        <i class="fa fa-twitter fa-lg"></i>
-                                    </a>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="terms-content">
+                                <div class="terms-section mb-5">
+                                    <h3>1. Información que Recopilamos</h3>
+                                    <p>En Bella, nos tomamos muy en serio la privacidad de nuestros usuarios. Recopilamos la siguiente información:</p>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">• Información personal básica (nombre, correo electrónico, teléfono)</li>
+                                        <li class="mb-2">• Información médica relevante para los procedimientos</li>
+                                        <li class="mb-2">• Historial de consultas y procedimientos</li>
+                                        <li class="mb-2">• Información de pago y facturación</li>
+                                    </ul>
                                 </div>
-                                <p class="mt-2 mb-0">Mantente conectado con nosotros</p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <!-- Formulario de Contacto -->
-                        <div class="col-lg-7 mb-5 mb-lg-0">
-                            <div class="contact-form p-4 bg-light rounded-4">
-                                <h3 class="mb-4">Envíanos un Mensaje</h3>
-                                <form id="contactForm">
-                                    <div class="row">
-                                        <div class="col-md-6 mb-4">
-                                            <input type="text" class="form-control" placeholder="Nombre completo"
-                                                required>
-                                        </div>
-                                        <div class="col-md-6 mb-4">
-                                            <input type="email" class="form-control" placeholder="Correo electrónico"
-                                                required>
-                                        </div>
-                                        <div class="col-md-6 mb-4">
-                                            <input type="tel" class="form-control" placeholder="Teléfono">
-                                        </div>
-                                        <div class="col-md-6 mb-4">
-                                            <select class="form-select py-3 px-4 w-100" style="height: auto; border-radius: 8px; border: 1px solid #dee2e6; width: 100% !important;">
-                                                <option selected disabled value="">Selecciona un asunto</option>
-                                                <option>Información sobre procedimientos</option>
-                                                <option>Consulta de precios</option>
-                                                <option>Soporte técnico</option>
-                                                <option>Otro</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-12 mb-4">
-                                            <textarea class="form-control" rows="5" placeholder="Mensaje"
-                                                required></textarea>
-                                        </div>
-                                        <div class="col-12">
-                                            <button type="submit" class="btn btn-dark">Enviar Mensaje</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                                <div class="terms-section mb-5">
+                                    <h3>2. Uso de la Información</h3>
+                                    <p>Utilizamos su información para:</p>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">• Conectarle con cirujanos plásticos certificados</li>
+                                        <li class="mb-2">• Procesar pagos y gestionar membresías</li>
+                                        <li class="mb-2">• Mejorar nuestros servicios</li>
+                                        <li class="mb-2">• Enviar comunicaciones relevantes sobre servicios y promociones</li>
+                                    </ul>
+                                </div>
 
-                        <!-- FAQ Sidebar -->
-                        <div class="col-lg-5">
-                            <div class="faq-sidebar p-4 bg-light rounded-4">
-                                <h3 class="mb-4">Preguntas Frecuentes</h3>
-                                <div class="accordion" id="faqAccordion">
-                                    <div class="accordion-item border-0 mb-3">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button rounded-3" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#faq1">
-                                                ¿Cómo funciona el proceso de reserva?
-                                            </button>
-                                        </h2>
-                                        <div id="faq1" class="accordion-collapse collapse show"
-                                            data-bs-parent="#faqAccordion">
-                                            <div class="accordion-body">
-                                                Selecciona el procedimiento, elige tu cirujano y realiza el depósito.
-                                                Nuestro equipo te guiará en cada paso.
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="terms-section mb-5">
+                                    <h3>3. Protección de Datos Médicos</h3>
+                                    <p>3.1 Cumplimiento HIPAA</p>
+                                    <p>Todos los datos médicos son tratados según los estándares de HIPAA y regulaciones locales aplicables.</p>
+                                    <p>3.2 Seguridad</p>
+                                    <p>Implementamos medidas de seguridad robustas para proteger su información médica sensible.</p>
+                                </div>
 
-                                    <div class="accordion-item border-0 mb-3">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed rounded-3" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#faq2">
-                                                ¿Los cirujanos están certificados?
-                                            </button>
-                                        </h2>
-                                        <div id="faq2" class="accordion-collapse collapse"
-                                            data-bs-parent="#faqAccordion">
-                                            <div class="accordion-body">
-                                                Sí, todos nuestros cirujanos están certificados y cuentan con amplia
-                                                experiencia.
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="terms-section mb-5">
+                                    <h3>4. Compartir Información</h3>
+                                    <p>Su información puede ser compartida con:</p>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">• Cirujanos plásticos seleccionados por usted</li>
+                                        <li class="mb-2">• Proveedores de servicios de pago</li>
+                                        <li class="mb-2">• Autoridades cuando sea legalmente requerido</li>
+                                    </ul>
+                                </div>
 
-                                    <div class="accordion-item border-0 mb-3">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed rounded-3" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#faq3">
-                                                ¿Ofrecen financiamiento?
-                                            </button>
-                                        </h2>
-                                        <div id="faq3" class="accordion-collapse collapse"
-                                            data-bs-parent="#faqAccordion">
-                                            <div class="accordion-body">
-                                                Sí, contamos con diferentes opciones de financiamiento y planes de pago
-                                                flexibles.
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="terms-section mb-5">
+                                    <h3>5. Sus Derechos</h3>
+                                    <p>Usted tiene derecho a:</p>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">• Acceder a su información personal</li>
+                                        <li class="mb-2">• Solicitar correcciones de su información</li>
+                                        <li class="mb-2">• Eliminar su cuenta y datos asociados</li>
+                                        <li class="mb-2">• Optar por no recibir comunicaciones promocionales</li>
+                                    </ul>
+                                </div>
+
+                                <div class="terms-section mb-5">
+                                    <h3>6. Cookies y Tecnologías de Seguimiento</h3>
+                                    <p>Utilizamos cookies y tecnologías similares para:</p>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">• Mejorar la experiencia del usuario</li>
+                                        <li class="mb-2">• Analizar el uso de la plataforma</li>
+                                        <li class="mb-2">• Personalizar contenido y publicidad</li>
+                                    </ul>
+                                </div>
+
+                                <div class="terms-section mb-5">
+                                    <h3>7. Seguridad de Datos</h3>
+                                    <p>Implementamos medidas de seguridad como:</p>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">• Encriptación de datos sensibles</li>
+                                        <li class="mb-2">• Acceso restringido a información personal</li>
+                                        <li class="mb-2">• Monitoreo regular de seguridad</li>
+                                        <li class="mb-2">• Copias de seguridad encriptadas</li>
+                                    </ul>
+                                </div>
+
+                                <div class="terms-section mb-5">
+                                    <h3>8. Cambios en la Política</h3>
+                                    <p>Nos reservamos el derecho de actualizar esta política de privacidad. Los cambios serán notificados a través de la plataforma y/o correo electrónico.</p>
+                                </div>
+
+                                <div class="terms-section">
+                                    <h3>9. Contacto</h3>
+                                    <p>Para preguntas sobre nuestra política de privacidad:</p>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">• Email: privacidad@bella.com</li>
+                                        <li class="mb-2">• Teléfono: [Número de contacto]</li>
+                                        <li class="mb-2">• Oficial de Privacidad: [Nombre]</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!--== End Contact Section ==-->
-            <!--== Start Newsletter Section ==-->
-            <section class="section-space">
-                <div class="container">
-                    <div class="newsletter-content-wrap bg-dark rounded-4 p-5" style="background-color: #B2B2B2 !important;">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 mb-4 mb-lg-0">
-                                <div class="newsletter-content">
-                                    <div class="section-title mb-0">
-                                        <h2 class="title text-white">Mantente Informado</h2>
-                                        <p class="text-white">Suscríbete para recibir ofertas exclusivas y las últimas novedades en procedimientos estéticos.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="newsletter-form">
-                                    <form class="d-flex gap-3">
-                                        <input type="email" class="form-control form-control-lg border-0" placeholder="Ingresa tu correo electrónico">
-                                        <button class="btn btn-light btn-lg" type="submit" style="background-color: white; color: #B2B2B2;">Suscribirse</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--== End Newsletter Section ==-->
-
+            <!--== End Privacy Content ==-->
         </main>
-
 
         <!--== Start Footer Area Wrapper ==-->
         <footer class="footer-area">
@@ -461,8 +423,7 @@
                             </div>
                             <div class="modal-action-product">
                                 <div class="thumb">
-                                    <img src="assets/images/shop/modal1.webp" alt="Organic Food Juice" width="466"
-                                        height="320">
+                                    <img src="assets/images/shop/modal1.webp" alt="Organic Food Juice" width="466" height="320">
                                 </div>
                                 <h4 class="product-name"><a href="product-details.html">Readable content DX22</a></h4>
                             </div>
@@ -487,8 +448,7 @@
                             </div>
                             <div class="modal-action-product">
                                 <div class="thumb">
-                                    <img src="assets/images/shop/modal1.webp" alt="Organic Food Juice" width="466"
-                                        height="320">
+                                    <img src="assets/images/shop/modal1.webp" alt="Organic Food Juice" width="466" height="320">
                                 </div>
                                 <h4 class="product-name"><a href="product-details.html">Readable content DX22</a></h4>
                             </div>
@@ -500,12 +460,10 @@
         <!--== End Product Quick Add Cart Modal ==-->
 
         <!--== Start Aside Search Form ==-->
-        <aside class="aside-search-box-wrapper offcanvas offcanvas-top" tabindex="-1" id="AsideOffcanvasSearch"
-            aria-labelledby="offcanvasTopLabel">
+        <aside class="aside-search-box-wrapper offcanvas offcanvas-top" tabindex="-1" id="AsideOffcanvasSearch" aria-labelledby="offcanvasTopLabel">
             <div class="offcanvas-header">
                 <h5 class="d-none" id="offcanvasTopLabel">Aside Search</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i
-                        class="fa fa-close"></i></button>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa fa-close"></i></button>
             </div>
             <div class="offcanvas-body">
                 <div class="container pt--0 pb--0">
@@ -516,8 +474,7 @@
                         <form action="#" method="post">
                             <div class="aside-search-form position-relative">
                                 <label for="SearchInput" class="visually-hidden">Search</label>
-                                <input id="SearchInput" type="search" class="form-control"
-                                    placeholder="Search entire store…">
+                                <input id="SearchInput" type="search" class="form-control" placeholder="Search entire store…">
                                 <button class="search-button" type="submit"><i class="fa fa-search"></i></button>
                             </div>
                         </form>
@@ -541,8 +498,7 @@
                                     <div class="col-lg-6">
                                         <!--== Start Product Thumbnail Area ==-->
                                         <div class="product-single-thumb">
-                                            <img src="assets/images/shop/quick-view1.webp" width="544" height="560"
-                                                alt="Image-HasTech">
+                                            <img src="assets/images/shop/quick-view1.webp" width="544" height="560" alt="Image-HasTech">
                                         </div>
                                         <!--== End Product Thumbnail Area ==-->
                                     </div>
@@ -561,10 +517,7 @@
                                                 </div>
                                                 <button type="button" class="product-review-show">150 reviews</button>
                                             </div>
-                                            <p class="mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                                Delectus, repellendus. Nam voluptate illo ut quia non sapiente provident
-                                                alias quos laborum incidunt, earum accusamus, natus. Vero pariatur ut
-                                                veniam sequi amet consectetur.</p>
+                                            <p class="mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, repellendus. Nam voluptate illo ut quia non sapiente provident alias quos laborum incidunt, earum accusamus, natus. Vero pariatur ut veniam sequi amet consectetur.</p>
                                             <div class="product-details-pro-qty">
                                                 <div class="pro-qty">
                                                     <input type="text" title="Quantity" value="01">
@@ -573,8 +526,7 @@
                                             <div class="product-details-action">
                                                 <h4 class="price">$254.22</h4>
                                                 <div class="product-details-cart-wishlist">
-                                                    <button type="button" class="btn" data-bs-toggle="modal"
-                                                        data-bs-target="#action-CartAddModal">Add to cart</button>
+                                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">Add to cart</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -590,12 +542,10 @@
         <!--== End Product Quick View Modal ==-->
 
         <!--== Start Aside Cart ==-->
-        <aside class="aside-cart-wrapper offcanvas offcanvas-end" tabindex="-1" id="AsideOffcanvasCart"
-            aria-labelledby="offcanvasRightLabel">
+        <aside class="aside-cart-wrapper offcanvas offcanvas-end" tabindex="-1" id="AsideOffcanvasCart" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
                 <h1 class="d-none" id="offcanvasRightLabel">Shopping Cart</h1>
-                <button class="btn-aside-cart-close" data-bs-dismiss="offcanvas" aria-label="Close">Shopping Cart <i
-                        class="fa fa-chevron-right"></i></button>
+                <button class="btn-aside-cart-close" data-bs-dismiss="offcanvas" aria-label="Close">Shopping Cart <i class="fa fa-chevron-right"></i></button>
             </div>
             <div class="offcanvas-body">
                 <ul class="aside-cart-product-list">
