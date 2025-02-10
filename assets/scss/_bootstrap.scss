@@ -1,0 +1,15 @@
+// 1. Include functions first
+@forward "functions";
+
+// 2. Include any default variable overrides here
+$primary: #27222C;
+$enable-dark-mode: true;
+$prefix: "bs-";
+$body-bg: #E6ECFF;  // Agregar el color de fondo aquí
+
+// 3. Include remainder of required Bootstrap stylesheets
+@forward "variables";
+@forward "variables-dark";
+@forward "maps";
+@forward "mixins";
+@forward "utilities"; 

@@ -5,7 +5,7 @@
             transition: color 0.3s ease;
 
             &:hover {
-                color: #B2B2B2 !important;
+                color: #27222C !important;
             }
         }
     }
@@ -17,7 +17,7 @@
         transition: color 0.3s ease;
 
         &:hover {
-            color: #B2B2B2 !important;
+            color: #27222C !important;
         }
     }
 }
@@ -26,7 +26,7 @@
 .mobile-menu-toggle {
     &:hover {
         span {
-            background-color: #B2B2B2;
+            background-color: #27222C;
         }
     }
 }
@@ -35,7 +35,7 @@
 .dropdown-menu {
     a {
         &:hover {
-            color: #B2B2B2 !important;
+            color: #27222C !important;
             background-color: rgba(151, 71, 255, 0.1);
         }
     }

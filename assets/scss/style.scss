@@ -72,20 +72,20 @@
 // Reemplazar todos los hovers rojos por morado
 a {
     &:hover {
-        color: #B2B2B2 !important;
+        color: #27222C !important;
     }
 }
 
 .btn-hover-dark {
     &:hover {
-        background-color: #B2B2B2 !important;
-        border-color: #B2B2B2 !important;
+        background-color: #27222C !important;
+        border-color: #27222C !important;
     }
 }
 
 .header-action-item {
     &:hover {
-        color: #B2B2B2 !important;
+        color: #27222C !important;
     }
 }
 
@@ -93,7 +93,7 @@ a {
     li {
         a {
             &:hover {
-                color: #B2B2B2 !important;
+                color: #27222C !important;
             }
         }
     }
@@ -103,7 +103,7 @@ a {
     li {
         a {
             &:hover {
-                color: #B2B2B2 !important;
+                color: #27222C !important;
             }
         }
     }
@@ -113,7 +113,7 @@ a {
     li {
         a {
             &:hover {
-                color: #B2B2B2 !important;
+                color: #27222C !important;
             }
         }
     }
@@ -122,14 +122,14 @@ a {
 .widget-social {
     a {
         &:hover {
-            color: #B2B2B2 !important;
+            color: #27222C !important;
         }
     }
 }
 
 .scroll-to-top {
     &:hover {
-        background-color: #B2B2B2 !important;
+        background-color: #27222C !important;
     }
 }
 
@@ -137,7 +137,7 @@ a {
 .link-hover, 
 .btn-hover {
     &:hover {
-        color: #B2B2B2 !important;
+        color: #27222C !important;
     }
 }
 
@@ -145,14 +145,170 @@ a {
 .card:hover,
 .product-item:hover,
 .service-item:hover {
-    border-color: #B2B2B2 !important;
+    border-color: #27222C !important;
     
     .title, .icon {
-        color: #B2B2B2 !important;
+        color: #27222C !important;
     }
 }
 
 // Asegurarnos que no queden referencias al color anterior
-$color-primary: #B2B2B2;
-$color-hover: #B2B2B2;
-$color-active: #B2B2B2;
+$color-primary: #27222C;
+$color-hover: #27222C;
+$color-active: #27222C;
+
+// Estilos del header
+.header-area {
+    position: relative;
+    z-index: 1000;  // Asegurarnos que esté por encima del hero
+    background-color: transparent;
+}
+
+// Estilos del hero
+.hero-slider-area {
+    background-color: #E6ECFF !important;
+    position: relative;
+    
+    .hero-slide-item {
+        background-color: #E6ECFF !important;
+        padding: 0;
+    }
+
+    .hero-slide-thumb {
+        margin: 0;
+        overflow: visible;
+        
+        img {
+            border-radius: 4% 4% 0 0;
+            width: 100%;
+            height: 85vh;
+            object-fit: contain;
+            overflow: visible;
+            
+            @media (max-width: 992px) {
+                height: 500px;
+                object-fit: cover;
+            }
+            
+            @media (max-width: 768px) {
+                height: 400px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    // Estilos para redes sociales
+    .hero-slide-social-media {
+        position: absolute;
+        right: 30px;
+        z-index: 9;
+        
+        a {
+            display: block;
+            margin: 10px 0;
+            color: #27222C;
+            font-size: 18px;
+            
+            &:hover {
+                transform: translateY(-2px);
+            }
+        }
+    }
+
+    .hero-slide-content {
+        padding: 2rem;
+        margin: 8rem 4rem;  // Margen vertical y horizontal para desktop
+        
+        @media (min-width: 1400px) {
+            margin: 10rem 6rem;  // Más margen para pantallas muy grandes
+        }
+        
+        @media (max-width: 1200px) {
+            margin: 6rem 3rem;  // Margen medio para laptops
+        }
+        
+        @media (max-width: 992px) {
+            margin: 4rem 2rem;  // Margen más pequeño para tablets
+        }
+        
+        @media (max-width: 768px) {
+            padding: 2rem 1rem;
+            margin: 2rem 1rem;  // Margen mínimo para móviles
+            text-align: center;
+        }
+        
+        @media (max-width: 576px) {
+            margin: 1rem 0.5rem;  // Margen muy pequeño para móviles pequeños
+        }
+    }
+
+    .hero-slide-title {
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+        
+        @media (max-width: 768px) {
+            margin: 1rem 0;
+            font-size: 2.5rem;
+        }
+        
+        @media (max-width: 576px) {
+            font-size: 2rem;
+        }
+    }
+
+    .hero-slide-desc {
+        @media (max-width: 768px) {
+            margin: 0;
+            padding: 0 15px;
+        }
+    }
+
+    .download-button {
+        margin-top: 2rem;  // Agregar margen superior consistente
+        
+        .btn {
+            padding: 0.75rem 1.75rem;  // Reducir padding vertical
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: inline-flex;  // Mejor alineación de icono y texto
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;  // Espacio entre icono y texto
+            
+            &:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            }
+            
+            i {
+                font-size: 1.2rem;
+                margin: 0;  // Quitar margen del icono
+            }
+        }
+        
+        @media (max-width: 768px) {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;  // Menos margen en móvil
+            
+            .btn {
+                padding: 0.625rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .swiper,
+    .swiper-wrapper,
+    .hero-slider-container {
+        overflow-x: visible !important;
+        overflow-y: hidden !important;
+    }
+
+    .swiper-slide {
+        overflow-x: visible !important;
+        overflow-y: hidden !important;
+    }
+}
