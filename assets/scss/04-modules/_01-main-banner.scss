@@ -9,7 +9,7 @@
 }
 
 .hero-slide-item {
-  background-color: #FAFAFA;
+  background-color: #27222C;
   height: 1000px !important;
   z-index: 1;
   display: flex;
@@ -25,7 +25,6 @@
     height: auto !important;
   }
   &:before {
-    background-color: #D9F1E1;
     position: absolute;
     width: 50%;
     content: "";
@@ -248,7 +247,7 @@
 .hero-slide-thumb {
   position: absolute;
   right: 0;
-  top: -162px;
+  top: 0px;
   @media #{$desktop-device, $tablet-device} {
     position: relative;
     top: 20px;

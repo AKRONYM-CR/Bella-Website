@@ -1,0 +1,52 @@
+.footer-main-area {
+    background-color: #27222C;
+}
+
+.footer-widget {
+    .widget-title {
+        color: white;
+    }
+    
+    p {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    // Links del footer con hover
+    a {
+        color: rgba(255, 255, 255, 0.8);
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: white !important;
+            text-decoration: underline;
+        }
+    }
+}
+
+// Redes sociales en el footer
+.footer-social-links {
+    a {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: white;
+            color: #27222C !important;
+        }
+    }
+}
+
+.footer-bottom {
+    background-color: #27222C !important;
+    
+    .footer-bottom-content {
+        .copyright {
+            color: white !important;
+            
+            p, span {
+                color: white !important;
+            }
+        }
+    }
+} 

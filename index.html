@@ -4,15 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Brancy - Cosmetic & Beauty Salon Website Template</title>
+    <title>Bella</title>
     <meta name="robots" content="noindex, follow" />
-    <meta name="description" content="Brancy - Cosmetic & Beauty Salon Website Template">
+    <meta name="description"
+        content="Bella: Conecta con cirujanos plásticos de clase mundial y accede a beneficios exclusivos en procedimientos estéticos. Disfruta de promociones únicas diseñadas para quienes buscan calidad, prestigio y resultados excepcionales." />
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="keywords" content="bootstrap, ecommerce, ecommerce html, beauty, cosmetic shop, beauty products, cosmetic, beauty shop, cosmetic store, shop, beauty store, spa, cosmetic, cosmetics, beauty salon" />
-    <meta name="author" content="codecarnival" />
+    <meta name="keywords"
+        content="bootstrap, ecommerce, ecommerce html, beauty, cosmetic shop, beauty products, cosmetic, beauty shop, cosmetic store, shop, beauty store, spa, cosmetic, cosmetics, beauty salon" />
+    <meta name="author" content="Akronym" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.webp">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/logo.png">
 
     <!-- CSS (Font, Vendor, Icon, Plugins & Style CSS files) -->
 
@@ -33,6 +36,162 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="./assets/css/style.min.css">
 
+    <style>
+        .swiper-pagination-bullet {
+            background: #27222C !important;
+            opacity: 0.5;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #27222C !important;
+            opacity: 1;
+        }
+
+        :root {
+            --swiper-theme-color: #27222C;
+            --swiper-pagination-color: #27222C;
+            --swiper-navigation-color: #27222C;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            background-color: rgba(255, 255, 255, 0.9);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font-size: 20px;
+        }
+
+        /* Ajustes de posición y tamaño */
+        .hero-slider-area .swiper-button-next,
+        .hero-slider-area .swiper-button-prev {
+            top: 50%;
+            transform: translateY(-50%);
+            width: 44px;
+            height: 44px;
+        }
+
+        .hero-slider-area .swiper-button-prev {
+            left: 20px;
+        }
+
+        .hero-slider-area .swiper-button-next {
+            right: 20px;
+        }
+
+        .hero-slider-area .swiper-button-next:after,
+        .hero-slider-area .swiper-button-prev:after {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Ocultar botones en móvil */
+        @media (max-width: 768px) {
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                display: none !important;
+            }
+        }
+
+        .btn-border-dark {
+            border-color: #27222C !important;
+            color: #27222C !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .btn-border-dark:hover {
+            background-color: #27222C !important;
+            color: white !important;
+            border-color: #27222C !important;
+        }
+
+        /* Estilos para el formulario del newsletter */
+        .newsletter-form .form-control {
+            border: 2px solid transparent !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .newsletter-form .form-control:focus {
+            border-color: #27222C !important;
+            box-shadow: 0 0 0 0.25rem rgba(159, 200, 204, 0.25) !important;
+        }
+
+        /* Estilo para el botón de suscripción */
+        .newsletter-form .btn-light {
+            background-color: white !important;
+            color: #27222C !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .newsletter-form .btn-light:hover {
+            background-color: rgba(255, 255, 255, 0.9) !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer-bottom,
+        .newsletter-content-wrap.bg-dark {
+            background-color: #27222C !important;
+        }
+
+        /* Estilo para el botón Conoce más */
+        .btn-dark {
+            background-color: #27222C !important;
+            border-color: #27222C !important;
+            color: white !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .btn-dark:hover {
+            background-color: white !important;
+            border-color: #27222C !important;
+            color: #27222C !important;
+        }
+
+        /* Ajuste para hero-slide-thumb */
+        .hero-slide-thumb {
+            position: relative;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .hero-slide-thumb img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 4% 4% 0 0;
+            display: block;
+        }
+
+        /* Ajuste para social media icons */
+        .hero-slider-area .hero-slide-social-media {
+            position: absolute;
+            right: 30px;
+            transform: translateY(-50%);
+            z-index: 9;
+        }
+
+        /* Opcional: ajustes adicionales para los iconos sociales */
+        .hero-slide-social-media a {
+            display: block;
+            margin: 10px 0;
+            color: #27222C;
+            transition: all 0.3s ease;
+        }
+
+        .hero-slide-social-media a:hover {
+            transform: scale(1.2);
+            color: #000;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -44,119 +203,36 @@
         <header class="header-area sticky-header header-transparent">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-5 col-lg-2 col-xl-1">
+                    <div class="col-5 col-lg-2 col-xl-2 p-0 ps-2">
                         <div class="header-logo">
                             <a href="index.html">
-                                <img class="logo-main" src="assets/images/logo.webp" width="95" height="68" alt="Logo" />
+                                <img class="logo-main" src="assets/images/logo.png" width="150" height="130" alt="Logo" />
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-7 col-xl-7 d-none d-lg-block">
+                    <div class="col-lg-7 col-xl-6 d-none d-lg-block">
                         <div class="header-navigation ps-7">
                             <ul class="main-nav justify-content-start">
-                                <li class="has-submenu"><a href="index.html">home</a>
-                                    <ul class="submenu-nav">
-                                        <li><a href="index.html">Home One</a></li>
-                                        <li><a href="index-two.html">Home Two</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="about-us.html">about</a></li>
-                                <li class="has-submenu position-static"><a href="product.html">shop</a>
-                                    <ul class="submenu-nav-mega">
-                                        <li><a href="#/" class="mega-title">Shop Layout</a>
-                                            <ul>
-                                                <li><a href="product.html">Shop 3 Column</a></li>
-                                                <li><a href="product-four-columns.html">Shop 4 Column</a></li>
-                                                <li><a href="product-left-sidebar.html">Shop Left Sidebar</a></li>
-                                                <li><a href="product-right-sidebar.html">Shop Right Sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#/" class="mega-title">Single Product</a>
-                                            <ul>
-                                                <li><a href="product-details-normal.html">Single Product Normal</a></li>
-                                                <li><a href="product-details.html">Single Product Variable</a></li>
-                                                <li><a href="product-details-group.html">Single Product Group</a></li>
-                                                <li><a href="product-details-affiliate.html">Single Product Affiliate</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#/" class="mega-title">Others Pages</a>
-                                            <ul>
-                                                <li><a href="product-cart.html">Shopping Cart</a></li>
-                                                <li><a href="product-checkout.html">Checkout</a></li>
-                                                <li><a href="product-wishlist.html">Wishlist</a></li>
-                                                <li><a href="product-compare.html">Compare</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="has-submenu"><a href="blog.html">Blog</a>
-                                    <ul class="submenu-nav">
-                                        <li class="has-submenu"><a href="#/">Blog Layout</a>
-                                            <ul class="submenu-nav">
-                                                <li><a href="blog.html">Blog Grid</a></li>
-                                                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                                <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="blog-details.html">Blog Details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-submenu"><a href="account-login.html">Pages</a>
-                                    <ul class="submenu-nav">
-                                        <li><a href="account-login.html">My Account</a></li>
-                                        <li><a href="faq.html">Frequently Questions</a></li>
-                                        <li><a href="page-not-found.html">Page Not Found</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="index.html">Inicio</a></li>
+
+                                <li><a href="about-us.html">Conocenos</a></li>
+                                <li><a class="text-nowrap" href="product.html">Beneficios Exclusivos</a></li>
+                                <li><a href="testimonials.html">Testimonios</a>
+
+                                <li><a href="contact.html">Contáctanos</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-7 col-lg-3 col-xl-4">
                         <div class="header-action justify-content-end">
-                            <button class="header-action-btn ms-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#AsideOffcanvasSearch" aria-controls="AsideOffcanvasSearch">
-                                <span class="icon">
-                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect class="icon-rect" width="30" height="30" fill="url(#pattern1)"/>
-                    <defs>
-                      <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                        <use xlink:href="#image0_504:11" transform="scale(0.0333333)"/>
-                      </pattern>
-                      <image id="image0_504:11" width="30" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAABiUlEQVRIie2Wu04CQRSGP0G2EUtIbHwA8B3EQisLIcorEInx8hbEZ9DKy6toDI1oAgalNFpDoYWuxZzJjoTbmSXERP7kZDbZ859vdmb27MJcf0gBUAaugRbQk2gBV3IvmDa0BLwA4Zh4BorTACaAU6fwPXAI5IAliTxwBDScvJp4vWWhH0BlTLEEsC+5Fu6lkgNdV/gKDnxHCw2I9rSiNQNV8baBlMZYJtpTn71KAg9SY3dUYn9xezLPgG8P8BdwLteq5X7CzDbnAbXKS42WxtQVUzoGeFlqdEclxXrnhmhhkqR+8KuMqzHA1vumAddl3IwB3pLxVmOyr1NjwKQmURJ4lBp7GmOAafghpg1qdSDeDrCoNReJWmZB4dsAPsW7rYVa1Rx4FbOEw5TEPKmFvgMZX3DCgYeYNniMaQ5piTXghGhPLdTmZ33hYNpem98f/UHRwSxvhqhXx4anMA3/EmhiOlJPJnSBOb3uQcpOE65VhujPpAms/Bu4u+x3swRbeB24mTV4LgB+AFuLedkPkcmmAAAAAElFTkSuQmCC"/>
-                    </defs>
-                  </svg>
-                </span>
-                            </button>
-
-                            <button class="header-action-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#AsideOffcanvasCart" aria-controls="AsideOffcanvasCart">
-                                <span class="icon">
-                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect class="icon-rect" width="30" height="30" fill="url(#pattern2)"/>
-                    <defs>
-                      <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
-                        <use xlink:href="#image0_504:9" transform="scale(0.0333333)"/>
-                      </pattern>
-                      <image id="image0_504:9" width="30" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAABFUlEQVRIie2VMU7DMBSGvwAqawaYuAmKxCW4A1I5Qg4AA93KBbp1ZUVUlQJSVVbCDVhgzcTQdLEVx7WDQ2xLRfzSvzzb+d6zn2MYrkugBBYevuWsHKiFn2JBMwH8Bq6Aw1jgBwHOYwGlPgT4LDZ4I8BJDNiEppl034UEJ8DMAJ0DByHBACPgUYEugePQUKkUWAmnsaB/Ry/YO9aXCwlT72AdrqaWEohwBWxSwc8ReIVtYIr5bM5pXqO+Men7rozGlkVSv4lJj1WQfsbvXVkNVNk1eEK4ik9/yuwzAPhLh5iuU4jtftMDR4ZJJXChxTJ2H3zXGDgWc43/X2Wro8G81a8u2fXU2nXiLVAxvNIKuPGW/r/2SltF+a3Rkw4pmwAAAABJRU5ErkJggg=="/>
-                    </defs>
-                  </svg>
-                </span>
-                            </button>
-
-                            <a class="header-action-btn" href="account-login.html">
-                                <span class="icon">
-                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect class="icon-rect" width="30" height="30" fill="url(#pattern3)"/>
-                    <defs>
-                      <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
-                        <use xlink:href="#image0_504:10" transform="scale(0.0333333)"/>
-                      </pattern>
-                      <image id="image0_504:10" width="30" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAABEUlEQVRIie3UMUoDYRDF8Z8psqUpLBRrBS+gx7ATD6E5iSjeQQ/gJUzEwmChnZZaKZiQ0ljsLkhQM5/5Agr74DX7DfOfgZ1Hoz+qAl30Marcx2H1thCtY4DJN76parKqmAH9DM+6eTcArX2QE3yVAO7lBA8TwMNIw6UgeJI46My+rWCjUQL0LVIUBd8lgEO1UfBZAvg8oXamCuWNRu64nRNMmUo/wReSXLXayoDoKc9miMvqW/ZNG2VRNLla2MYudrCFTvX2intlnl/gGu/zDraGYzyLZ/UTjrD6G2AHpxgnAKc9xgmWo9BNPM4BnPYDNiLg24zQ2oNpyFdZvRKZLlGhnvvKPzXXti/Yy7hEo3+iD9EHtgdqxQnwAAAAAElFTkSuQmCC"/>
-                    </defs>
-                  </svg>
-                </span>
-                            </a>
-
-                            <button class="header-menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#AsideOffcanvasMenu" aria-controls="AsideOffcanvasMenu">
+                            <div class="d-flex flex-nowrap">
+                                <a class="m-1" href="www.apple.com/store" target="_blank"><img width="114"
+                                        src="assets/images/icons/appstore.svg" alt=""></a>
+                                <a class="m-1" href="https://play.google.com/store" target="_blank"><img width="130"
+                                        src="assets/images/icons/playstore.png" alt=""></a>
+                            </div>
+                            <button class="header-menu-btn" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#AsideOffcanvasMenu" aria-controls="AsideOffcanvasMenu">
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -171,725 +247,355 @@
         <main class="main-content">
 
             <!--== Start Hero Area Wrapper ==-->
-            <section class="hero-slider-area position-relative">
+            <section class="hero-slider-area" style="background-color: #E6ECFF;">
                 <div class="swiper hero-slider-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide hero-slide-item">
-                            <div class="container">
-                                <div class="row align-items-center position-relative">
-                                    <div class="col-12 col-md-6">
-                                        <div class="hero-slide-content">
-                                            <div class="hero-slide-text-img"><img src="assets/images/slider/text-theme.webp" width="427" height="232" alt="Image"></div>
-                                            <h2 class="hero-slide-title">CLEAN FRESH</h2>
-                                            <p class="hero-slide-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.</p>
-                                            <a class="btn btn-border-dark" href="product.html">BUY NOW</a>
+                        <div class="swiper-slide hero-slide-item" style="background-color: #E6ECFF; padding-bottom: 0;">
+                            <div class="container-fluid px-4">
+                                <div class="row align-items-center justify-content-center" style="min-height: 75vh;">
+                                    <div class="col-12 col-md-6 order-2 order-md-1">
+                                        <div class="hero-slide-content pe-md-5" style="padding-bottom: 2rem;">
+                                            <h2 class="hero-slide-title" style="font-size: 5rem; font-weight: 700; line-height: 1.2;">Bella</h2>
+                                            <p class="hero-slide-desc">Accede a Servicios Médicos Exclusivos con los
+                                                Mejores Especialistas del Mundo.</p>
+                                            
+                                            <!-- Botón de descarga inteligente -->
+                                            <div class="download-button">
+                                                <button onclick="detectAndRedirect()" class="btn btn-dark">
+                                                    <i class="fa fa-download"></i>
+                                                    Descargar App
+                                                </button>
+                                            </div>
+
+                                            <script>
+                                                function detectAndRedirect() {
+                                                    // Detectar sistema operativo
+                                                    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+                                                    
+                                                    // iOS detection
+                                                    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                                                        window.location.href = "https://apps.apple.com/app/bella-app";
+                                                    }
+                                                    // macOS detection
+                                                    else if (navigator.platform.toUpperCase().indexOf('MAC') >= 0) {
+                                                        window.location.href = "https://apps.apple.com/app/bella-app";
+                                                    }
+                                                    // Android detection
+                                                    else if (/android/i.test(userAgent)) {
+                                                        window.location.href = "https://play.google.com/store/apps/details?id=com.bella.app";
+                                                    }
+                                                    // Windows/otros (default a Google Play)
+                                                    else {
+                                                        window.location.href = "https://play.google.com/store/apps/details?id=com.bella.app";
+                                                    }
+                                                }
+                                            </script>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-6">
+                                    <div class="col-12 col-md-6 order-1 order-md-2">
                                         <div class="hero-slide-thumb">
-                                            <img src="assets/images/slider/slider1.webp" width="841" height="832" alt="Image">
+                                            <img src="assets/images/slider/hero-1.png" alt="Image">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="hero-slide-text-shape"><img src="assets/images/slider/text1.webp" width="70" height="955" alt="Image"></div>
-                            <div class="hero-slide-social-shape"></div>
                         </div>
-                        <div class="swiper-slide hero-slide-item">
-                            <div class="container">
-                                <div class="row align-items-center position-relative">
-                                    <div class="col-12 col-md-6">
-                                        <div class="hero-slide-content">
-                                            <div class="hero-slide-text-img"><img src="assets/images/slider/text-theme.webp" width="427" height="232" alt="Image"></div>
-                                            <h2 class="hero-slide-title">Facial Cream</h2>
-                                            <p class="hero-slide-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.</p>
-                                            <a class="btn btn-border-dark" href="product.html">BUY NOW</a>
+                        <div class="swiper-slide hero-slide-item" style="background-color: #E6ECFF; padding-bottom: 0;">
+                            <div class="container-lg">
+                                <div class="row align-items-center position-relative" style="min-height: 75vh;">
+                                    <div class="col-12 col-md-6 order-1 order-md-2">
+                                        <div class="hero-slide-thumb" style="margin-bottom: -2px;">
+                                            <img style="border-radius: 4% 4% 0 0; display: block; width: 100%; height: 600px; object-fit: cover;" 
+                                                 src="assets/images/vertical.jpg" alt="Image">
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="hero-slide-thumb">
-                                            <img src="assets/images/slider/slider2.webp" width="841" height="832" alt="Image">
+                                    <div class="col-12 col-md-6 order-2 order-md-1">
+                                        <div class="hero-slide-content" style="padding-bottom: 2rem;">
+                                            <h2 class="hero-slide-title">Resultados Naturales</h2>
+                                            <p class="hero-slide-desc">Confía en los mejores cirujanos plásticos
+                                                certificados internacionalmente para lograr la mejor versión de ti.</p>
+                                            <a class="btn btn-border-dark" href="product.html"
+                                                style="border-color: #27222C; color: #27222C; transition: all 0.3s ease;"
+                                                onmouseover="this.style.backgroundColor='#27222C'; this.style.color='white';"
+                                                onmouseout="this.style.backgroundColor='transparent'; this.style.color='#27222C';">Ver
+                                                Beneficios</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="hero-slide-text-shape"><img src="assets/images/slider/text1.webp" width="70" height="955" alt="Image"></div>
-                            <div class="hero-slide-social-shape"></div>
                         </div>
                     </div>
+                    <!--== Add Navigation Buttons ==-->
+                    <div class="swiper-button-prev" style="color: #27222C;"></div>
+                    <div class="swiper-button-next" style="color: #27222C;"></div>
                     <!--== Add Pagination ==-->
-                    <div class="hero-slider-pagination"></div>
+                    <div class="hero-slider-pagination" style="--swiper-theme-color: #27222C;"></div>
                 </div>
                 <div class="hero-slide-social-media">
-                    <a href="https://www.pinterest.com/" target="_blank" rel="noopener"><i class="fa fa-pinterest-p"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener"><i
+                            class="fa fa-instagram"></i></a>
                     <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i
+                            class="fa fa-facebook"></i></a>
                 </div>
             </section>
             <!--== End Hero Area Wrapper ==-->
 
-            <!--== Start Product Category Area Wrapper ==-->
-            <section class="section-space pb-0">
-                <div class="container">
-                    <div class="row g-3 g-sm-6">
-                        <div class="col-6 col-lg-4 col-lg-2 col-xl-2">
-                            <!--== Start Product Category Item ==-->
-                            <a href="product.html" class="product-category-item">
-                                <img class="icon" src="assets/images/shop/category/1.webp" width="70" height="80" alt="Image-HasTech">
-                                <h3 class="title">Hare care</h3>
-                                <span class="flag-new">new</span>
-                            </a>
-                            <!--== End Product Category Item ==-->
-                        </div>
-                        <div class="col-6 col-lg-4 col-lg-2 col-xl-2">
-                            <!--== Start Product Category Item ==-->
-                            <a href="product.html" class="product-category-item" data-bg-color="#FFEDB4">
-                                <img class="icon" src="assets/images/shop/category/2.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Skin care</h3>
-                            </a>
-                            <!--== End Product Category Item ==-->
-                        </div>
-                        <div class="col-6 col-lg-4 col-lg-2 col-xl-2 mt-lg-0 mt-sm-6 mt-4">
-                            <!--== Start Product Category Item ==-->
-                            <a href="product.html" class="product-category-item" data-bg-color="#DFE4FF">
-                                <img class="icon" src="assets/images/shop/category/3.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Lip stick</h3>
-                            </a>
-                            <!--== End Product Category Item ==-->
-                        </div>
-                        <div class="col-6 col-lg-4 col-lg-2 col-xl-2 mt-xl-0 mt-sm-6 mt-4">
-                            <!--== Start Product Category Item ==-->
-                            <a href="product.html" class="product-category-item" data-bg-color="#FFEACC">
-                                <img class="icon" src="assets/images/shop/category/4.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Face skin</h3>
-                                <span data-bg-color="#835BF4" class="flag-new">sale</span>
-                            </a>
-                            <!--== End Product Category Item ==-->
-                        </div>
-                        <div class="col-6 col-lg-4 col-lg-2 col-xl-2 mt-xl-0 mt-sm-6 mt-4">
-                            <!--== Start Product Category Item ==-->
-                            <a href="product.html" class="product-category-item" data-bg-color="#FFDAE0">
-                                <img class="icon" src="assets/images/shop/category/5.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Blusher</h3>
-                            </a>
-                            <!--== End Product Category Item ==-->
-                        </div>
-                        <div class="col-6 col-lg-4 col-lg-2 col-xl-2 mt-xl-0 mt-sm-6 mt-4">
-                            <!--== Start Product Category Item ==-->
-                            <a href="product.html" class="product-category-item" data-bg-color="#FFF3DA">
-                                <img class="icon" src="assets/images/shop/category/6.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Natural</h3>
-                            </a>
-                            <!--== End Product Category Item ==-->
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--== End Product Category Area Wrapper ==-->
-
-            <!--== Start Product Area Wrapper ==-->
+            <!--== Start Features Section ==-->
             <section class="section-space">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
                             <div class="section-title text-center">
-                                <h2 class="title">Top sale</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+                                <h2 class="title">¿Por qué elegir Bella?</h2>
+                                <p>Descubre los beneficios exclusivos que tenemos para ti</p>
                             </div>
                         </div>
                     </div>
-                    <div class="row mb-n4 mb-sm-n10 g-3 g-sm-6">
-                        <div class="col-6 col-lg-4 mb-4 mb-sm-9">
-                            <!--== Start Product Item ==-->
-                            <div class="product-item">
-                                <div class="product-thumb">
-                                    <a class="d-block" href="product-details.html">
-                                        <img src="assets/images/shop/1.webp" width="370" height="450" alt="Image-HasTech">
-                                    </a>
-                                    <span class="flag-new">new</span>
-                                    <div class="product-action">
-                                        <button type="button" class="product-action-btn action-btn-quick-view" data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                            <i class="fa fa-expand"></i>
-                                        </button>
-                                        <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                            <span>Add to cart</span>
-                                        </button>
-                                        <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
-                                            <i class="fa fa-heart-o"></i>
-                                        </button>
-                                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 mb-7">
+                            <div class="feature-item text-center">
+                                <div class="feature-icon mb-5">
+                                    <svg width="64" height="64" viewBox="0 0 24 24" fill="#27222C">
+                                        <path
+                                            d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm6 9.09c0 4-2.55 7.7-6 8.83-3.45-1.13-6-4.82-6-8.83v-4.7l6-2.25 6 2.25v4.7zM12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 8.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z" />
+                                    </svg>
                                 </div>
-                                <div class="product-info">
-                                    <div class="product-rating">
-                                        <div class="rating">
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                        </div>
-                                        <div class="reviews">150 reviews</div>
-                                    </div>
-                                    <h4 class="title"><a href="product-details.html">Readable content DX22</a></h4>
-                                    <div class="prices">
-                                        <span class="price">$210.00</span>
-                                        <span class="price-old">300.00</span>
-                                    </div>
-                                </div>
-                                <div class="product-action-bottom">
-                                    <button type="button" class="product-action-btn action-btn-quick-view" data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                        <i class="fa fa-expand"></i>
-                                    </button>
-                                    <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
-                                        <i class="fa fa-heart-o"></i>
-                                    </button>
-                                    <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                        <span>Add to cart</span>
-                                    </button>
-                                </div>
+                                <h4>Cirujanos Certificados</h4>
+                                <p>Conectamos con los mejores especialistas certificados internacionalmente.</p>
                             </div>
-                            <!--== End prPduct Item ==-->
                         </div>
-                        <div class="col-6 col-lg-4 mb-4 mb-sm-9">
-                            <!--== Start Product Item ==-->
-                            <div class="product-item">
-                                <div class="product-thumb">
-                                    <a class="d-block" href="product-details.html">
-                                        <img src="assets/images/shop/2.webp" width="370" height="450" alt="Image-HasTech">
-                                    </a>
-                                    <span class="flag-new">new</span>
-                                    <div class="product-action">
-                                        <button type="button" class="product-action-btn action-btn-quick-view" data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                            <i class="fa fa-expand"></i>
-                                        </button>
-                                        <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                            <span>Add to cart</span>
-                                        </button>
-                                        <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
-                                            <i class="fa fa-heart-o"></i>
-                                        </button>
-                                    </div>
+                        <div class="col-md-4 mb-7">
+                            <div class="feature-item text-center">
+                                <div class="feature-icon mb-5">
+                                    <svg width="64" height="64" viewBox="0 0 24 24" fill="#27222C">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.79 1.49 2.69 3.66 3.21 1.95.46 2.34 1.15 2.34 1.87 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.32-1.64H8.04c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.42z" />
+                                    </svg>
                                 </div>
-                                <div class="product-info">
-                                    <div class="product-rating">
-                                        <div class="rating">
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                        </div>
-                                        <div class="reviews">150 reviews</div>
-                                    </div>
-                                    <h4 class="title"><a href="product-details.html">Modern Eye Brush</a></h4>
-                                    <div class="prices">
-                                        <span class="price">$210.00</span>
-                                        <span class="price-old">300.00</span>
-                                    </div>
-                                </div>
-                                <div class="product-action-bottom">
-                                    <button type="button" class="product-action-btn action-btn-quick-view" data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                        <i class="fa fa-expand"></i>
-                                    </button>
-                                    <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
-                                        <i class="fa fa-heart-o"></i>
-                                    </button>
-                                    <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                        <span>Add to cart</span>
-                                    </button>
-                                </div>
+                                <h4>Precios Exclusivos</h4>
+                                <p>Accede a descuentos y promociones especiales en procedimientos estéticos.</p>
                             </div>
-                            <!--== End prPduct Item ==-->
                         </div>
-                        <div class="col-6 col-lg-4 mb-4 mb-sm-9">
-                            <!--== Start Product Item ==-->
-                            <div class="product-item">
-                                <div class="product-thumb">
-                                    <a class="d-block" href="product-details.html">
-                                        <img src="assets/images/shop/3.webp" width="370" height="450" alt="Image-HasTech">
-                                    </a>
-                                    <span class="flag-new">new</span>
-                                    <div class="product-action">
-                                        <button type="button" class="product-action-btn action-btn-quick-view" data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                            <i class="fa fa-expand"></i>
-                                        </button>
-                                        <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                            <span>Add to cart</span>
-                                        </button>
-                                        <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
-                                            <i class="fa fa-heart-o"></i>
-                                        </button>
-                                    </div>
+                        <div class="col-md-4 mb-7">
+                            <div class="feature-item text-center">
+                                <div class="feature-icon mb-5">
+                                    <svg width="64" height="64" viewBox="0 0 24 24" fill="#27222C">
+                                        <path
+                                            d="M12 1c-4.97 0-9 4.03-9 9v7c0 1.66 1.34 3 3 3h3v-8H5v-2c0-3.87 3.13-7 7-7s7 3.13 7 7v2h-4v8h3c1.66 0 3-1.34 3-3v-7c0-4.97-4.03-9-9-9z" />
+                                    </svg>
                                 </div>
-                                <div class="product-info">
-                                    <div class="product-rating">
-                                        <div class="rating">
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                        </div>
-                                        <div class="reviews">150 reviews</div>
-                                    </div>
-                                    <h4 class="title"><a href="product-details.html">Voyage face cleaner</a></h4>
-                                    <div class="prices">
-                                        <span class="price">$210.00</span>
-                                        <span class="price-old">300.00</span>
-                                    </div>
-                                </div>
-                                <div class="product-action-bottom">
-                                    <button type="button" class="product-action-btn action-btn-quick-view" data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                        <i class="fa fa-expand"></i>
-                                    </button>
-                                    <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
-                                        <i class="fa fa-heart-o"></i>
-                                    </button>
-                                    <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                        <span>Add to cart</span>
-                                    </button>
-                                </div>
+                                <h4>Acompañamiento 24/7</h4>
+                                <p>Te brindamos soporte personalizado durante todo el proceso.</p>
                             </div>
-                            <!--== End prPduct Item ==-->
-                        </div>
-                        <div class="col-6 col-lg-4 mb-4 mb-sm-9">
-                            <!--== Start Product Item ==-->
-                            <div class="product-item">
-                                <div class="product-thumb">
-                                    <a class="d-block" href="product-details.html">
-                                        <img src="assets/images/shop/4.webp" width="370" height="450" alt="Image-HasTech">
-                                    </a>
-                                    <span class="flag-new">new</span>
-                                    <div class="product-action">
-                                        <button type="button" class="product-action-btn action-btn-quick-view" data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                            <i class="fa fa-expand"></i>
-                                        </button>
-                                        <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                            <span>Add to cart</span>
-                                        </button>
-                                        <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
-                                            <i class="fa fa-heart-o"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="product-rating">
-                                        <div class="rating">
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                        </div>
-                                        <div class="reviews">150 reviews</div>
-                                    </div>
-                                    <h4 class="title"><a href="product-details.html">Impulse Duffle</a></h4>
-                                    <div class="prices">
-                                        <span class="price">$210.00</span>
-                                        <span class="price-old">300.00</span>
-                                    </div>
-                                </div>
-                                <div class="product-action-bottom">
-                                    <button type="button" class="product-action-btn action-btn-quick-view" data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                        <i class="fa fa-expand"></i>
-                                    </button>
-                                    <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
-                                        <i class="fa fa-heart-o"></i>
-                                    </button>
-                                    <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                        <span>Add to cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <!--== End prPduct Item ==-->
-                        </div>
-                        <div class="col-6 col-lg-4 mb-4 mb-sm-9">
-                            <!--== Start Product Item ==-->
-                            <div class="product-item">
-                                <div class="product-thumb">
-                                    <a class="d-block" href="product-details.html">
-                                        <img src="assets/images/shop/5.webp" width="370" height="450" alt="Image-HasTech">
-                                    </a>
-                                    <span class="flag-new">new</span>
-                                    <div class="product-action">
-                                        <button type="button" class="product-action-btn action-btn-quick-view" data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                            <i class="fa fa-expand"></i>
-                                        </button>
-                                        <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                            <span>Add to cart</span>
-                                        </button>
-                                        <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
-                                            <i class="fa fa-heart-o"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="product-rating">
-                                        <div class="rating">
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                        </div>
-                                        <div class="reviews">150 reviews</div>
-                                    </div>
-                                    <h4 class="title"><a href="product-details.html">Sprite Yoga Straps1</a></h4>
-                                    <div class="prices">
-                                        <span class="price">$210.00</span>
-                                        <span class="price-old">300.00</span>
-                                    </div>
-                                </div>
-                                <div class="product-action-bottom">
-                                    <button type="button" class="product-action-btn action-btn-quick-view" data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                        <i class="fa fa-expand"></i>
-                                    </button>
-                                    <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
-                                        <i class="fa fa-heart-o"></i>
-                                    </button>
-                                    <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                        <span>Add to cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <!--== End prPduct Item ==-->
-                        </div>
-                        <div class="col-6 col-lg-4 mb-4 mb-sm-9">
-                            <!--== Start Product Item ==-->
-                            <div class="product-item">
-                                <div class="product-thumb">
-                                    <a class="d-block" href="product-details.html">
-                                        <img src="assets/images/shop/6.webp" width="370" height="450" alt="Image-HasTech">
-                                    </a>
-                                    <span class="flag-new">new</span>
-                                    <div class="product-action">
-                                        <button type="button" class="product-action-btn action-btn-quick-view" data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                            <i class="fa fa-expand"></i>
-                                        </button>
-                                        <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                            <span>Add to cart</span>
-                                        </button>
-                                        <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
-                                            <i class="fa fa-heart-o"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="product-rating">
-                                        <div class="rating">
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                        </div>
-                                        <div class="reviews">150 reviews</div>
-                                    </div>
-                                    <h4 class="title"><a href="product-details.html">Fusion facial cream</a></h4>
-                                    <div class="prices">
-                                        <span class="price">$210.00</span>
-                                        <span class="price-old">300.00</span>
-                                    </div>
-                                </div>
-                                <div class="product-action-bottom">
-                                    <button type="button" class="product-action-btn action-btn-quick-view" data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                        <i class="fa fa-expand"></i>
-                                    </button>
-                                    <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
-                                        <i class="fa fa-heart-o"></i>
-                                    </button>
-                                    <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                        <span>Add to cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <!--== End prPduct Item ==-->
                         </div>
                     </div>
                 </div>
             </section>
-            <!--== End Product Area Wrapper ==-->
+            <!--== End Features Section ==-->
 
-            <!--== Start Product Banner Area Wrapper ==-->
-            <section>
+            <!--== Start About Section ==-->
+            <section class="section-space pt-0">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="about-thumb">
+                                <img src="assets/images/Fotos-Website-prueba/Consultorio.jpg" alt="Sobre Nosotros" class="rounded-4">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-content ps-lg-7 mt-8 mt-md-0">
+                                <h2 class="title">Transformamos vidas a través de la belleza</h2>
+                                <p class="desc mb-5">En Bella, entendemos que cada persona es única. Por eso, conectamos
+                                    a nuestros usuarios con cirujanos plásticos de clase mundial que comparten nuestra
+                                    pasión por la excelencia y los resultados naturales.</p>
+                                <a href="about-us.html" class="btn btn-dark"
+                                    style="background-color: #27222C; border-color: #27222C;">Conoce más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--== End About Section ==-->
+
+            <!--== Start Services Section ==-->
+            <section class="section-space pt-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-title text-center">
+                                <h2 class="title">Nuestros Servicios</h2>
+                                <p>Procedimientos estéticos con los más altos estándares de calidad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mb-7">
+                            <div class="service-item text-center">
+                                <img src="assets/images/Fotos-Website-prueba/pexels-shvetsa-4586711.jpg" alt="Cirugía Facial" class="rounded-4 mb-4">
+                                <h4>Cirugía Facial</h4>
+                                <p>Especialistas en rinoplastia, lifting facial, mentoplastia y procedimientos para
+                                    rejuvenecimiento facial.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-7">
+                            <div class="service-item text-center">
+                                <img src="assets/images/Fotos-Website-prueba/pexels-cottonbro-7583377.jpg" alt="Cirugía Corporal" class="rounded-4 mb-4">
+                                <h4>Cirugía Corporal</h4>
+                                <p>Expertos en lipoescultura, abdominoplastia, aumento de glúteos y contorno corporal.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-7">
+                            <div class="service-item text-center">
+                                <img src="assets/images/Fotos-Website-prueba/pexels-shvetsa-4586732.jpg" alt="Cirugía Mamaria" class="rounded-4 mb-4">
+                                <h4>Cirugía Mamaria</h4>
+                                <p>Especialistas en aumento, reducción y levantamiento de senos con resultados
+                                    naturales.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-7">
+                            <div class="service-item text-center">
+                                <img src="assets/images/Fotos-Website-prueba/pexels-cottonbro-7584493.jpg" alt="Cirugía Reconstructiva"
+                                    class="rounded-4 mb-4">
+                                <h4>Cirugía Reconstructiva</h4>
+                                <p>Expertos en reconstrucción post-mastectomía, corrección de cicatrices y
+                                    malformaciones.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-7">
+                            <div class="service-item text-center">
+                                <img src="assets/images/Fotos-Website-prueba/pexels-shvetsa-4586732.jpg" alt="Procedimientos No Quirúrgicos"
+                                    class="rounded-4 mb-4">
+                                <h4>Medicina Estética</h4>
+                                <p>Especialistas en tratamientos mínimamente invasivos, rellenos y rejuvenecimiento.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-7">
+                            <div class="service-item text-center">
+                                <img src="assets/images/Fotos-Website-prueba/pexels-pavel-danilyuk-6417942.jpg" alt="Más Especialidades" class="rounded-4 mb-4">
+                                <h4>Otras Especialidades</h4>
+                                <p>Descubre más especialistas certificados en diversos procedimientos estéticos y muchas
+                                    otras áreas de la cirugía plástica y estética.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12 text-center">
+                            <p class="text-muted">* Todos nuestros especialistas cuentan con certificaciones
+                                internacionales y amplia experiencia en su campo.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--== End Services Section ==-->
+
+            <!--== Start CTA Section ==-->
+            <section class="section-space pt-0">
+                <div class="container">
+                    <div class="cta-wrapper bg-dark rounded-4 p-7" style="background-color: #27222C !important;">
+                        <div class="row align-items-center">
+                            <div class="col-md-8">
+                                <h2 class="text-white mb-3">¿Listo para comenzar tu transformación?</h2>
+                                <p class="text-white mb-md-0">Descarga nuestra app y accede a beneficios exclusivos.</p>
+                            </div>
+                            <div class="col-md-4 text-md-end">
+                                <div class="d-flex flex-wrap justify-content-md-end">
+                                    <a class="me-2 mb-2" href="www.apple.com/store" target="_blank">
+                                        <img width="140" src="assets/images/icons/appstore.svg" alt="App Store">
+                                    </a>
+                                    <a class="mb-2" href="https://play.google.com/store" target="_blank">
+                                        <img width="140" src="assets/images/icons/playstore.png" alt="Play Store">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--== End CTA Section ==-->
+
+            <!--== Start Featured Categories Section ==-->
+            <section class="my-10">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6 col-lg-4">
-                            <!--== Start Product Category Item ==-->
-                            <a href="product.html" class="product-banner-item">
-                                <img src="assets/images/shop/banner/1.webp" width="370" height="370" alt="Image-HasTech">
+                            <!--== Start Category Item ==-->
+                            <a href="product.html" class="product-banner-item position-relative">
+                                <img src="assets/images/Fotos-Website-prueba/botox.jpg" width="370" height="370" alt="Antes y Después"
+                                    class="rounded-4">
+                                <div class="overlay-text position-absolute bottom-0 start-0 w-100 p-4 text-white"
+                                    style="background: linear-gradient(transparent, #27222C);">
+                                    <h3 class="h4 mb-2 text-white">Antes y Después</h3>
+                                    <p class="mb-0">Resultados reales de nuestros pacientes</p>
+                                </div>
                             </a>
-                            <!--== End Product Category Item ==-->
+
+                            <!--== End Category Item ==-->
                         </div>
                         <div class="col-sm-6 col-lg-4 mt-sm-0 mt-6">
-                            <!--== Start Product Category Item ==-->
-                            <a href="product.html" class="product-banner-item">
-                                <img src="assets/images/shop/banner/2.webp" width="370" height="370" alt="Image-HasTech">
+                            <!--== Start Category Item ==-->
+                            <a href="product.html" class="product-banner-item position-relative">
+                                <img src="assets/images/Fotos-Website-prueba/pexels-cottonbro-7581091.jpg" width="370" height="370" alt="Financiamiento"
+                                    class="rounded-4">
+                                <div class="overlay-text position-absolute bottom-0 start-0 w-100 p-4 text-white"
+                                    style="background: linear-gradient(transparent, #27222C);">
+                                    <h3 class="h4 mb-2 text-white">Financiamiento</h3>
+                                    <p class="mb-0">Opciones flexibles de pago</p>
+                                </div>
                             </a>
-                            <!--== End Product Category Item ==-->
+
+                            <!--== End Category Item ==-->
                         </div>
                         <div class="col-sm-6 col-lg-4 mt-lg-0 mt-6">
-                            <!--== Start Product Category Item ==-->
-                            <a href="product.html" class="product-banner-item">
-                                <img src="assets/images/shop/banner/3.webp" width="370" height="370" alt="Image-HasTech">
+                            <!--== Start Category Item ==-->
+                            <a href="product.html" class="product-banner-item position-relative">
+                                <img src="assets/images/Fotos-Website-prueba/pexels-cottonbro-7583376.jpg" width="370" height="370" alt="Consulta Virtual"
+                                    class="rounded-4">
+                                <div class="overlay-text position-absolute bottom-0 start-0 w-100 p-4 text-white"
+                                    style="background: linear-gradient(transparent, #27222C);">
+                                    <h3 class="h4 mb-2 text-white">Consulta Virtual</h3>
+                                    <p class="mb-0">Primera evaluación sin costo</p>
+                                </div>
+
                             </a>
-                            <!--== End Product Category Item ==-->
+                            <!--== End Category Item ==-->
                         </div>
                     </div>
                 </div>
             </section>
-            <!--== End Product Banner Area Wrapper ==-->
+            <!--== End Featured Categories Section ==-->
 
-            <!--== Start Product Area Wrapper ==-->
-            <section class="section-space pb-0">
-                <div class="container">
-                    <div class="row mb-n4 mb-sm-n10 g-3 g-sm-6">
-                        <div class="col-6 col-lg-4 mb-4 mb-sm-8">
-                            <!--== Start Product Item ==-->
-                            <div class="product-item">
-                                <div class="product-thumb">
-                                    <a class="d-block" href="product-details.html">
-                                        <img src="assets/images/shop/4.webp" width="370" height="450" alt="Image-HasTech">
-                                    </a>
-                                    <span class="flag-new">new</span>
-                                    <div class="product-action">
-                                        <button type="button" class="product-action-btn action-btn-quick-view" data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                            <i class="fa fa-expand"></i>
-                                        </button>
-                                        <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                            <span>Add to cart</span>
-                                        </button>
-                                        <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
-                                            <i class="fa fa-heart-o"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="product-rating">
-                                        <div class="rating">
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                        </div>
-                                        <div class="reviews">150 reviews</div>
-                                    </div>
-                                    <h4 class="title"><a href="product-details.html">Readable content DX22</a></h4>
-                                    <div class="prices">
-                                        <span class="price">$210.00</span>
-                                        <span class="price-old">300.00</span>
-                                    </div>
-                                </div>
-                                <div class="product-action-bottom">
-                                    <button type="button" class="product-action-btn action-btn-quick-view" data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                        <i class="fa fa-expand"></i>
-                                    </button>
-                                    <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
-                                        <i class="fa fa-heart-o"></i>
-                                    </button>
-                                    <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                        <span>Add to cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <!--== End prPduct Item ==-->
-                        </div>
-                        <div class="col-6 col-lg-4 mb-4 mb-sm-8">
-                            <!--== Start Product Item ==-->
-                            <div class="product-item">
-                                <div class="product-thumb">
-                                    <a class="d-block" href="product-details.html">
-                                        <img src="assets/images/shop/5.webp" width="370" height="450" alt="Image-HasTech">
-                                    </a>
-                                    <span class="flag-new">new</span>
-                                    <div class="product-action">
-                                        <button type="button" class="product-action-btn action-btn-quick-view" data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                            <i class="fa fa-expand"></i>
-                                        </button>
-                                        <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                            <span>Add to cart</span>
-                                        </button>
-                                        <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
-                                            <i class="fa fa-heart-o"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="product-rating">
-                                        <div class="rating">
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                        </div>
-                                        <div class="reviews">150 reviews</div>
-                                    </div>
-                                    <h4 class="title"><a href="product-details.html">Voyage face cleaner</a></h4>
-                                    <div class="prices">
-                                        <span class="price">$210.00</span>
-                                        <span class="price-old">300.00</span>
-                                    </div>
-                                </div>
-                                <div class="product-action-bottom">
-                                    <button type="button" class="product-action-btn action-btn-quick-view" data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                        <i class="fa fa-expand"></i>
-                                    </button>
-                                    <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
-                                        <i class="fa fa-heart-o"></i>
-                                    </button>
-                                    <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                        <span>Add to cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <!--== End prPduct Item ==-->
-                        </div>
-                        <div class="col-6 col-lg-4 mb-4 mb-sm-8">
-                            <!--== Start Product Item ==-->
-                            <div class="product-item">
-                                <div class="product-thumb">
-                                    <a class="d-block" href="product-details.html">
-                                        <img src="assets/images/shop/6.webp" width="370" height="450" alt="Image-HasTech">
-                                    </a>
-                                    <span class="flag-new">new</span>
-                                    <div class="product-action">
-                                        <button type="button" class="product-action-btn action-btn-quick-view" data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                            <i class="fa fa-expand"></i>
-                                        </button>
-                                        <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                            <span>Add to cart</span>
-                                        </button>
-                                        <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
-                                            <i class="fa fa-heart-o"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="product-rating">
-                                        <div class="rating">
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                        </div>
-                                        <div class="reviews">150 reviews</div>
-                                    </div>
-                                    <h4 class="title"><a href="product-details.html">Impulse Duffle</a></h4>
-                                    <div class="prices">
-                                        <span class="price">$210.00</span>
-                                        <span class="price-old">300.00</span>
-                                    </div>
-                                </div>
-                                <div class="product-action-bottom">
-                                    <button type="button" class="product-action-btn action-btn-quick-view" data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                        <i class="fa fa-expand"></i>
-                                    </button>
-                                    <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
-                                        <i class="fa fa-heart-o"></i>
-                                    </button>
-                                    <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                        <span>Add to cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <!--== End prPduct Item ==-->
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--== End Product Area Wrapper ==-->
-
-            <!--== Start Blog Area Wrapper ==-->
+            <!--== Start Newsletter Section ==-->
             <section class="section-space">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="section-title text-center">
-                                <h2 class="title">Blog posts</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-n9">
-                        <div class="col-sm-6 col-lg-4 mb-8">
-                            <!--== Start Blog Item ==-->
-                            <div class="post-item">
-                                <a href="blog-details.html" class="thumb">
-                                    <img src="assets/images/blog/1.webp" width="370" height="320" alt="Image-HasTech">
-                                </a>
-                                <div class="content">
-                                    <a class="post-category" href="blog.html">beauty</a>
-                                    <h4 class="title"><a href="blog-details.html">Lorem ipsum dolor sit amet consectetur adipiscing.</a></h4>
-                                    <ul class="meta">
-                                        <li class="author-info"><span>By:</span> <a href="blog.html">Tomas De Momen</a></li>
-                                        <li class="post-date">February 13, 2022</li>
-                                    </ul>
+                    <div class="newsletter-content-wrap bg-dark rounded-4 p-5"
+                        style="background-color: #27222C !important;">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-4 mb-lg-0">
+                                <div class="newsletter-content">
+                                    <div class="section-title mb-0">
+                                        <h2 class="title text-white">Mantente Informado</h2>
+                                        <p class="text-white">Suscríbete para recibir ofertas exclusivas y las últimas
+                                            novedades en procedimientos estéticos.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <!--== End Blog Item ==-->
-                        </div>
-                        <div class="col-sm-6 col-lg-4 mb-8">
-                            <!--== Start Blog Item ==-->
-                            <div class="post-item">
-                                <a href="blog-details.html" class="thumb">
-                                    <img src="assets/images/blog/2.webp" width="370" height="320" alt="Image-HasTech">
-                                </a>
-                                <div class="content">
-                                    <a class="post-category post-category-two" data-bg-color="#A49CFF" href="blog.html">beauty</a>
-                                    <h4 class="title"><a href="blog-details.html">Facial Scrub is natural treatment for face.</a></h4>
-                                    <ul class="meta">
-                                        <li class="author-info"><span>By:</span> <a href="blog.html">Tomas De Momen</a></li>
-                                        <li class="post-date">February 13, 2022</li>
-                                    </ul>
+                            <div class="col-lg-6">
+                                <div class="newsletter-form">
+                                    <form class="d-flex gap-3">
+                                        <input type="email" class="form-control form-control-lg border-0"
+                                            placeholder="Ingresa tu correo electrónico">
+                                        <button class="btn btn-light btn-lg" type="submit"
+                                            style="background-color: white; color: #27222C;">Suscribirse</button>
+                                    </form>
                                 </div>
                             </div>
-                            <!--== End Blog Item ==-->
-                        </div>
-                        <div class="col-sm-6 col-lg-4 mb-8">
-                            <!--== Start Blog Item ==-->
-                            <div class="post-item">
-                                <a href="blog-details.html" class="thumb">
-                                    <img src="assets/images/blog/3.webp" width="370" height="320" alt="Image-HasTech">
-                                </a>
-                                <div class="content">
-                                    <a class="post-category post-category-three" data-bg-color="#9CDBFF" href="blog.html">beauty</a>
-                                    <h4 class="title"><a href="blog-details.html">Benefit of Hot Ston Spa for your health & life.</a></h4>
-                                    <ul class="meta">
-                                        <li class="author-info"><span>By:</span> <a href="blog.html">Tomas De Momen</a></li>
-                                        <li class="post-date">February 13, 2022</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!--== End Blog Item ==-->
                         </div>
                     </div>
                 </div>
             </section>
-            <!--== End Blog Area Wrapper ==-->
-
-            <!--== Start News Letter Area Wrapper ==-->
-            <section class="section-space pt-0">
-                <div class="container">
-                    <div class="newsletter-content-wrap" data-bg-img="assets/images/photos/bg1.webp">
-                        <div class="newsletter-content">
-                            <div class="section-title mb-0">
-                                <h2 class="title">Join with us</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.</p>
-                            </div>
-                        </div>
-                        <div class="newsletter-form">
-                            <form>
-                                <input type="email" class="form-control" placeholder="enter your email">
-                                <button class="btn-submit" type="submit"><i class="fa fa-paper-plane"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--== End News Letter Area Wrapper ==-->
+            <!--== End Newsletter Section ==-->
 
         </main>
 
@@ -903,34 +609,39 @@
                             <div class="widget-item">
                                 <div class="widget-about">
                                     <a class="widget-logo" href="index.html">
-                                        <img src="assets/images/logo.webp" width="95" height="68" alt="Logo">
+                                        <img src="assets/images/logo.png" width="96" height="69" alt="Logo">
                                     </a>
-                                    <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+                                    <p class="desc">Bella conecta a pacientes con los mejores cirujanos plásticos
+                                        certificados, ofreciendo descuentos exclusivos y garantizando la más alta
+                                        calidad en procedimientos estéticos.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-5 mt-md-0 mt-9">
                             <div class="widget-item">
-                                <h4 class="widget-title">Information</h4>
+                                <h4 class="widget-title">Información</h4>
                                 <ul class="widget-nav">
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="about-us.html">About us</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="faq.html">Privacy</a></li>
-                                    <li><a href="account-login.html">Login</a></li>
-                                    <li><a href="product.html">Shop</a></li>
-                                    <li><a href="my-account.html">My Account</a></li>
-                                    <li><a href="faq.html">FAQs</a></li>
+                                    <li><a href="testimonials.html">Testimonios</a></li>
+                                    <li><a href="about-us.html">Conocenos</a></li>
+                                    <li><a href="product.html">Beneficios Exclusivos</a></li>
+                                    <li><a href="contact.html">Contáctanos</a></li>
+                                    <li><a href="terms.html">Terminos y condiciones</a></li>
+                                    <li><a href="politicsAndPrivacid.html">Politicas de privacidad</a></li>
+
+                                    <li><a href="contact.html#faqs-container">FAQs</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3 mt-lg-0 mt-6">
                             <div class="widget-item">
-                                <h4 class="widget-title">Social Info</h4>
+                                <h4 class="widget-title">Redes Sociales</h4>
                                 <div class="widget-social">
-                                    <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
-                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
-                                    <a href="https://www.pinterest.com/" target="_blank" rel="noopener"><i class="fa fa-pinterest-p"></i></a>
+                                    <a href="https://twitter.com/" target="_blank" rel="noopener"><i
+                                            class="fa fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i
+                                            class="fa fa-facebook"></i></a>
+                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener"><i
+                                            class="fa fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -940,10 +651,10 @@
             <!--== End Footer Main ==-->
 
             <!--== Start Footer Bottom ==-->
-            <div class="footer-bottom">
+            <div class="footer-bottom" style="background-color: #27222C !important;">
                 <div class="container pt-0 pb-0">
                     <div class="footer-bottom-content">
-                        <p class="copyright">© 2022 Brancy. Made with <i class="fa fa-heart"></i> by <a target="_blank" href="https://themeforest.net/user/codecarnival">Codecarnival.</a></p>
+                        <p class="copyright" style="color: white !important;">© 2025 Bella </p>
                     </div>
                 </div>
             </div>
@@ -954,235 +665,39 @@
         <!--== Scroll Top Button ==-->
         <div id="scroll-to-top" class="scroll-to-top"><span class="fa fa-angle-up"></span></div>
 
-        <!--== Start Product Quick Wishlist Modal ==-->
-        <aside class="product-action-modal modal fade" id="action-WishlistModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="product-action-view-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal">
-                                <i class="fa fa-times"></i>
-                            </button>
-                            <div class="modal-action-messages">
-                                <i class="fa fa-check-square-o"></i> Added to wishlist successfully!
-                            </div>
-                            <div class="modal-action-product">
-                                <div class="thumb">
-                                    <img src="assets/images/shop/modal1.webp" alt="Organic Food Juice" width="466" height="320">
-                                </div>
-                                <h4 class="product-name"><a href="product-details.html">Readable content DX22</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </aside>
-        <!--== End Product Quick Wishlist Modal ==-->
 
-        <!--== Start Product Quick Add Cart Modal ==-->
-        <aside class="product-action-modal modal fade" id="action-CartAddModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="product-action-view-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal">
-                                <i class="fa fa-times"></i>
-                            </button>
-                            <div class="modal-action-messages">
-                                <i class="fa fa-check-square-o"></i> Added to cart successfully!
-                            </div>
-                            <div class="modal-action-product">
-                                <div class="thumb">
-                                    <img src="assets/images/shop/modal1.webp" alt="Organic Food Juice" width="466" height="320">
-                                </div>
-                                <h4 class="product-name"><a href="product-details.html">Readable content DX22</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </aside>
-        <!--== End Product Quick Add Cart Modal ==-->
 
-        <!--== Start Aside Search Form ==-->
-        <aside class="aside-search-box-wrapper offcanvas offcanvas-top" tabindex="-1" id="AsideOffcanvasSearch" aria-labelledby="offcanvasTopLabel">
-            <div class="offcanvas-header">
-                <h5 class="d-none" id="offcanvasTopLabel">Aside Search</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa fa-close"></i></button>
-            </div>
-            <div class="offcanvas-body">
-                <div class="container pt--0 pb--0">
-                    <div class="search-box-form-wrap">
-                        <div class="search-note">
-                            <p>Start typing and press Enter to search</p>
-                        </div>
-                        <form action="#" method="post">
-                            <div class="aside-search-form position-relative">
-                                <label for="SearchInput" class="visually-hidden">Search</label>
-                                <input id="SearchInput" type="search" class="form-control" placeholder="Search entire store…">
-                                <button class="search-button" type="submit"><i class="fa fa-search"></i></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </aside>
-        <!--== End Aside Search Form ==-->
 
-        <!--== Start Product Quick View Modal ==-->
-        <aside class="product-cart-view-modal modal fade" id="action-QuickViewModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="product-quick-view-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal">
-                                <span class="fa fa-close"></span>
-                            </button>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <!--== Start Product Thumbnail Area ==-->
-                                        <div class="product-single-thumb">
-                                            <img src="assets/images/shop/quick-view1.webp" width="544" height="560" alt="Image-HasTech">
-                                        </div>
-                                        <!--== End Product Thumbnail Area ==-->
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <!--== Start Product Info Area ==-->
-                                        <div class="product-details-content">
-                                            <h5 class="product-details-collection">Premioum collection</h5>
-                                            <h3 class="product-details-title">Offbline Instant Age Rewind Eraser.</h3>
-                                            <div class="product-details-review mb-5">
-                                                <div class="product-review-icon">
-                                                    <i class="fa fa-star-o"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                    <i class="fa fa-star-half-o"></i>
-                                                </div>
-                                                <button type="button" class="product-review-show">150 reviews</button>
-                                            </div>
-                                            <p class="mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, repellendus. Nam voluptate illo ut quia non sapiente provident alias quos laborum incidunt, earum accusamus, natus. Vero pariatur ut veniam sequi amet consectetur.</p>
-                                            <div class="product-details-pro-qty">
-                                                <div class="pro-qty">
-                                                    <input type="text" title="Quantity" value="01">
-                                                </div>
-                                            </div>
-                                            <div class="product-details-action">
-                                                <h4 class="price">$254.22</h4>
-                                                <div class="product-details-cart-wishlist">
-                                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">Add to cart</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--== End Product Info Area ==-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </aside>
-        <!--== End Product Quick View Modal ==-->
-
-        <!--== Start Aside Cart ==-->
-        <aside class="aside-cart-wrapper offcanvas offcanvas-end" tabindex="-1" id="AsideOffcanvasCart" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-                <h1 class="d-none" id="offcanvasRightLabel">Shopping Cart</h1>
-                <button class="btn-aside-cart-close" data-bs-dismiss="offcanvas" aria-label="Close">Shopping Cart <i class="fa fa-chevron-right"></i></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="aside-cart-product-list">
-                    <li class="aside-product-list-item">
-                        <a href="#/" class="remove">×</a>
-                        <a href="product-details.html">
-                            <img src="assets/images/shop/cart1.webp" width="68" height="84" alt="Image">
-                            <span class="product-title">Leather Mens Slipper</span>
-                        </a>
-                        <span class="product-price">1 × £69.99</span>
-                    </li>
-                    <li class="aside-product-list-item">
-                        <a href="#/" class="remove">×</a>
-                        <a href="product-details.html">
-                            <img src="assets/images/shop/cart2.webp" width="68" height="84" alt="Image">
-                            <span class="product-title">Quickiin Mens shoes</span>
-                        </a>
-                        <span class="product-price">1 × £20.00</span>
-                    </li>
-                </ul>
-                <p class="cart-total"><span>Subtotal:</span><span class="amount">£89.99</span></p>
-                <a class="btn-total" href="product-cart.html">View cart</a>
-                <a class="btn-total" href="product-checkout.html">Checkout</a>
-            </div>
-        </aside>
-        <!--== End Aside Cart ==-->
 
         <!--== Start Aside Menu ==-->
-        <aside class="off-canvas-wrapper offcanvas offcanvas-start" tabindex="-1" id="AsideOffcanvasMenu" aria-labelledby="offcanvasExampleLabel">
+        <aside class="off-canvas-wrapper offcanvas offcanvas-start" tabindex="-1" id="AsideOffcanvasMenu"
+            aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
                 <h1 class="d-none" id="offcanvasExampleLabel">Aside Menu</h1>
-                <button class="btn-menu-close" data-bs-dismiss="offcanvas" aria-label="Close">menu <i class="fa fa-chevron-left"></i></button>
+                <button class="btn-menu-close" data-bs-dismiss="offcanvas" aria-label="Close">menu <i
+                        class="fa fa-chevron-left"></i></button>
             </div>
             <div class="offcanvas-body">
                 <div id="offcanvasNav" class="offcanvas-menu-nav">
                     <ul>
-                        <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="#">home</a>
-                            <ul>
-                                <li><a href="index.html">Home One</a></li>
-                                <li><a href="index-two.html">Home Two</a></li>
-                            </ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about-us.html">Conócenos</a></li>
+                        <li><a href="product.html">Beneficios Exclusivos</a></li>
+                        <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item"
+                                href="testimonials.html">Testimonios</a></li>
+                        <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="contact.html">Contact</a>
                         </li>
-                        <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="about-us.html">about</a></li>
-                        <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="#">shop</a>
-                            <ul>
-                                <li><a href="#" class="offcanvas-nav-item">Shop Layout</a>
-                                    <ul>
-                                        <li><a href="product.html">Shop 3 Column</a></li>
-                                        <li><a href="product-four-columns.html">Shop 4 Column</a></li>
-                                        <li><a href="product-left-sidebar.html">Shop Left Sidebar</a></li>
-                                        <li><a href="product-right-sidebar.html">Shop Right Sidebar</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#" class="offcanvas-nav-item">Single Product</a>
-                                    <ul>
-                                        <li><a href="product-details-normal.html">Single Product Normal</a></li>
-                                        <li><a href="product-details.html">Single Product Variable</a></li>
-                                        <li><a href="product-details-group.html">Single Product Group</a></li>
-                                        <li><a href="product-details-affiliate.html">Single Product Affiliate</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#" class="offcanvas-nav-item">Others Pages</a>
-                                    <ul>
-                                        <li><a href="product-cart.html">Shopping Cart</a></li>
-                                        <li><a href="product-checkout.html">Checkout</a></li>
-                                        <li><a href="product-wishlist.html">Wishlist</a></li>
-                                        <li><a href="product-compare.html">Compare</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="#">Blog</a>
-                            <ul>
-                                <li><a class="offcanvas-nav-item" href="#">Blog Layout</a>
-                                    <ul>
-                                        <li><a href="blog.html">Blog Grid</a></li>
-                                        <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                        <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="blog-details.html">Blog Details</a></li>
-                            </ul>
-                        </li>
-                        <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="#">Pages</a>
-                            <ul>
-                                <li><a href="account-login.html">My Account</a></li>
-                                <li><a href="faq.html">Frequently Questions</a></li>
-                                <li><a href="page-not-found.html">Page Not Found</a></li>
-                            </ul>
-                        </li>
-                        <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="contact.html">Contact</a></li>
+
                     </ul>
+                    <div class="d-flex flex-nowrap">
+                        <a class="m-1" href="www.apple.com/store" target="_blank"><img width="114"
+                                src="assets/images/icons/appstore.svg" alt=""></a>
+                        <a class="m-1" href="https://play.google.com/store" target="_blank"><img width="130"
+                                src="assets/images/icons/playstore.png" alt=""></a>
+                    </div>
+                    <div class="w-100 text-center">
+                        <p class="text-muted">© 2025 Bella </p>
+                    </div>
                 </div>
             </div>
         </aside>

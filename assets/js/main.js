@@ -78,6 +78,10 @@
             return '0' + number;
         }
       },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     });
 
   // Swiper Default Slider JS

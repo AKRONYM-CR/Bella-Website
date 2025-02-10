@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Testimonios - Bella</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description"
+        content="Descubre las experiencias reales de nuestros pacientes con los mejores cirujanos plásticos. Historias de transformación y satisfacción." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords"
+        content="testimonios cirugía plástica, experiencias pacientes, resultados cirugía estética, opiniones cirujanos plásticos" />
+    <meta name="author" content="Bella" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/logo.png">
+
+    <!-- CSS (Font, Vendor, Icon, Plugins & Style CSS files) -->
+
+    <!-- Font CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS (Bootstrap & Icon Font) -->
+    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css">
+
+    <!-- Plugins CSS (All Plugins Files) -->
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+
+    <style>
+        :root {
+            --theme-color: #27222C;
+            --theme-light: rgba(159, 200, 204, 0.1);
+            --theme-medium: rgba(159, 200, 204, 0.5);
+            --theme-dark: #8AB5B9;
+        }
+
+        .testimonial-card {
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--theme-color);
+            box-shadow: 0 10px 20px rgba(159, 200, 204, 0.2);
+        }
+
+        .testimonial-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid var(--theme-color);
+        }
+
+        .testimonial-rating {
+            color: #FFD700;
+        }
+
+        .quote-icon {
+            font-size: 4rem;
+            opacity: 0.1;
+            color: var(--theme-color);
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .featured-testimonial {
+            background: linear-gradient(145deg, var(--theme-color) 0%, var(--theme-dark) 100%);
+            color: white;
+        }
+
+        .featured-testimonial .quote-icon {
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--== Wrapper Start ==-->
+    <div class="wrapper">
+
+        <!--== Start Header Wrapper ==-->
+        <header class="header-area sticky-header">
+            <div class="container">
+                <div class="row align-items-center justify-content-between flex-nowrap">
+                    <div class="col-5 col-sm-4 col-lg-1">
+                        <div class="header-logo">
+                            <a href="index.html">
+                                <img class="logo-main" src="assets/images/logo.png" width="150" height="130" alt="Logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 d-none d-lg-block">
+                        <div class="header-navigation">
+                            <ul class="main-nav justify-content-start">
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="about-us.html">Conocenos</a></li>
+                                <li><a class="text-nowrap" href="product.html">Beneficios Exclusivos</a></li>
+                                <li><a href="testimonials.html">Testimonios</a>
+                                <li><a href="contact.html">Contáctanos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-7 col-sm-6 col-lg-3">
+                        <div class="header-action justify-content-end">
+                            <div class="d-flex flex-nowrap">
+                                <a class="m-1" href="www.apple.com/store" target="_blank"><img width="114"
+                                        src="assets/images/icons/appstore.svg" alt=""></a>
+                                <a class="m-1" href="https://play.google.com/store" target="_blank"><img width="130"
+                                        src="assets/images/icons/playstore.png" alt=""></a>
+                            </div>
+                            <button class="header-menu-btn" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#AsideOffcanvasMenu" aria-controls="AsideOffcanvasMenu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--== End Header Wrapper ==-->
+
+        <main class="main-content">
+
+
+            <!--== Start Testimonials Section ==-->
+            <section class="section-space bg-light">
+                <div class="container">
+                    <div class="section-title text-center mb-5">
+                        <h2 class="title">Lo que dicen nuestros pacientes</h2>
+                        <p class="text-muted fs-5">Experiencias reales de personas que confiaron en nosotros</p>
+                    </div>
+
+                    <!-- Testimonial Destacado -->
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <div class="testimonial-card featured-testimonial p-5 position-relative">
+                                <i class="fa fa-quote-right quote-icon"></i>
+                                <div class="row align-items-center">
+                                    <div class="col-md-3 text-center">
+                                        <img src="assets/images/perfil.jpg" style="object-fit: cover;" alt="Ana García" class="testimonial-avatar mb-3">
+                                        <h4 class="mb-1 text-white">Ana García</h4>
+                                        <p class="mb-3">Rinoplastia</p>
+                                        <div class="testimonial-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <p class="lead">"La mejor decisión que pude tomar. El equipo médico fue excepcional, el seguimiento post-operatorio impecable y los resultados superaron mis expectativas. ¡Gracias por ayudarme a recuperar mi confianza!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grid de Testimonios -->
+                    <div class="row g-4">
+                        <!-- Testimonio 1 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="testimonial-card p-4 position-relative h-100">
+                                <i class="fa fa-quote-right quote-icon"></i>
+                                <div class="text-center mb-4">
+                                    <img src="assets/images/testimonials/unnamed.jpg" style="object-fit: cover;" alt="Emily Torres" class="testimonial-avatar mb-3">
+                                    <h5 class="mb-1">Emily Torres</h5>
+                                    <p class="text-muted small mb-3">Aumento Mamario</p>
+                                    <div class="testimonial-rating mb-3">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="text-muted">"Gracias a mi suscripción y a los beneficios premium de BELLA, pude acceder a los mejores doctores y encontrar al especialista ideal para mi procedimiento. Me realicé un aumento mamario que superó mis expectativas y mejoró mi autoestima. Desde el inicio de mi suscripción hasta el trato con el doctor, todo fue excepcional. Si estás buscando la mejor experiencia para tu bienestar, te recomiendo esta aplicación. ¡Te sentirás segura, cómoda y en las mejores manos!"</p>
+                            </div>
+                        </div>
+
+                        <!-- Testimonio 2 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="testimonial-card p-4 position-relative h-100">
+                                <i class="fa fa-quote-right quote-icon"></i>
+                                <div class="text-center mb-4">
+                                    <img src="assets/images/testimonials/unnamed (5).jpg" style="object-fit: cover;" alt="Carlos Campos" class="testimonial-avatar mb-3">
+                                    <h5 class="mb-1">Carlos Campos</h5>
+                                    <p class="text-muted small mb-3">Botox</p>
+                                    <div class="testimonial-rating mb-3">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="text-muted">"Siempre había querido mejorar mi apariencia de forma natural y segura. Con mi suscripción premium de la BELLA, pude encontrar un especialista en bótox de primer nivel. Desde la elección del doctor hasta el procedimiento, todo fue fácil y profesional. El resultado superó mis expectativas, logrando un look renovado sin perder mi expresión natural. Definitivamente, esta aplicación es la mejor opción para quienes buscan confianza y calidad en sus tratamientos"</p>
+                            </div>
+                        </div>
+
+                        <!-- Testimonio 3 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="testimonial-card p-4 position-relative h-100">
+                                <i class="fa fa-quote-right quote-icon"></i>
+                                <div class="text-center mb-4">
+                                    <img src="assets/images/testimonials/unnamed (1).jpg" style="object-fit: cover;" alt="Alina Vargas" class="testimonial-avatar mb-3">
+                                    <h5 class="mb-1">Alina Vargas</h5>
+                                    <p class="text-muted small mb-3">Aumento de Glúteos</p>
+                                    <div class="testimonial-rating mb-3">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="text-muted">"Tomar la decisión de hacerme un aumento de glúteos fue un gran paso, y gracias a esta aplicación lo hice con total seguridad. Mi suscripción en BELLA me permitió acceder a los mejores especialistas, y encontré un cirujano que entendió perfectamente lo que quería. El proceso fue impecable, el trato inmejorable y el resultado simplemente espectacular. Me siento más segura y feliz con mi cuerpo. Si estás pensando en un cambio, esta es la mejor opción."</p>
+                            </div>
+                        </div>
+
+                        <!-- Testimonio 4 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="testimonial-card p-4 position-relative h-100">
+                                <i class="fa fa-quote-right quote-icon"></i>
+                                <div class="text-center mb-4">
+                                    <img src="assets/images/testimonials/unnamed (2).jpg" style="object-fit: cover;" alt="Ana Vargas" class="testimonial-avatar mb-3">
+                                    <h5 class="mb-1">Ana Vargas</h5>
+                                    <p class="text-muted small mb-3">Retiro de Biopolímeros</p>
+                                    <div class="testimonial-rating mb-3">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="text-muted">"Retirar los biopolímeros fue una decisión crucial para mi salud, y gracias a mi suscripción en BELLA, encontré a los mejores especialistas. Su experiencia y profesionalismo me dieron total confianza desde el primer momento. Hoy me siento más saludable y segura. Sin duda, la mejor opción para quienes buscan atención de calidad"</p>
+                            </div>
+                        </div>
+
+                        <!-- Testimonio 5 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="testimonial-card p-4 position-relative h-100">
+                                <i class="fa fa-quote-right quote-icon"></i>
+                                <div class="text-center mb-4">
+                                    <img src="assets/images/testimonials/unnamed (3).jpg" style="object-fit: cover;" alt="Alejandro Bermudez" class="testimonial-avatar mb-3">
+                                    <h5 class="mb-1">Alejandro Bermudez</h5>
+                                    <p class="text-muted small mb-3">Abdominoplastia</p>
+                                    <div class="testimonial-rating mb-3">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="text-muted">"Decidí realizarme una abdominoplastia y, gracias a mi suscripción en BELLA, encontré al especialista perfecto. Su experiencia y dedicación me dieron mucha confianza durante todo el proceso. El resultado fue más allá de lo que esperaba. Me siento mucho mejor y más seguro con mi apariencia. Recomiendo totalmente esta aplicación para quienes buscan los mejores profesionales"</p>
+                            </div>
+                        </div>
+
+                        <!-- Testimonio 6 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="testimonial-card p-4 position-relative h-100">
+                                <i class="fa fa-quote-right quote-icon"></i>
+                                <div class="text-center mb-4">
+                                    <img src="assets/images/testimonials/unnamed (4).jpg" style="object-fit: cover;" alt="Tammy Andrade" class="testimonial-avatar mb-3">
+                                    <h5 class="mb-1">Tammy Andrade</h5>
+                                    <p class="text-muted small mb-3">Rinoplastia</p>
+                                    <div class="testimonial-rating mb-3">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="text-muted">"Mi experiencia con la rinoplastia fue increíble, y todo gracias a la app. Encontré al cirujano ideal, quien me brindó un trato cercano y profesional. El procedimiento superó mis expectativas, y ahora me siento más segura y feliz con mi rostro. Recomiendo a BELLA a quienes busquen un especialista confiable y de calidad"</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <!--== End Testimonials Section ==-->
+
+            <!--== Start Stats Section ==-->
+            <section class="section-space pt-0">
+                <div class="container">
+                    <div class="row justify-content-center text-center g-4">
+                        <div class="col-6 col-md-3">
+                            <div class="p-4 rounded-4" style="background-color: var(--theme-light);">
+                                <h3 class="mb-2" style="color: var(--theme-color);">+5,000</h3>
+                                <p class="text-muted mb-0">Pacientes Satisfechos</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="p-4 rounded-4" style="background-color: var(--theme-light);">
+                                <h3 class="mb-2" style="color: var(--theme-color);">+200</h3>
+                                <p class="text-muted mb-0">Cirujanos Certificados</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="p-4 rounded-4" style="background-color: var(--theme-light);">
+                                <h3 class="mb-2" style="color: var(--theme-color);">4.9/5</h3>
+                                <p class="text-muted mb-0">Calificación Promedio</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="p-4 rounded-4" style="background-color: var(--theme-light);">
+                                <h3 class="mb-2" style="color: var(--theme-color);">+15</h3>
+                                <p class="text-muted mb-0">Años de Experiencia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--== End Stats Section ==-->
+
+            <!--== Start Download App Section ==-->
+            <section class="section-space" style="background-color: var(--theme-light);">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <h2 class="mb-4">Descarga nuestra app</h2>
+                            <p class="lead mb-5">Accede a descuentos exclusivos y encuentra los mejores cirujanos certificados</p>
+                            
+                            <!-- App Store Badges -->
+                            <div class="app-stores d-flex justify-content-center gap-4 flex-wrap">
+                                <a href="https://www.apple.com/app-store/" target="_blank" class="store-badge" style="transition: transform 0.3s ease;">
+                                    <img src="./assets/images/icons/appstore.svg" alt="App Store" width="140" style="filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));">
+                                </a>
+                                <a href="https://play.google.com/store" target="_blank" class="store-badge" style="transition: transform 0.3s ease;">
+                                    <img src="./assets/images/icons/playstore.png" alt="Google Play" width="150" style="filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));">
+                                </a>
+                            </div>
+
+                            <p class="mt-4 text-muted small">
+                                <i class="fa fa-shield" style="color: #27222C;"></i> 
+                                Descarga segura y gratuita
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--== End Download App Section ==-->
+
+
+            <!--== Start Newsletter Section ==-->
+            <section class="section-space">
+                <div class="container">
+                    <div class="newsletter-content-wrap bg-dark rounded-4 p-5" style="background-color: #27222C !important;">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-4 mb-lg-0">
+                                <div class="newsletter-content">
+                                    <div class="section-title mb-0">
+                                        <h2 class="title text-white">Mantente Informado</h2>
+                                        <p class="text-white">Suscríbete para recibir ofertas exclusivas y las últimas novedades en procedimientos estéticos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="newsletter-form">
+                                    <form class="d-flex gap-3">
+                                        <input type="email" class="form-control form-control-lg border-0" placeholder="Ingresa tu correo electrónico">
+                                        <button class="btn btn-light btn-lg" type="submit" style="background-color: white; color: #27222C;">Suscribirse</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--== End Newsletter Section ==-->
+
+        </main>
+
+        <!--== Start Footer Area Wrapper ==-->
+        <footer class="footer-area">
+            <!--== Start Footer Main ==-->
+            <div class="footer-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="widget-item">
+                                <div class="widget-about">
+                                    <a class="widget-logo" href="index.html">
+                                        <img src="assets/images/logo.png" width="96" height="69" alt="Logo">
+                                    </a>
+                                    <p class="desc">Bella conecta a pacientes con los mejores cirujanos plásticos certificados, ofreciendo descuentos exclusivos y garantizando la más alta calidad en procedimientos estéticos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5 mt-md-0 mt-9">
+                            <div class="widget-item">
+                                <h4 class="widget-title">Información</h4>
+                                <ul class="widget-nav">
+                                    <li><a href="testimonials.html">Testimonios</a></li>
+                                    <li><a href="about-us.html">Conocenos</a></li>
+                                    <li><a href="product.html">Beneficios Exclusivos</a></li>
+                                    <li><a href="contact.html">Contáctanos</a></li>
+                                    <li><a href="terms.html">Terminos y condiciones</a></li>
+                                    <li><a href="politicsAndPrivacid.html">Politicas de privacidad</a></li>
+                                       
+                                    <li><a href="contact.html#faqs-container">FAQs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mt-lg-0 mt-6">
+                            <div class="widget-item">
+                                <h4 class="widget-title">Redes Sociales</h4>
+                                <div class="widget-social">
+                                    <a href="https://twitter.com/" target="_blank" rel="noopener"><i
+                                            class="fa fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i
+                                            class="fa fa-facebook"></i></a>
+                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener"><i
+                                            class="fa fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--== End Footer Main ==-->
+
+            <!--== Start Footer Bottom ==-->
+            <div class="footer-bottom">
+                <div class="container pt-0 pb-0">
+                    <div class="footer-bottom-content">
+                        <p class="copyright">© 2025 Bella </p>
+                    </div>
+                </div>
+            </div>
+            <!--== End Footer Bottom ==-->
+        </footer>
+        <!--== End Footer Area Wrapper ==-->
+
+        <!--== Scroll Top Button ==-->
+        <div id="scroll-to-top" class="scroll-to-top"><span class="fa fa-angle-up"></span></div>
+
+        <!--== Start Aside Menu ==-->
+        <aside class="off-canvas-wrapper offcanvas offcanvas-start" tabindex="-1" id="AsideOffcanvasMenu"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h1 class="d-none" id="offcanvasExampleLabel">Aside Menu</h1>
+                <button class="btn-menu-close" data-bs-dismiss="offcanvas" aria-label="Close">menu <i
+                        class="fa fa-chevron-left"></i></button>
+            </div>
+            <div class="offcanvas-body">
+                <div id="offcanvasNav" class="offcanvas-menu-nav">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about-us.html">Conócenos</a></li>
+                        <li><a href="product.html">Beneficios Exclusivos</a></li>
+                        <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item"
+                                href="testimonials.html">Testimonios</a></li>
+                        <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+                    <div class="d-flex flex-nowrap">
+                        <a class="m-1" href="www.apple.com/store" target="_blank"><img width="114"
+                                src="assets/images/icons/appstore.svg" alt=""></a>
+                        <a class="m-1" href="https://play.google.com/store" target="_blank"><img width="130"
+                                src="assets/images/icons/playstore.png" alt=""></a>
+                    </div>
+                    <div class="w-100 text-center">
+                        <p class="text-muted">© 2025 Bella </p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!--== End Aside Menu ==-->
+
+    </div>
+    <!--== Wrapper End ==-->
+
+    <!-- JS Vendor, Plugins & Activation Script Files -->
+
+    <!-- Vendors JS -->
+    <script src="./assets/js/vendor/modernizr-3.11.7.min.js"></script>
+    <script src="./assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <script src="./assets/js/vendor/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugins JS -->
+    <script src="./assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="./assets/js/plugins/fancybox.min.js"></script>
+    <script src="./assets/js/plugins/jquery.nice-select.min.js"></script>
+
+    <!-- Custom Main JS -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
