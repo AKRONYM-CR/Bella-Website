@@ -38,19 +38,19 @@
 
     <style>
         .swiper-pagination-bullet {
-            background: #B2B2B2 !important;
+            background: #27222C !important;
             opacity: 0.5;
         }
 
         .swiper-pagination-bullet-active {
-            background: #B2B2B2 !important;
+            background: #27222C !important;
             opacity: 1;
         }
 
         :root {
-            --swiper-theme-color: #B2B2B2;
-            --swiper-pagination-color: #B2B2B2;
-            --swiper-navigation-color: #B2B2B2;
+            --swiper-theme-color: #27222C;
+            --swiper-pagination-color: #27222C;
+            --swiper-navigation-color: #27222C;
         }
 
         .swiper-button-next,
@@ -100,15 +100,15 @@
         }
 
         .btn-border-dark {
-            border-color: #B2B2B2 !important;
-            color: #B2B2B2 !important;
+            border-color: #27222C !important;
+            color: #27222C !important;
             transition: all 0.3s ease !important;
         }
 
         .btn-border-dark:hover {
-            background-color: #B2B2B2 !important;
+            background-color: #27222C !important;
             color: white !important;
-            border-color: #B2B2B2 !important;
+            border-color: #27222C !important;
         }
 
         /* Estilos para el formulario del newsletter */
@@ -118,14 +118,14 @@
         }
 
         .newsletter-form .form-control:focus {
-            border-color: #B2B2B2 !important;
+            border-color: #27222C !important;
             box-shadow: 0 0 0 0.25rem rgba(159, 200, 204, 0.25) !important;
         }
 
         /* Estilo para el botón de suscripción */
         .newsletter-form .btn-light {
             background-color: white !important;
-            color: #B2B2B2 !important;
+            color: #27222C !important;
             transition: all 0.3s ease !important;
         }
 
@@ -137,21 +137,58 @@
 
         .footer-bottom,
         .newsletter-content-wrap.bg-dark {
-            background-color: #B2B2B2 !important;
+            background-color: #27222C !important;
         }
 
         /* Estilo para el botón Conoce más */
         .btn-dark {
-            background-color: #B2B2B2 !important;
-            border-color: #B2B2B2 !important;
+            background-color: #27222C !important;
+            border-color: #27222C !important;
             color: white !important;
             transition: all 0.3s ease !important;
         }
 
         .btn-dark:hover {
             background-color: white !important;
-            border-color: #B2B2B2 !important;
-            color: #B2B2B2 !important;
+            border-color: #27222C !important;
+            color: #27222C !important;
+        }
+
+        /* Ajuste para hero-slide-thumb */
+        .hero-slide-thumb {
+            position: relative;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .hero-slide-thumb img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 4% 4% 0 0;
+            display: block;
+        }
+
+        /* Ajuste para social media icons */
+        .hero-slider-area .hero-slide-social-media {
+            position: absolute;
+            right: 30px;
+            transform: translateY(-50%);
+            z-index: 9;
+        }
+
+        /* Opcional: ajustes adicionales para los iconos sociales */
+        .hero-slide-social-media a {
+            display: block;
+            margin: 10px 0;
+            color: #27222C;
+            transition: all 0.3s ease;
+        }
+
+        .hero-slide-social-media a:hover {
+            transform: scale(1.2);
+            color: #000;
         }
     </style>
 
@@ -165,34 +202,33 @@
         <!--== Start Header Wrapper ==-->
         <header class="header-area sticky-header header-transparent">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-5 col-lg-2 col-xl-1">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-5 col-lg-3 col-xl-3 p-0 ps-2">
                         <div class="header-logo">
                             <a href="index.html">
-                                <img class="logo-main" src="assets/images/logo.png" width="95" height="68" alt="Logo" />
+                                <img class="logo-main" src="assets/images/logo.png" width="220" height="191" alt="Logo" />
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-7 col-xl-7 d-none d-lg-block">
-                        <div class="header-navigation ps-7">
+                    <div class="col-lg-5 col-xl-5" style="display: none;">
+                        <div class="header-navigation">
                             <ul class="main-nav justify-content-start">
-                                <li><a href="index.html">Inicio</a></li>
-
                                 <li><a href="about-us.html">Conocenos</a></li>
                                 <li><a class="text-nowrap" href="product.html">Beneficios Exclusivos</a></li>
-                                <li><a href="testimonials.html">Testimonios</a>
-
+                                <li><a href="testimonials.html">Testimonios</a></li>
                                 <li><a href="contact.html">Contáctanos</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-7 col-lg-3 col-xl-4">
+                    <div class="col-7 col-lg-4 col-xl-4">
                         <div class="header-action justify-content-end">
                             <div class="d-flex flex-nowrap">
-                                <a class="m-1" href="www.apple.com/store" target="_blank"><img width="114"
-                                        src="assets/images/icons/appstore.svg" alt=""></a>
-                                <a class="m-1" href="https://play.google.com/store" target="_blank"><img width="130"
-                                        src="assets/images/icons/playstore.png" alt=""></a>
+                                <div class="download-button">
+                                    <button onclick="detectAndRedirect()" class="btn btn-dark px-3">
+                                        <i class="fa fa-download"></i>
+                                        Descargar
+                                    </button>
+                                </div>
                             </div>
                             <button class="header-menu-btn" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#AsideOffcanvasMenu" aria-controls="AsideOffcanvasMenu">
@@ -210,47 +246,55 @@
         <main class="main-content">
 
             <!--== Start Hero Area Wrapper ==-->
-            <section class="hero-slider-area position-relative" style="padding-bottom: 0;">
+            <section class="hero-slider-area" style="background-color: #E6ECFF;">
                 <div class="swiper hero-slider-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide hero-slide-item" style="padding-bottom: 0;">
-                            <div class="container">
-                                <div class="row align-items-center position-relative" style="min-height: 600px;">
-                                    <div class="col-12 col-md-6">
-                                        <div class="hero-slide-content">
-                                            <h2 class="hero-slide-title">Bella</h2>
+                        <div class="swiper-slide hero-slide-item" style="background-color: #F5EEFE; padding-bottom: 0;">
+                            <div class="container-fluid px-4">
+                                <div class="row align-items-center justify-content-center" style="min-height: 75vh;">
+                                    <div class="col-12 col-md-6 order-2 order-md-1">
+                                        <div class="hero-slide-content pe-md-5" style="padding-bottom: 2rem;">
+                                            <h2 class="hero-slide-title" style="font-size: 5rem; font-weight: 700; line-height: 1.2;">Bella</h2>
                                             <p class="hero-slide-desc">Accede a Servicios Médicos Exclusivos con los
                                                 Mejores Especialistas del Mundo.</p>
+                                            
+                                            <!-- Botón de descarga inteligente -->
+                                            <div class="download-button">
+                                                <button onclick="detectAndRedirect()" class="btn btn-dark">
+                                                    <i class="fa fa-download"></i>
+                                                    Descargar App
+                                                </button>
+                                            </div>
+
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-6 position-static">
-                                        <div class="hero-slide-thumb" style="position: absolute; bottom: 0; right: 0; margin-bottom: 0;">
-                                            <img style="border-radius: 4% 4% 0 0; display: block;" src="assets/images/slider/hero-1.png"
-                                                width="841" height="832" alt="Image">
+                                    <div class="col-12 col-md-6 order-1 order-md-2">
+                                        <div class="hero-slide-thumb">
+                                            <img src="assets/images/slider/hero-1.png" alt="Image">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide hero-slide-item" style="padding-bottom: 0;">
-                            <div class="container">
-                                <div class="row align-items-center position-relative" style="min-height: 600px;">
-                                    <div class="col-12 col-md-6">
-                                        <div class="hero-slide-content">
-                                            <h2 class="hero-slide-title">Resultados Naturales</h2>
-                                            <p class="hero-slide-desc">Confía en los mejores cirujanos plásticos
-                                                certificados internacionalmente para lograr la mejor versión de ti.</p>
-                                            <a class="btn btn-border-dark" href="product.html"
-                                                style="border-color: #B2B2B2; color: #B2B2B2; transition: all 0.3s ease;"
-                                                onmouseover="this.style.backgroundColor='#B2B2B2'; this.style.color='white';"
-                                                onmouseout="this.style.backgroundColor='transparent'; this.style.color='#B2B2B2';">Ver
-                                                Beneficios</a>
+                        <div class="swiper-slide hero-slide-item" style="background-color: #E6ECFF; padding-bottom: 0;">
+                            <div class="container-fluid px-0">
+                                <div class="row align-items-center position-relative" style="min-height: 75vh;">
+                                    <div class="col-12 col-md-6 order-1 order-md-2">
+                                        <div class="hero-slide-thumb">
+                                            <img src="assets/images/vertical.jpg" alt="Image" 
+                                                 style="margin: auto; border-radius: 4% 4% 0 0; width: auto; max-height: 80vh; object-fit: contain;">
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-6 position-static">
-                                        <div class="hero-slide-thumb" style="position: absolute; bottom: 0; right: 0; margin-bottom: 0;">
-                                            <img style="border-radius: 4% 4% 0 0; display: block;" src="assets/images/vertical.jpg"
-                                                width="841" height="832" alt="Image">
+                                    <div class="col-12 col-md-6 order-2 order-md-1">
+                                        <div class="hero-slide-content">
+                                            <h2 class="hero-slide-title">Resultados Naturales</h2>
+                                            <p class="hero-slide-desc">Nuestros especialistas certificados te ayudarán a lograr los resultados que deseas de manera segura y natural.</p>
+                                            <div class="download-button">
+                                                <button onclick="detectAndRedirect()" class="btn btn-dark">
+                                                    <i class="fa fa-download"></i>
+                                                    Descargar App
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -258,10 +302,10 @@
                         </div>
                     </div>
                     <!--== Add Navigation Buttons ==-->
-                    <div class="swiper-button-prev" style="color: #B2B2B2;"></div>
-                    <div class="swiper-button-next" style="color: #B2B2B2;"></div>
+                    <div class="swiper-button-prev" style="color: #27222C;"></div>
+                    <div class="swiper-button-next" style="color: #27222C;"></div>
                     <!--== Add Pagination ==-->
-                    <div class="hero-slider-pagination" style="--swiper-theme-color: #B2B2B2;"></div>
+                    <div class="hero-slider-pagination" style="--swiper-theme-color: #27222C;"></div>
                 </div>
                 <div class="hero-slide-social-media">
                     <a href="https://www.instagram.com/" target="_blank" rel="noopener"><i
@@ -288,7 +332,7 @@
                         <div class="col-md-4 mb-7">
                             <div class="feature-item text-center">
                                 <div class="feature-icon mb-5">
-                                    <svg width="64" height="64" viewBox="0 0 24 24" fill="#B2B2B2">
+                                    <svg width="64" height="64" viewBox="0 0 24 24" fill="#27222C">
                                         <path
                                             d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm6 9.09c0 4-2.55 7.7-6 8.83-3.45-1.13-6-4.82-6-8.83v-4.7l6-2.25 6 2.25v4.7zM12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 8.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z" />
                                     </svg>
@@ -300,7 +344,7 @@
                         <div class="col-md-4 mb-7">
                             <div class="feature-item text-center">
                                 <div class="feature-icon mb-5">
-                                    <svg width="64" height="64" viewBox="0 0 24 24" fill="#B2B2B2">
+                                    <svg width="64" height="64" viewBox="0 0 24 24" fill="#27222C">
                                         <path
                                             d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.79 1.49 2.69 3.66 3.21 1.95.46 2.34 1.15 2.34 1.87 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.32-1.64H8.04c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.42z" />
                                     </svg>
@@ -312,7 +356,7 @@
                         <div class="col-md-4 mb-7">
                             <div class="feature-item text-center">
                                 <div class="feature-icon mb-5">
-                                    <svg width="64" height="64" viewBox="0 0 24 24" fill="#B2B2B2">
+                                    <svg width="64" height="64" viewBox="0 0 24 24" fill="#27222C">
                                         <path
                                             d="M12 1c-4.97 0-9 4.03-9 9v7c0 1.66 1.34 3 3 3h3v-8H5v-2c0-3.87 3.13-7 7-7s7 3.13 7 7v2h-4v8h3c1.66 0 3-1.34 3-3v-7c0-4.97-4.03-9-9-9z" />
                                     </svg>
@@ -332,7 +376,7 @@
                     <div class="row align-items-center">
                         <div class="col-md-6">
                             <div class="about-thumb">
-                                <img src="assets/images/vertical.jpg" alt="Sobre Nosotros" class="rounded-4">
+                                <img src="assets/images/Fotos-Website-prueba/Consultorio.jpg" alt="Sobre Nosotros" class="rounded-4">
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -342,7 +386,7 @@
                                     a nuestros usuarios con cirujanos plásticos de clase mundial que comparten nuestra
                                     pasión por la excelencia y los resultados naturales.</p>
                                 <a href="about-us.html" class="btn btn-dark"
-                                    style="background-color: #B2B2B2; border-color: #B2B2B2;">Conoce más</a>
+                                    style="background-color: #27222C; border-color: #27222C;">Conoce más</a>
                             </div>
                         </div>
                     </div>
@@ -364,7 +408,7 @@
                     <div class="row">
                         <div class="col-md-4 mb-7">
                             <div class="service-item text-center">
-                                <img src="assets/images/vertical.jpg" alt="Cirugía Facial" class="rounded-4 mb-4">
+                                <img src="assets/images/Fotos-Website-prueba/pexels-cottonbro-7583376.jpg" alt="Cirugía Facial" class="rounded-4 mb-4">
                                 <h4>Cirugía Facial</h4>
                                 <p>Especialistas en rinoplastia, lifting facial, mentoplastia y procedimientos para
                                     rejuvenecimiento facial.</p>
@@ -372,7 +416,7 @@
                         </div>
                         <div class="col-md-4 mb-7">
                             <div class="service-item text-center">
-                                <img src="assets/images/vertical.jpg" alt="Cirugía Corporal" class="rounded-4 mb-4">
+                                <img src="assets/images/Fotos-Website-prueba/Consultorio.jpg" alt="Cirugía Corporal" class="rounded-4 mb-4">
                                 <h4>Cirugía Corporal</h4>
                                 <p>Expertos en lipoescultura, abdominoplastia, aumento de glúteos y contorno corporal.
                                 </p>
@@ -380,7 +424,7 @@
                         </div>
                         <div class="col-md-4 mb-7">
                             <div class="service-item text-center">
-                                <img src="assets/images/vertical.jpg" alt="Cirugía Mamaria" class="rounded-4 mb-4">
+                                <img src="assets/images/Fotos-Website-prueba/pexels-shvetsa-5069609 (1).jpg" alt="Cirugía Mamaria" class="rounded-4 mb-4">
                                 <h4>Cirugía Mamaria</h4>
                                 <p>Especialistas en aumento, reducción y levantamiento de senos con resultados
                                     naturales.</p>
@@ -388,7 +432,7 @@
                         </div>
                         <div class="col-md-4 mb-7">
                             <div class="service-item text-center">
-                                <img src="assets/images/vertical.jpg" alt="Cirugía Reconstructiva"
+                                <img src="assets/images/Fotos-Website-prueba/pexels-cottonbro-7584493.jpg" alt="Cirugía Reconstructiva"
                                     class="rounded-4 mb-4">
                                 <h4>Cirugía Reconstructiva</h4>
                                 <p>Expertos en reconstrucción post-mastectomía, corrección de cicatrices y
@@ -397,7 +441,7 @@
                         </div>
                         <div class="col-md-4 mb-7">
                             <div class="service-item text-center">
-                                <img src="assets/images/vertical.jpg" alt="Procedimientos No Quirúrgicos"
+                                <img src="assets/images/Fotos-Website-prueba/pexels-shvetsa-4586711.jpg" alt="Procedimientos No Quirúrgicos"
                                     class="rounded-4 mb-4">
                                 <h4>Medicina Estética</h4>
                                 <p>Especialistas en tratamientos mínimamente invasivos, rellenos y rejuvenecimiento.</p>
@@ -405,7 +449,7 @@
                         </div>
                         <div class="col-md-4 mb-7">
                             <div class="service-item text-center">
-                                <img src="assets/images/vertical.jpg" alt="Más Especialidades" class="rounded-4 mb-4">
+                                <img src="assets/images/Fotos-Website-prueba/pexels-ganinph-7772686.jpg" alt="Más Especialidades" class="rounded-4 mb-4">
                                 <h4>Otras Especialidades</h4>
                                 <p>Descubre más especialistas certificados en diversos procedimientos estéticos y muchas
                                     otras áreas de la cirugía plástica y estética.</p>
@@ -425,7 +469,7 @@
             <!--== Start CTA Section ==-->
             <section class="section-space pt-0">
                 <div class="container">
-                    <div class="cta-wrapper bg-dark rounded-4 p-7" style="background-color: #B2B2B2 !important;">
+                    <div class="cta-wrapper bg-dark rounded-4 p-7" style="background-color: #27222C !important;">
                         <div class="row align-items-center">
                             <div class="col-md-8">
                                 <h2 class="text-white mb-3">¿Listo para comenzar tu transformación?</h2>
@@ -454,39 +498,42 @@
                         <div class="col-sm-6 col-lg-4">
                             <!--== Start Category Item ==-->
                             <a href="product.html" class="product-banner-item position-relative">
-                                <img src="assets/images/vertical.jpg" width="370" height="370" alt="Antes y Después"
+                                <img src="assets/images/Fotos-Website-prueba/botox.jpg" width="370" height="370" alt="Antes y Después"
                                     class="rounded-4">
                                 <div class="overlay-text position-absolute bottom-0 start-0 w-100 p-4 text-white"
-                                    style="background: linear-gradient(transparent, #B2B2B2);">
-                                    <h3 class="h4 mb-2">Antes y Después</h3>
+                                    style="background: linear-gradient(transparent, #27222C);">
+                                    <h3 class="h4 mb-2 text-white">Antes y Después</h3>
                                     <p class="mb-0">Resultados reales de nuestros pacientes</p>
                                 </div>
                             </a>
+
                             <!--== End Category Item ==-->
                         </div>
                         <div class="col-sm-6 col-lg-4 mt-sm-0 mt-6">
                             <!--== Start Category Item ==-->
                             <a href="product.html" class="product-banner-item position-relative">
-                                <img src="assets/images/vertical.jpg" width="370" height="370" alt="Financiamiento"
+                                <img src="assets/images/Fotos-Website-prueba/pexels-cottonbro-7581091.jpg" width="370" height="370" alt="Financiamiento"
                                     class="rounded-4">
                                 <div class="overlay-text position-absolute bottom-0 start-0 w-100 p-4 text-white"
-                                    style="background: linear-gradient(transparent, #B2B2B2);">
-                                    <h3 class="h4 mb-2">Financiamiento</h3>
+                                    style="background: linear-gradient(transparent, #27222C);">
+                                    <h3 class="h4 mb-2 text-white">Financiamiento</h3>
                                     <p class="mb-0">Opciones flexibles de pago</p>
                                 </div>
                             </a>
+
                             <!--== End Category Item ==-->
                         </div>
                         <div class="col-sm-6 col-lg-4 mt-lg-0 mt-6">
                             <!--== Start Category Item ==-->
                             <a href="product.html" class="product-banner-item position-relative">
-                                <img src="assets/images/vertical.jpg" width="370" height="370" alt="Consulta Virtual"
+                                <img src="assets/images/Fotos-Website-prueba/pexels-cottonbro-7583376.jpg" width="370" height="370" alt="Consulta Virtual"
                                     class="rounded-4">
                                 <div class="overlay-text position-absolute bottom-0 start-0 w-100 p-4 text-white"
-                                    style="background: linear-gradient(transparent, #B2B2B2);">
-                                    <h3 class="h4 mb-2">Consulta Virtual</h3>
+                                    style="background: linear-gradient(transparent, #27222C);">
+                                    <h3 class="h4 mb-2 text-white">Consulta Virtual</h3>
                                     <p class="mb-0">Primera evaluación sin costo</p>
                                 </div>
+
                             </a>
                             <!--== End Category Item ==-->
                         </div>
@@ -499,7 +546,7 @@
             <section class="section-space">
                 <div class="container">
                     <div class="newsletter-content-wrap bg-dark rounded-4 p-5"
-                        style="background-color: #B2B2B2 !important;">
+                        style="background-color: #27222C !important;">
                         <div class="row align-items-center">
                             <div class="col-lg-6 mb-4 mb-lg-0">
                                 <div class="newsletter-content">
@@ -512,11 +559,11 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="newsletter-form">
-                                    <form class="d-flex gap-3">
+                                    <form class="d-flex gap-3 flex-wrap">
                                         <input type="email" class="form-control form-control-lg border-0"
                                             placeholder="Ingresa tu correo electrónico">
                                         <button class="btn btn-light btn-lg" type="submit"
-                                            style="background-color: white; color: #B2B2B2;">Suscribirse</button>
+                                            style="background-color: white; color: #27222C;">Suscribirse</button>
                                     </form>
                                 </div>
                             </div>
@@ -538,7 +585,7 @@
                             <div class="widget-item">
                                 <div class="widget-about">
                                     <a class="widget-logo" href="index.html">
-                                        <img src="assets/images/logo.png" width="95" height="68" alt="Logo">
+                                        <img src="assets/images/logo.png" width="96" height="69" alt="Logo">
                                     </a>
                                     <p class="desc">Bella conecta a pacientes con los mejores cirujanos plásticos
                                         certificados, ofreciendo descuentos exclusivos y garantizando la más alta
@@ -580,7 +627,7 @@
             <!--== End Footer Main ==-->
 
             <!--== Start Footer Bottom ==-->
-            <div class="footer-bottom" style="background-color: #B2B2B2 !important;">
+            <div class="footer-bottom" style="background-color: #27222C !important;">
                 <div class="container pt-0 pb-0">
                     <div class="footer-bottom-content">
                         <p class="copyright" style="color: white !important;">© 2025 Bella </p>

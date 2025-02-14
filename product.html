@@ -39,7 +39,7 @@
     <style>
         /* Variables y colores base */
         :root {
-            --theme-color: #B2B2B2;
+            --theme-color: #27222C;
             --theme-light: rgba(159, 200, 204, 0.1);
             --theme-medium: rgba(159, 200, 204, 0.5);
             --theme-dark: #8AB5B9;
@@ -195,7 +195,7 @@
 
         .period-btn:not(.active):hover {
             background-color: rgba(159, 200, 204, 0.05);
-            color: #B2B2B2;
+            color: #27222C;
         }
 
         .period-btn.active {
@@ -216,7 +216,7 @@
         }
 
         .membership-card:hover {
-            border-color: #B2B2B2;
+            border-color: #27222C;
         }
 
         .store-badge:hover {
@@ -266,37 +266,36 @@
     <!--== Wrapper Start ==-->
     <div class="wrapper">
 
-
         <!--== Start Header Wrapper ==-->
         <header class="header-area sticky-header header-transparent">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-5 col-lg-2 col-xl-1">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-5 col-lg-3 col-xl-3 p-0 ps-2">
                         <div class="header-logo">
                             <a href="index.html">
-                                <img class="logo-main" src="assets/images/logo.png" width="95" height="68"
-                                    alt="Logo" />
+                                <img class="logo-main" src="assets/images/logo.png" width="220" height="191" alt="Logo" />
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-7 col-xl-7 d-none d-lg-block">
-                        <div class="header-navigation ps-7">
+                    <div class="col-lg-5 col-xl-5" style="display: none;">
+                        <div class="header-navigation">
                             <ul class="main-nav justify-content-start">
-                                                                 <li><a href="index.html">Inicio</a></li>
-
                                 <li><a href="about-us.html">Conocenos</a></li>
-                               <li ><a class="text-nowrap" href="product.html">Beneficios Exclusivos</a></li >
-                               <li><a href="testimonials.html">Testimonios</a>
-                                 
+                                <li><a class="text-nowrap" href="product.html">Beneficios Exclusivos</a></li>
+                                <li><a href="testimonials.html">Testimonios</a></li>
                                 <li><a href="contact.html">Contáctanos</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-7 col-lg-3 col-xl-4">
+                    <div class="col-7 col-lg-4 col-xl-4">
                         <div class="header-action justify-content-end">
                             <div class="d-flex flex-nowrap">
-                            <a class="m-1" href="www.apple.com/store" target="_blank"><img width="114" src="assets/images/icons/appstore.svg" alt=""></a>
-                            <a class="m-1" href="https://play.google.com/store" target="_blank"><img width="130" src="assets/images/icons/playstore.png" alt=""></a>
+                                <div class="download-button">
+                                    <button onclick="detectAndRedirect()" class="btn btn-dark px-3">
+                                        <i class="fa fa-download"></i>
+                                        Descargar
+                                    </button>
+                                </div>
                             </div>
                             <button class="header-menu-btn" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#AsideOffcanvasMenu" aria-controls="AsideOffcanvasMenu">
@@ -313,26 +312,7 @@
 
         <main class="main-content mt-10">
 
-            <!--== Start Page Header Area Wrapper ==-->
-            <div class="page-header-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <div class="page-header-content">
-                                <h2 class="title">Beneficios Exclusivos</h2>
-                                <nav class="breadcrumb-area">
-                                    <ul class="breadcrumb">
-                                        <li><a href="index.html">Inicio</a></li>
-                                        <li class="breadcrumb-sep">/</li>
-                                        <li>Beneficios</li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--== End Page Header Area Wrapper ==-->
+     
 
             <!--== Start Benefits Section ==-->
             <section class="section-space bg-light">
@@ -410,7 +390,6 @@
                 </div>
             </section>
             <!--== End Benefits Section ==-->
-
             <!--== Start Services Section ==-->
             <section class="section-space pt-0">
                 <div class="container">
@@ -425,50 +404,58 @@
                     <div class="row">
                         <div class="col-md-4 mb-7">
                             <div class="service-item text-center">
-                                <img src="assets/images/vertical.jpg" alt="Cirugía Facial" class="rounded-4 mb-4">
+                                <img src="assets/images/Fotos-Website-prueba/pexels-cottonbro-7583376.jpg" alt="Cirugía Facial" class="rounded-4 mb-4">
                                 <h4>Cirugía Facial</h4>
-                                <p>Especialistas en rinoplastia, lifting facial, mentoplastia y procedimientos para rejuvenecimiento facial.</p>
+                                <p>Especialistas en rinoplastia, lifting facial, mentoplastia y procedimientos para
+                                    rejuvenecimiento facial.</p>
                             </div>
                         </div>
                         <div class="col-md-4 mb-7">
                             <div class="service-item text-center">
-                                <img src="assets/images/vertical.jpg" alt="Cirugía Corporal" class="rounded-4 mb-4">
+                                <img src="assets/images/Fotos-Website-prueba/Consultorio.jpg" alt="Cirugía Corporal" class="rounded-4 mb-4">
                                 <h4>Cirugía Corporal</h4>
-                                <p>Expertos en lipoescultura, abdominoplastia, aumento de glúteos y contorno corporal.</p>
+                                <p>Expertos en lipoescultura, abdominoplastia, aumento de glúteos y contorno corporal.
+                                </p>
                             </div>
                         </div>
                         <div class="col-md-4 mb-7">
                             <div class="service-item text-center">
-                                <img src="assets/images/vertical.jpg" alt="Cirugía Mamaria" class="rounded-4 mb-4">
+                                <img src="assets/images/Fotos-Website-prueba/pexels-shvetsa-5069609 (1).jpg" alt="Cirugía Mamaria" class="rounded-4 mb-4">
                                 <h4>Cirugía Mamaria</h4>
-                                <p>Especialistas en aumento, reducción y levantamiento de senos con resultados naturales.</p>
+                                <p>Especialistas en aumento, reducción y levantamiento de senos con resultados
+                                    naturales.</p>
                             </div>
                         </div>
                         <div class="col-md-4 mb-7">
                             <div class="service-item text-center">
-                                <img src="assets/images/vertical.jpg" alt="Cirugía Reconstructiva" class="rounded-4 mb-4">
+                                <img src="assets/images/Fotos-Website-prueba/pexels-cottonbro-7584493.jpg" alt="Cirugía Reconstructiva"
+                                    class="rounded-4 mb-4">
                                 <h4>Cirugía Reconstructiva</h4>
-                                <p>Expertos en reconstrucción post-mastectomía, corrección de cicatrices y malformaciones.</p>
+                                <p>Expertos en reconstrucción post-mastectomía, corrección de cicatrices y
+                                    malformaciones.</p>
                             </div>
                         </div>
                         <div class="col-md-4 mb-7">
                             <div class="service-item text-center">
-                                <img src="assets/images/vertical.jpg" alt="Procedimientos No Quirúrgicos" class="rounded-4 mb-4">
+                                <img src="assets/images/Fotos-Website-prueba/pexels-shvetsa-4586711.jpg" alt="Procedimientos No Quirúrgicos"
+                                    class="rounded-4 mb-4">
                                 <h4>Medicina Estética</h4>
                                 <p>Especialistas en tratamientos mínimamente invasivos, rellenos y rejuvenecimiento.</p>
                             </div>
                         </div>
                         <div class="col-md-4 mb-7">
                             <div class="service-item text-center">
-                                <img src="assets/images/vertical.jpg" alt="Más Especialidades" class="rounded-4 mb-4">
+                                <img src="assets/images/Fotos-Website-prueba/pexels-ganinph-7772686.jpg" alt="Más Especialidades" class="rounded-4 mb-4">
                                 <h4>Otras Especialidades</h4>
-                                <p>Descubre más especialistas certificados en diversos procedimientos estéticos y muchas otras áreas de la cirugía plástica y estética.</p>
+                                <p>Descubre más especialistas certificados en diversos procedimientos estéticos y muchas
+                                    otras áreas de la cirugía plástica y estética.</p>
                             </div>
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class="col-12 text-center">
-                            <p class="text-muted">* Todos nuestros especialistas cuentan con certificaciones internacionales y amplia experiencia en su campo.</p>
+                            <p class="text-muted">* Todos nuestros especialistas cuentan con certificaciones
+                                internacionales y amplia experiencia en su campo.</p>
                         </div>
                     </div>
                 </div>
@@ -485,7 +472,7 @@
                         <!-- Selector de período clásico -->
                         <div class="toggle-container mt-4 mb-5 d-inline-flex">
                             <div class="toggle-wrapper" style="background-color: #f5f5f5; border-radius: 8px; padding: 4px;">
-                                <button class="toggle-btn active me-1" data-period="monthly" style="border: none; background-color: #B2B2B2; color: white; padding: 8px 24px; border-radius: 6px; font-weight: 500; transition: all 0.3s ease;">
+                                <button class="toggle-btn active me-1" data-period="monthly" style="border: none; background-color: #27222C; color: white; padding: 8px 24px; border-radius: 6px; font-weight: 500; transition: all 0.3s ease;">
                                     Mensual
                                 </button>
                                 <button class="toggle-btn" data-period="yearly" style="border: none; background-color: transparent; color: #666; padding: 8px 24px; border-radius: 6px; font-weight: 500; transition: all 0.3s ease;">
@@ -498,20 +485,20 @@
                     <div class="row g-4">
                         <!-- Plan Básico -->
                         <div class="col-md-4">
-                            <div class="membership-card bg-white p-4 rounded-4 h-100 shadow-sm hover-shadow transition-300" style="border: 2px solid #B2B2B2;">
+                            <div class="membership-card bg-white p-4 rounded-4 h-100 shadow-sm hover-shadow transition-300" style="border: 2px solid #27222C;">
                                 <div class="text-center mb-4">
                                     <span class="membership-icon-circle d-inline-flex align-items-center justify-content-center rounded-circle mb-3" style="background-color: rgba(159, 200, 204, 0.1);">
-                                        <i class="fa fa-star fa-2x" style="color: #B2B2B2;"></i>
+                                        <i class="fa fa-star fa-2x" style="color: #27222C;"></i>
                                     </span>
                                     <h3 class="h4" style="color: #333;">Plan Básico</h3>
                                     <div class="price-tag my-4">
                                         <div class="monthly-price">
-                                            <span class="h1" style="color: #B2B2B2;">10%</span>
+                                            <span class="h1" style="color: #27222C;">10%</span>
                                             <p class="text-muted mb-0">de descuento</p>
                                             <small class="text-muted">$9.99/mes</small>
                                         </div>
                                         <div class="yearly-price" style="display: none;">
-                                            <span class="h1" style="color: #B2B2B2;">15%</span>
+                                            <span class="h1" style="color: #27222C;">15%</span>
                                             <p class="text-muted mb-0">de descuento</p>
                                             <small class="text-muted">$99.99/año <span class="badge bg-warning">¡2 meses gratis!</span></small>
                                         </div>
@@ -536,23 +523,23 @@
 
                         <!-- Plan Premium -->
                         <div class="col-md-4">
-                            <div class="membership-card bg-white p-4 rounded-4 h-100 shadow-lg hover-shadow transition-300 position-relative" style="border: 2px solid #B2B2B2;">
+                            <div class="membership-card bg-white p-4 rounded-4 h-100 shadow-lg hover-shadow transition-300 position-relative" style="border: 2px solid #27222C;">
                                 <div class="position-absolute top-0 end-0 mt-3 me-3">
                                     <span class="badge bg-warning">Más Popular</span>
                                 </div>
                                 <div class="text-center mb-4">
                                     <span class="membership-icon-circle d-inline-flex align-items-center justify-content-center rounded-circle mb-3" style="background-color: rgba(159, 200, 204, 0.1);">
-                                        <i class="fa fa-star fa-2x" style="color: #B2B2B2;"></i>
+                                        <i class="fa fa-star fa-2x" style="color: #27222C;"></i>
                                     </span>
                                     <h3 class="h4" style="color: #333;">Plan Premium</h3>
                                     <div class="price-tag my-4">
                                         <div class="monthly-price">
-                                            <span class="h1" style="color: #B2B2B2;">25%</span>
+                                            <span class="h1" style="color: #27222C;">25%</span>
                                             <p class="text-muted mb-0">de descuento</p>
                                             <small class="text-muted">$19.99/mes</small>
                                         </div>
                                         <div class="yearly-price" style="display: none;">
-                                            <span class="h1" style="color: #B2B2B2;">30%</span>
+                                            <span class="h1" style="color: #27222C;">30%</span>
                                             <p class="text-muted mb-0">de descuento</p>
                                             <small class="text-muted">$199.99/año <span class="badge bg-warning">¡2 meses gratis!</span></small>
                                         </div>
@@ -581,20 +568,20 @@
 
                         <!-- Plan Elite -->
                         <div class="col-md-4">
-                            <div class="membership-card bg-white p-4 rounded-4 h-100 shadow-sm hover-shadow transition-300" style="border: 2px solid #B2B2B2;">
+                            <div class="membership-card bg-white p-4 rounded-4 h-100 shadow-sm hover-shadow transition-300" style="border: 2px solid #27222C;">
                                 <div class="text-center mb-4">
                                     <span class="membership-icon-circle d-inline-flex align-items-center justify-content-center rounded-circle mb-3" style="background-color: rgba(159, 200, 204, 0.1);">
-                                        <i class="fa fa-star fa-2x" style="color: #B2B2B2;"></i>
+                                        <i class="fa fa-star fa-2x" style="color: #27222C;"></i>
                                     </span>
                                     <h3 class="h4" style="color: #333;">Plan Elite</h3>
                                     <div class="price-tag my-4">
                                         <div class="monthly-price">
-                                            <span class="h1" style="color: #B2B2B2;">35%</span>
+                                            <span class="h1" style="color: #27222C;">35%</span>
                                             <p class="text-muted mb-0">de descuento</p>
                                             <small class="text-muted">$29.99/mes</small>
                                         </div>
                                         <div class="yearly-price" style="display: none;">
-                                            <span class="h1" style="color: #B2B2B2;">40%</span>
+                                            <span class="h1" style="color: #27222C;">40%</span>
                                             <p class="text-muted mb-0">de descuento</p>
                                             <small class="text-muted">$299.99/año <span class="badge bg-warning">¡2 meses gratis!</span></small>
                                         </div>
@@ -637,11 +624,11 @@
                 </div>
             </section>
             <!--== End Membership Section ==-->
-
             <!--== Start Newsletter Section ==-->
             <section class="section-space">
                 <div class="container">
-                    <div class="newsletter-content-wrap bg-dark rounded-4 p-5">
+                    <div class="newsletter-content-wrap bg-dark rounded-4 p-5"
+                        style="background-color: #27222C !important;">
                         <div class="row align-items-center">
                             <div class="col-lg-6 mb-4 mb-lg-0">
                                 <div class="newsletter-content">
@@ -654,10 +641,11 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="newsletter-form">
-                                    <form class="d-flex gap-3">
+                                    <form class="d-flex gap-3 flex-wrap">
                                         <input type="email" class="form-control form-control-lg border-0"
                                             placeholder="Ingresa tu correo electrónico">
-                                        <button class="btn btn-primary btn-lg" type="submit">Suscribirse</button>
+                                        <button class="btn btn-light btn-lg" type="submit"
+                                            style="background-color: white; color: #27222C;">Suscribirse</button>
                                     </form>
                                 </div>
                             </div>
@@ -685,7 +673,7 @@
                             </div>
 
                             <p class="mt-4 text-muted small">
-                                <i class="fa fa-shield" style="color: #B2B2B2;"></i> 
+                                <i class="fa fa-shield" style="color: #27222C;"></i> 
                                 Descarga segura y gratuita
                             </p>
                         </div>
@@ -705,7 +693,7 @@
                             <div class="widget-item">
                                 <div class="widget-about">
                                     <a class="widget-logo" href="index.html">
-                                        <img src="assets/images/logo.png" width="95" height="68" alt="Logo">
+                                        <img src="assets/images/logo.png" width="150" height="130" alt="Logo">
                                     </a>
                                     <p class="desc">Bella conecta a pacientes con los mejores cirujanos plásticos certificados, ofreciendo descuentos exclusivos y garantizando la más alta calidad en procedimientos estéticos.</p>
                                 </div>
@@ -827,7 +815,7 @@
                     });
 
                     this.classList.add('active');
-                    this.style.backgroundColor = '#B2B2B2';
+                    this.style.backgroundColor = '#27222C';
                     this.style.color = 'white';
 
                     // Actualizar precios

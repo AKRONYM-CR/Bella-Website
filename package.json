@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "sass": "sass --load-path=node_modules/bootstrap/scss --load-path=node_modules --style compressed --watch assets/scss:assets/css"
+  }
+} 
