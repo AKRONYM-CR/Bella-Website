@@ -148,35 +148,35 @@
     <div class="wrapper">
 
         <!--== Start Header Wrapper ==-->
-        <header class="header-area sticky-header">
+        <header class="header-area sticky-header header-transparent">
             <div class="container">
-                <div class="row align-items-center justify-content-between flex-nowrap">
-                    <div class="col-5 col-sm-4 col-lg-1">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-5 col-lg-3 col-xl-3 p-0 ps-2">
                         <div class="header-logo">
                             <a href="index.html">
-                                <img class="logo-main" src="assets/images/logo.png" width="150" height="130" alt="Logo" />
+                                <img class="logo-main" src="assets/images/logo.png" width="220" height="191" alt="Logo" />
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-7 d-none d-lg-block">
+                    <div class="col-lg-5 col-xl-5" style="display: none;">
                         <div class="header-navigation">
                             <ul class="main-nav justify-content-start">
-                                <li><a href="index.html">Inicio</a></li>
                                 <li><a href="about-us.html">Conocenos</a></li>
                                 <li><a class="text-nowrap" href="product.html">Beneficios Exclusivos</a></li>
-                                <li><a href="testimonials.html">Testimonios</a>
-
+                                <li><a href="testimonials.html">Testimonios</a></li>
                                 <li><a href="contact.html">Contáctanos</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-7 col-sm-6 col-lg-3">
+                    <div class="col-7 col-lg-4 col-xl-4">
                         <div class="header-action justify-content-end">
                             <div class="d-flex flex-nowrap">
-                                <a class="m-1" href="www.apple.com/store" target="_blank"><img width="114"
-                                        src="assets/images/icons/appstore.svg" alt=""></a>
-                                <a class="m-1" href="https://play.google.com/store" target="_blank"><img width="130"
-                                        src="assets/images/icons/playstore.png" alt=""></a>
+                                <div class="download-button">
+                                    <button onclick="detectAndRedirect()" class="btn btn-dark px-3">
+                                        <i class="fa fa-download"></i>
+                                        Descargar
+                                    </button>
+                                </div>
                             </div>
                             <button class="header-menu-btn" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#AsideOffcanvasMenu" aria-controls="AsideOffcanvasMenu">
@@ -334,32 +334,38 @@
                 </div>
             </section>
             <!--== End Contact Section ==-->
-            <!--== Start Newsletter Section ==-->
-            <section class="section-space">
-                <div class="container">
-                    <div class="newsletter-content-wrap bg-dark rounded-4 p-5" style="background-color: #27222C !important;">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 mb-4 mb-lg-0">
-                                <div class="newsletter-content">
-                                    <div class="section-title mb-0">
-                                        <h2 class="title text-white">Mantente Informado</h2>
-                                        <p class="text-white">Suscríbete para recibir ofertas exclusivas y las últimas novedades en procedimientos estéticos.</p>
+
+            
+                        <!--== Start Newsletter Section ==-->
+                        <section class="section-space">
+                            <div class="container">
+                                <div class="newsletter-content-wrap bg-dark rounded-4 p-5"
+                                    style="background-color: #27222C !important;">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6 mb-4 mb-lg-0">
+                                            <div class="newsletter-content">
+                                                <div class="section-title mb-0">
+                                                    <h2 class="title text-white">Mantente Informado</h2>
+                                                    <p class="text-white">Suscríbete para recibir ofertas exclusivas y las últimas
+                                                        novedades en procedimientos estéticos.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="newsletter-form">
+                                                <form class="d-flex gap-3 flex-wrap">
+                                                    <input type="email" class="form-control form-control-lg border-0"
+                                                        placeholder="Ingresa tu correo electrónico">
+                                                    <button class="btn btn-light btn-lg" type="submit"
+                                                        style="background-color: white; color: #27222C;">Suscribirse</button>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="newsletter-form">
-                                    <form class="d-flex gap-3">
-                                        <input type="email" class="form-control form-control-lg border-0" placeholder="Ingresa tu correo electrónico">
-                                        <button class="btn btn-light btn-lg" type="submit" style="background-color: white; color: #27222C;">Suscribirse</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--== End Newsletter Section ==-->
+                        </section>
+                        <!--== End Newsletter Section ==-->
 
         </main>
 
