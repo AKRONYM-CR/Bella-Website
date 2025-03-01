@@ -160,33 +160,50 @@ $color-active: #27222C;
 // Estilos del header
 .header-area {
     position: relative;
-    z-index: 1000;  // Asegurarnos que esté por encima del hero
+    z-index: 1000;
     background-color: transparent;
-
+    max-height: 100px !important;  
+    padding: 0 !important;
+    
     .header-logo {
         img.logo-main {
-            width: 220px;  // Logo más grande (antes 180px)
-            height: auto;
-            max-height: 191px;
+            width: auto;
+            height: 50px !important;  // Aumentado proporcionalmente
+            max-height: 50px !important;
+            padding: 5px 0;
             
             @media (max-width: 992px) {
-                width: 180px;  // Tamaño para tablet
+                height: 45px !important;  // Aumentado proporcionalmente
             }
             
             @media (max-width: 768px) {
-                width: 150px;  // Tamaño para móvil
+                height: 40px !important;  // Aumentado proporcionalmente
             }
         }
     }
 
     .header-navigation {
         .main-nav {
-            gap: 0.8rem;  // Menos espacio entre items
+            height: 60px !important;  // Aumentado a 60px
             
-            li a {
-                font-size: 0.9rem;  // Texto más pequeño
-                padding: 0 8px;  // Menos padding horizontal
+            & > li > a {
+                height: 60px !important;  // Aumentado a 60px
+                line-height: 60px !important;  // Aumentado a 60px
+                padding: 0 8px;
             }
+        }
+    }
+
+    // Ajustar el botón de menú móvil
+    .header-menu-btn {
+        margin-top: 10px !important;  // Aumentado para centrar
+        margin-bottom: 10px !important;
+    }
+
+    // Ajustar el botón de descarga
+    .download-button {
+        .btn {
+            font-size: 0.9rem !important;
         }
     }
 
@@ -198,14 +215,20 @@ $color-active: #27222C;
             display: block !important;
         }
     }
+}
 
-    .header-menu-btn {
-        @media (min-width: 1051px) {
-            display: none !important;
-        }
-        @media (max-width: 1050px) {
-            display: block !important;
-        }
+// Ajustar el header cuando es sticky
+.sticky-header.sticky {
+    max-height: 60px !important;  // Aumentado a 60px
+    
+    .header-logo img {
+        height: 50px !important;  // Aumentado proporcionalmente
+        max-height: 50px !important;
+    }
+    
+    .main-nav > li > a {
+        height: 60px !important;  // Aumentado a 60px
+        line-height: 60px !important;  // Aumentado a 60px
     }
 }
 
@@ -255,7 +278,7 @@ $color-active: #27222C;
         
         a {
             display: block;
-            margin: 20px 0;  // Más espacio entre iconos
+            margin: 10px;  // Más espacio entre iconos
             color: #27222C;
             font-size: 32px;  // Aumentar significativamente el tamaño (antes 24px)
             transition: all 0.3s ease;
@@ -314,13 +337,18 @@ $color-active: #27222C;
     }
 
     .hero-slide-desc {
-        font-size: 1.25rem;  // Texto descriptivo más grande
+        font-size: 1.5rem;  // Aumentado de 1.25rem a 1.5rem
         line-height: 1.6;
         margin-bottom: 2rem;
+        font-weight: 400;  // Añadido para mejor legibilidad
         
         @media (max-width: 768px) {
-            font-size: 1.1rem;
+            font-size: 1.25rem;  // Aumentado de 1.1rem a 1.25rem
             padding: 0 15px;
+        }
+        
+        @media (max-width: 576px) {
+            font-size: 1.15rem;  // Añadido para móviles pequeños
         }
     }
 
@@ -487,8 +515,8 @@ $color-active: #27222C;
         }
         
         .hero-slide-desc {
-            font-size: 1.2rem;
-            line-height: 1.6;
+            font-size: 32px;
+            line-height: 1.1;
             margin-bottom: 1.5rem;  // Reducido de 2rem a 1.5rem
             max-width: 100%;  // Aumentado para usar más espacio
             

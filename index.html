@@ -190,6 +190,16 @@
             transform: scale(1.2);
             color: #000;
         }
+
+        .hero-slider-area .swiper-slide {
+            animation-duration: 50% !important;
+        }
+
+        .hero-slider-area .swiper-button-next,
+        .hero-slider-area .swiper-button-prev,
+        .hero-slider-area .hero-slide-social-media a {
+            transition-duration: 50% !important;
+        }
     </style>
 
 </head>
@@ -201,7 +211,7 @@
 
         <!--== Start Header Wrapper ==-->
         <header class="header-area sticky-header header-transparent">
-            <div class="container">
+            <div class="container p-3">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-5 col-lg-3 col-xl-3 p-0 ps-2">
                         <div class="header-logo">
@@ -212,12 +222,12 @@
                     </div>
                     <div class="col-lg-5 col-xl-5" style="display: none;">
                         <div class="header-navigation">
-                            <ul class="main-nav justify-content-start">
-                                <li><a href="about-us.html">Conocenos</a></li>
-                                <li><a class="text-nowrap" href="product.html">Beneficios Exclusivos</a></li>
-                                <li><a href="testimonials.html">Testimonios</a></li>
-                                <li><a href="contact.html">Contáctanos</a></li>
-                            </ul>
+                            <div class="main-nav justify-content-center flex justify-content-center" style="font-size: 20px; margin: auto;  gap: 10px;">
+                                <a class="fw-bold m-auto" href="about-us.html">Conocenos</a>
+                                <a class="fw-bold m-auto text-nowrap" href="product.html">Beneficios Exclusivos</a>
+                                <a class="fw-bold m-auto" href="testimonials.html">Testimonios</a>
+                                <a class="fw-bold m-auto" href="contact.html">Contáctanos</a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-7 col-lg-4 col-xl-4">
@@ -304,13 +314,11 @@
                     <!--== Add Navigation Buttons ==-->
                     <div class="swiper-button-prev" style="color: #27222C;"></div>
                     <div class="swiper-button-next" style="color: #27222C;"></div>
-                    <!--== Add Pagination ==-->
-                    <div class="hero-slider-pagination" style="--swiper-theme-color: #27222C;"></div>
                 </div>
                 <div class="hero-slide-social-media">
                     <a href="https://www.instagram.com/" target="_blank" rel="noopener"><i
                             class="fa fa-instagram"></i></a>
-                    <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+                   
                     <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i
                             class="fa fa-facebook"></i></a>
                 </div>
@@ -356,13 +364,11 @@
                         <div class="col-md-4 mb-7">
                             <div class="feature-item text-center">
                                 <div class="feature-icon mb-5">
-                                    <svg width="64" height="64" viewBox="0 0 24 24" fill="#27222C">
-                                        <path
-                                            d="M12 1c-4.97 0-9 4.03-9 9v7c0 1.66 1.34 3 3 3h3v-8H5v-2c0-3.87 3.13-7 7-7s7 3.13 7 7v2h-4v8h3c1.66 0 3-1.34 3-3v-7c0-4.97-4.03-9-9-9z" />
-                                    </svg>
+                                    <img width="64" height="64" src="assets/images/icons/icon-2.png" alt="Educación en Cirugía Plástica">
                                 </div>
-                                <h4>Acompañamiento 24/7</h4>
-                                <p>Te brindamos soporte personalizado durante todo el proceso.</p>
+                                <h4>Educación en Cirugía Plástica</h4>
+                                <p>Recibe información clara y detallada en cada etapa del proceso para tomar decisiones seguras.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -400,7 +406,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="section-title text-center">
-                                <h2 class="title">Nuestros Servicios</h2>
+                                <h2 class="title">Nuestros Beneficios</h2>
                                 <p>Procedimientos estéticos con los más altos estándares de calidad</p>
                             </div>
                         </div>
@@ -408,51 +414,47 @@
                     <div class="row">
                         <div class="col-md-4 mb-7">
                             <div class="service-item text-center">
-                                <img src="assets/images/Fotos-Website-prueba/pexels-cottonbro-7583376.jpg" alt="Cirugía Facial" class="rounded-4 mb-4">
+                                <img src="assets/images/Fotos-Website-prueba/7.jpg" alt="Cirugía Facial" class="rounded-4 mb-4">
                                 <h4>Cirugía Facial</h4>
-                                <p>Especialistas en rinoplastia, lifting facial, mentoplastia y procedimientos para
-                                    rejuvenecimiento facial.</p>
+                                <p>Especialistas en rinoplastia, lifting facial, mentoplastia, rejuvenecimiento facial y mucho más. Transforma tu rostro con resultados naturales y una apariencia fresca y armónica.</p>
                             </div>
                         </div>
                         <div class="col-md-4 mb-7">
                             <div class="service-item text-center">
-                                <img src="assets/images/Fotos-Website-prueba/Consultorio.jpg" alt="Cirugía Corporal" class="rounded-4 mb-4">
+                                <img src="assets/images/Fotos-Website-prueba/8.jpg alt="Cirugía Corporal" class="rounded-4 mb-4">
                                 <h4>Cirugía Corporal</h4>
-                                <p>Expertos en lipoescultura, abdominoplastia, aumento de glúteos y contorno corporal.
+                                <p>Especialistas en lipoescultura, abdominoplastia, aumento de glúteos, contorno corporal y más. Transforma tu cuerpo con resultados naturales y una silueta definida que resalta tu confianza.
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-4 mb-7">
                             <div class="service-item text-center">
-                                <img src="assets/images/Fotos-Website-prueba/pexels-shvetsa-5069609 (1).jpg" alt="Cirugía Mamaria" class="rounded-4 mb-4">
+                                <img src="assets/images/Fotos-Website-prueba/9.jpg" alt="Cirugía Mamaria" class="rounded-4 mb-4">
                                 <h4>Cirugía Mamaria</h4>
-                                <p>Especialistas en aumento, reducción y levantamiento de senos con resultados
-                                    naturales.</p>
+                                <p>Especialistas en aumento, reducción, levantamiento de senos y más procedimientos. Logra resultados naturales y armónicos que realzan tu figura y restauran tu confianza.</p>
                             </div>
                         </div>
                         <div class="col-md-4 mb-7">
                             <div class="service-item text-center">
-                                <img src="assets/images/Fotos-Website-prueba/pexels-cottonbro-7584493.jpg" alt="Cirugía Reconstructiva"
+                                <img src="assets/images/Fotos-Website-prueba/10.jpg" alt="Cirugía Reconstructiva"
                                     class="rounded-4 mb-4">
                                 <h4>Cirugía Reconstructiva</h4>
-                                <p>Expertos en reconstrucción post-mastectomía, corrección de cicatrices y
-                                    malformaciones.</p>
+                                <p>Especialistas en reconstrucción post-mastectomía, corrección de cicatrices y malformaciones, brindando resultados naturales que restauran tu bienestar y confianza.</p>
                             </div>
                         </div>
                         <div class="col-md-4 mb-7">
                             <div class="service-item text-center">
-                                <img src="assets/images/Fotos-Website-prueba/pexels-shvetsa-4586711.jpg" alt="Procedimientos No Quirúrgicos"
+                                <img src="assets/images/Fotos-Website-prueba/12.jpg" alt="Procedimientos No Quirúrgicos"
                                     class="rounded-4 mb-4">
                                 <h4>Medicina Estética</h4>
-                                <p>Especialistas en tratamientos mínimamente invasivos, rellenos y rejuvenecimiento.</p>
+                                <p>Especialistas en tratamientos mínimamente invasivos, rellenos y rejuvenecimiento, para una apariencia fresca y natural sin necesidad de cirugía.</p>
                             </div>
                         </div>
                         <div class="col-md-4 mb-7">
                             <div class="service-item text-center">
-                                <img src="assets/images/Fotos-Website-prueba/pexels-ganinph-7772686.jpg" alt="Más Especialidades" class="rounded-4 mb-4">
+                                <img src="assets/images/Fotos-Website-prueba/11.jpg" alt="Más Especialidades" class="rounded-4 mb-4">
                                 <h4>Otras Especialidades</h4>
-                                <p>Descubre más especialistas certificados en diversos procedimientos estéticos y muchas
-                                    otras áreas de la cirugía plástica y estética.</p>
+                                <p>Descubre a nuestros especialistas certificados en una amplia gama de procedimientos estéticos y otras áreas de la cirugía plástica, para ofrecerte un enfoque integral de belleza y bienestar.</p>
                             </div>
                         </div>
                     </div>
@@ -498,12 +500,12 @@
                         <div class="col-sm-6 col-lg-4">
                             <!--== Start Category Item ==-->
                             <a href="product.html" class="product-banner-item position-relative">
-                                <img src="assets/images/Fotos-Website-prueba/botox.jpg" width="370" height="370" alt="Antes y Después"
+                                <img src="assets/images/Fotos-Website-prueba/5.jpg" width="370" height="370" alt="Cirujanos de Prestigio"
                                     class="rounded-4">
                                 <div class="overlay-text position-absolute bottom-0 start-0 w-100 p-4 text-white"
                                     style="background: linear-gradient(transparent, #27222C);">
-                                    <h3 class="h4 mb-2 text-white">Antes y Después</h3>
-                                    <p class="mb-0">Resultados reales de nuestros pacientes</p>
+                                    <h3 class="h4 mb-2 text-white">Cirujanos de Prestigio</h3>
+                                    <p class="mb-0">En nuestra aplicación, encontrarás especialistas certificados y altamente capacitados, comprometidos con ofrecer resultados excepcionales y el mejor cuidado para ti.</p>
                                 </div>
                             </a>
 
@@ -512,12 +514,12 @@
                         <div class="col-sm-6 col-lg-4 mt-sm-0 mt-6">
                             <!--== Start Category Item ==-->
                             <a href="product.html" class="product-banner-item position-relative">
-                                <img src="assets/images/Fotos-Website-prueba/pexels-cottonbro-7581091.jpg" width="370" height="370" alt="Financiamiento"
+                                <img src="assets/images/Fotos-Website-prueba/13.jpg" width="370" height="370" alt="Suscripciones VIP"
                                     class="rounded-4">
                                 <div class="overlay-text position-absolute bottom-0 start-0 w-100 p-4 text-white"
                                     style="background: linear-gradient(transparent, #27222C);">
-                                    <h3 class="h4 mb-2 text-white">Financiamiento</h3>
-                                    <p class="mb-0">Opciones flexibles de pago</p>
+                                    <h3 class="h4 mb-2 text-white">Suscripciones VIP</h3>
+                                    <p class="mb-0">Disfruta de acceso exclusivo a beneficios premium y tratamientos personalizados solo para nuestros miembros más exclusivos en nuestra app.</p>
                                 </div>
                             </a>
 
@@ -526,12 +528,13 @@
                         <div class="col-sm-6 col-lg-4 mt-lg-0 mt-6">
                             <!--== Start Category Item ==-->
                             <a href="product.html" class="product-banner-item position-relative">
-                                <img src="assets/images/Fotos-Website-prueba/pexels-cottonbro-7583376.jpg" width="370" height="370" alt="Consulta Virtual"
+                                <img src="assets/images/Fotos-Website-prueba/6.jpg  " width="370" height="370" alt="Consulta Virtual"
                                     class="rounded-4">
                                 <div class="overlay-text position-absolute bottom-0 start-0 w-100 p-4 text-white"
                                     style="background: linear-gradient(transparent, #27222C);">
-                                    <h3 class="h4 mb-2 text-white">Consulta Virtual</h3>
-                                    <p class="mb-0">Primera evaluación sin costo</p>
+                                    <h3 class="h4 mb-2 text-white">Opciones de Pago Exclusivas
+                                    </h3>
+                                    <p class="mb-0">Disfruta de descuentos premium y planes de pago flexibles, disponibles únicamente a través de nuestra app.</p>
                                 </div>
 
                             </a>
@@ -612,8 +615,7 @@
                             <div class="widget-item">
                                 <h4 class="widget-title">Redes Sociales</h4>
                                 <div class="widget-social">
-                                    <a href="https://twitter.com/" target="_blank" rel="noopener"><i
-                                            class="fa fa-twitter"></i></a>
+                                    
                                     <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i
                                             class="fa fa-facebook"></i></a>
                                     <a href="https://www.instagram.com/" target="_blank" rel="noopener"><i
