@@ -158,11 +158,10 @@ $theme-color: #27222C !default;
 
   .page-header-sub-title {
     font-weight: $font-weight-normal;
-    font-size: 21px;
+    font-size: 31px;
     line-height: 28px;
-    letter-spacing: 0.43em;
     margin-bottom: 28px;
-    text-decoration-line: underline;
+    font-weight: 600;
     @media #{$desktop-device, $tablet-device, $large-mobile} {
       font-size: 18px;
       margin-bottom: 18px;
@@ -174,7 +173,7 @@ $theme-color: #27222C !default;
   }
 
   .page-header-desc {
-    font-size: 21px;
+    font-size: 28px;
     line-height: 1.5;
     max-width: 470px;
     @media #{$desktop-device, $tablet-device, $large-mobile} {

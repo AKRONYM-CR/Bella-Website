@@ -148,35 +148,35 @@
     <div class="wrapper">
 
         <!--== Start Header Wrapper ==-->
-        <header class="header-area sticky-header">
-            <div class="container">
-                <div class="row align-items-center justify-content-between flex-nowrap">
-                    <div class="col-5 col-sm-4 col-lg-1">
+        <header class="header-area sticky-header header-transparent">
+            <div class="container p-3">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-5 col-lg-3 col-xl-3 p-0 ps-2">
                         <div class="header-logo">
                             <a href="index.html">
-                                <img class="logo-main" src="assets/images/logo.png" width="150" height="130" alt="Logo" />
+                                <img class="logo-main" src="assets/images/logo.png" width="220" height="191" alt="Logo" />
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-7 d-none d-lg-block">
+                    <div class="col-lg-5 col-xl-5" style="display: none;">
                         <div class="header-navigation">
-                            <ul class="main-nav justify-content-start">
-                                <li><a href="index.html">Inicio</a></li>
-                                <li><a href="about-us.html">Conocenos</a></li>
-                                <li><a class="text-nowrap" href="product.html">Beneficios Exclusivos</a></li>
-                                <li><a href="testimonials.html">Testimonios</a>
-
-                                <li><a href="contact.html">Contáctanos</a></li>
-                            </ul>
+                            <div class="main-nav justify-content-center flex justify-content-center" style="font-size: 20px; margin: auto;  gap: 10px;">
+                                <a class="fw-bold m-auto" href="about-us.html">Conocenos</a>
+                                <a class="fw-bold m-auto text-nowrap" href="product.html">Beneficios Exclusivos</a>
+                                <a class="fw-bold m-auto" href="testimonials.html">Testimonios</a>
+                                <a class="fw-bold m-auto" href="contact.html">Contáctanos</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-7 col-sm-6 col-lg-3">
+                    <div class="col-7 col-lg-4 col-xl-4">
                         <div class="header-action justify-content-end">
                             <div class="d-flex flex-nowrap">
-                                <a class="m-1" href="www.apple.com/store" target="_blank"><img width="114"
-                                        src="assets/images/icons/appstore.svg" alt=""></a>
-                                <a class="m-1" href="https://play.google.com/store" target="_blank"><img width="130"
-                                        src="assets/images/icons/playstore.png" alt=""></a>
+                                <div class="download-button">
+                                    <button onclick="detectAndRedirect()" class="btn btn-dark px-3">
+                                        <i class="fa fa-download"></i>
+                                        Descargar
+                                    </button>
+                                </div>
                             </div>
                             <button class="header-menu-btn" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#AsideOffcanvasMenu" aria-controls="AsideOffcanvasMenu">
@@ -203,9 +203,9 @@
                         <div class="col-md-4 mb-4 mb-md-0">
                             <div class="contact-card text-center p-4 h-100 bg-light rounded-4">
                                 <i class="fa fa-phone fa-3x mb-3"></i>
-                                <h4>Llámanos</h4>
-                                <p class="mb-0">+52 (55) 1234-5678</p>
-                                <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                                <h4>Contáctanos</h4>
+                                <p class="mb-0">+00 000 000</p>
+                                <p>Nuestro equipo de atención está disponible para ayudarte en todo momento.</p>
                             </div>
                         </div>
                         <div class="col-md-4 mb-4 mb-md-0">
@@ -227,11 +227,10 @@
                                     <a href="https://facebook.com" target="_blank" class="mx-2" style="color: var(--theme-color);">
                                         <i class="fa fa-facebook fa-lg"></i>
                                     </a>
-                                    <a href="https://twitter.com" target="_blank" class="mx-2" style="color: var(--theme-color);">
-                                        <i class="fa fa-twitter fa-lg"></i>
-                                    </a>
+                                    
                                 </div>
-                                <p class="mt-2 mb-0">Mantente conectado con nosotros</p>
+                                <p class="mt-2 mb-0">¡Conéctate con nosotros en redes sociales!
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -284,14 +283,14 @@
                                         <h2 class="accordion-header">
                                             <button class="accordion-button rounded-3" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#faq1">
-                                                ¿Cómo funciona el proceso de reserva?
+                                                ¿Cómo puedo acceder a los servicios?
                                             </button>
                                         </h2>
                                         <div id="faq1" class="accordion-collapse collapse show"
                                             data-bs-parent="#faqAccordion">
                                             <div class="accordion-body">
-                                                Selecciona el procedimiento, elige tu cirujano y realiza el depósito.
-                                                Nuestro equipo te guiará en cada paso.
+                                                Solo necesitas descargar nuestra app, elegir el procedimiento que deseas y seleccionar al cirujano de tu preferencia. ¡Todo al alcance de tu mano!
+
                                             </div>
                                         </div>
                                     </div>
@@ -301,13 +300,14 @@
                                             <button class="accordion-button collapsed rounded-3" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#faq2">
                                                 ¿Los cirujanos están certificados?
+
                                             </button>
                                         </h2>
                                         <div id="faq2" class="accordion-collapse collapse"
                                             data-bs-parent="#faqAccordion">
                                             <div class="accordion-body">
-                                                Sí, todos nuestros cirujanos están certificados y cuentan con amplia
-                                                experiencia.
+                                                Sí, en nuestra app contamos con cirujanos de prestigio, todos certificados y altamente capacitados, comprometidos con ofrecerte resultados excepcionales.
+
                                             </div>
                                         </div>
                                     </div>
@@ -316,14 +316,79 @@
                                         <h2 class="accordion-header">
                                             <button class="accordion-button collapsed rounded-3" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#faq3">
-                                                ¿Ofrecen financiamiento?
+                                                ¿Ofrecen opciones de financiamiento?
                                             </button>
                                         </h2>
                                         <div id="faq3" class="accordion-collapse collapse"
                                             data-bs-parent="#faqAccordion">
                                             <div class="accordion-body">
-                                                Sí, contamos con diferentes opciones de financiamiento y planes de pago
-                                                flexibles.
+                                                Sí, ofrecemos opciones de pago exclusivas, con descuentos premium y planes flexibles, disponibles únicamente a través de nuestra app.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Nuevas preguntas frecuentes -->
+                                    <div class="accordion-item border-0 mb-3">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                                ¿Cómo puedo acceder a los beneficios VIP?
+                                            </button>
+                                        </h2>
+                                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                Al ser miembro VIP en nuestra app, podrás disfrutar de acceso exclusivo a beneficios premium y tratamientos personalizados.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item border-0 mb-3">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                                ¿Puedo ver los resultados de otros pacientes?
+                                            </button>
+                                        </h2>
+                                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                Sí, podrás explorar casos de éxito y resultados previos de nuestros cirujanos dentro de la app, para que tomes decisiones informadas.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item border-0 mb-3">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                                ¿Cómo puedo saber si el cirujano es adecuado para mi procedimiento?
+                                            </button>
+                                        </h2>
+                                        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                Cada cirujano tiene un perfil detallado con su especialización, experiencia, y testimonios de pacientes. Además, puedes contactar directamente a los doctores a través de la app para resolver cualquier duda antes de tu consulta.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item border-0 mb-3">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                                                ¿Puedo realizar una consulta previa con el cirujano?
+                                            </button>
+                                        </h2>
+                                        <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                ¡Sí! Ofrecemos consultas virtuales con los cirujanos para que puedas discutir tu procedimiento en detalle, aclarar tus inquietudes y conocer mejor las opciones disponibles para ti.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item border-0 mb-3">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
+                                                ¿Cuánto tiempo de recuperación necesito?
+                                            </button>
+                                        </h2>
+                                        <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                El tiempo de recuperación varía según el procedimiento. Nuestros cirujanos ofrecen guías personalizadas para cada caso, asegurando una recuperación segura y eficiente.
                                             </div>
                                         </div>
                                     </div>
@@ -334,32 +399,38 @@
                 </div>
             </section>
             <!--== End Contact Section ==-->
-            <!--== Start Newsletter Section ==-->
-            <section class="section-space">
-                <div class="container">
-                    <div class="newsletter-content-wrap bg-dark rounded-4 p-5" style="background-color: #27222C !important;">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 mb-4 mb-lg-0">
-                                <div class="newsletter-content">
-                                    <div class="section-title mb-0">
-                                        <h2 class="title text-white">Mantente Informado</h2>
-                                        <p class="text-white">Suscríbete para recibir ofertas exclusivas y las últimas novedades en procedimientos estéticos.</p>
+
+            
+                        <!--== Start Newsletter Section ==-->
+                        <section class="section-space">
+                            <div class="container">
+                                <div class="newsletter-content-wrap bg-dark rounded-4 p-5"
+                                    style="background-color: #27222C !important;">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6 mb-4 mb-lg-0">
+                                            <div class="newsletter-content">
+                                                <div class="section-title mb-0">
+                                                    <h2 class="title text-white">Mantente Informado</h2>
+                                                    <p class="text-white">Suscríbete para recibir ofertas exclusivas y las últimas
+                                                        novedades en procedimientos estéticos.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="newsletter-form">
+                                                <form class="d-flex gap-3 flex-wrap">
+                                                    <input type="email" class="form-control form-control-lg border-0"
+                                                        placeholder="Ingresa tu correo electrónico">
+                                                    <button class="btn btn-light btn-lg" type="submit"
+                                                        style="background-color: white; color: #27222C;">Suscribirse</button>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="newsletter-form">
-                                    <form class="d-flex gap-3">
-                                        <input type="email" class="form-control form-control-lg border-0" placeholder="Ingresa tu correo electrónico">
-                                        <button class="btn btn-light btn-lg" type="submit" style="background-color: white; color: #27222C;">Suscribirse</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--== End Newsletter Section ==-->
+                        </section>
+                        <!--== End Newsletter Section ==-->
 
         </main>
 
@@ -399,8 +470,7 @@
                             <div class="widget-item">
                                 <h4 class="widget-title">Redes Sociales</h4>
                                 <div class="widget-social">
-                                    <a href="https://twitter.com/" target="_blank" rel="noopener"><i
-                                            class="fa fa-twitter"></i></a>
+                                    
                                     <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i
                                             class="fa fa-facebook"></i></a>
                                     <a href="https://www.instagram.com/" target="_blank" rel="noopener"><i

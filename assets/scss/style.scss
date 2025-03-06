@@ -160,8 +160,76 @@ $color-active: #27222C;
 // Estilos del header
 .header-area {
     position: relative;
-    z-index: 1000;  // Asegurarnos que esté por encima del hero
+    z-index: 1000;
     background-color: transparent;
+    max-height: 100px !important;  
+    padding: 0 !important;
+    
+    .header-logo {
+        img.logo-main {
+            width: auto;
+            height: 50px !important;  // Aumentado proporcionalmente
+            max-height: 50px !important;
+            padding: 5px 0;
+            
+            @media (max-width: 992px) {
+                height: 45px !important;  // Aumentado proporcionalmente
+            }
+            
+            @media (max-width: 768px) {
+                height: 40px !important;  // Aumentado proporcionalmente
+            }
+        }
+    }
+
+    .header-navigation {
+        .main-nav {
+            height: 60px !important;  // Aumentado a 60px
+            
+            & > li > a {
+                height: 60px !important;  // Aumentado a 60px
+                line-height: 60px !important;  // Aumentado a 60px
+                padding: 0 8px;
+            }
+        }
+    }
+
+    // Ajustar el botón de menú móvil
+    .header-menu-btn {
+        margin-top: 10px !important;  // Aumentado para centrar
+        margin-bottom: 10px !important;
+    }
+
+    // Ajustar el botón de descarga
+    .download-button {
+        .btn {
+            font-size: 0.9rem !important;
+        }
+    }
+
+    .col-lg-5 {
+        @media (max-width: 1050px) {
+            display: none !important;
+        }
+        @media (min-width: 1051px) {
+            display: block !important;
+        }
+    }
+}
+
+// Ajustar el header cuando es sticky
+.sticky-header.sticky {
+    max-height: 60px !important;  // Aumentado a 60px
+    
+    .header-logo img {
+        height: 50px !important;  // Aumentado proporcionalmente
+        max-height: 50px !important;
+    }
+    
+    .main-nav > li > a {
+        height: 60px !important;  // Aumentado a 60px
+        line-height: 60px !important;  // Aumentado a 60px
+    }
 }
 
 // Estilos del hero
@@ -170,8 +238,13 @@ $color-active: #27222C;
     position: relative;
     
     .hero-slide-item {
-        background-color: #E6ECFF !important;
-        padding: 0;
+        &:first-child {
+            background-color: #F5EEFE !important;  // Color morado pastel para el primer slide
+        }
+        
+        &:nth-child(2) {
+            background-color: #E6ECFF !important;  // Mantener el azul para el segundo
+        }
     }
 
     .hero-slide-thumb {
@@ -205,63 +278,77 @@ $color-active: #27222C;
         
         a {
             display: block;
-            margin: 10px 0;
+            margin: 10px;  // Más espacio entre iconos
             color: #27222C;
-            font-size: 18px;
+            font-size: 32px;  // Aumentar significativamente el tamaño (antes 24px)
+            transition: all 0.3s ease;
             
             &:hover {
-                transform: translateY(-2px);
+                transform: scale(1.2);
+                color: #000;
+            }
+        }
+
+        @media (max-width: 768px) {
+            a {
+                font-size: 28px;  // También más grande en móvil (antes 20px)
+                margin: 15px 0;
             }
         }
     }
 
     .hero-slide-content {
         padding: 2rem;
-        margin: 8rem 4rem;  // Margen vertical y horizontal para desktop
-        
-        @media (min-width: 1400px) {
-            margin: 10rem 6rem;  // Más margen para pantallas muy grandes
-        }
+        margin-left: 4rem;  // Solo margen izquierdo
         
         @media (max-width: 1200px) {
-            margin: 6rem 3rem;  // Margen medio para laptops
+            margin-left: 3rem;  // Reducir en pantallas más pequeñas
         }
         
         @media (max-width: 992px) {
-            margin: 4rem 2rem;  // Margen más pequeño para tablets
+            margin-left: 2rem;  // Reducir aún más en tablets
         }
         
         @media (max-width: 768px) {
             padding: 2rem 1rem;
-            margin: 2rem 1rem;  // Margen mínimo para móviles
+            margin-left: 1rem;  // Mínimo margen en móvil
             text-align: center;
         }
         
         @media (max-width: 576px) {
-            margin: 1rem 0.5rem;  // Margen muy pequeño para móviles pequeños
+            padding: 1rem;
+            margin-left: 0.5rem;  // Muy pequeño en móviles pequeños
         }
     }
 
     .hero-slide-title {
-        font-size: 5rem;
+        font-size: 6rem;  // Título más grande (antes 5rem)
         font-weight: 700;
-        line-height: 1.2;
-        margin-bottom: 1.5rem;
+        line-height: 1.1;
+        margin-bottom: 2rem;
         
         @media (max-width: 768px) {
-            margin: 1rem 0;
-            font-size: 2.5rem;
+            font-size: 3.5rem;  // Más grande en móvil también
         }
         
         @media (max-width: 576px) {
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
     }
 
     .hero-slide-desc {
+        font-size: 1.5rem;  // Aumentado de 1.25rem a 1.5rem
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        font-weight: 400;  // Añadido para mejor legibilidad
+        
         @media (max-width: 768px) {
-            margin: 0;
+            font-size: 1.25rem;  // Aumentado de 1.1rem a 1.25rem
             padding: 0 15px;
+        }
+        
+        @media (max-width: 576px) {
+            font-size: 1.15rem;  // Añadido para móviles pequeños
         }
     }
 
@@ -303,12 +390,287 @@ $color-active: #27222C;
     .swiper,
     .swiper-wrapper,
     .hero-slider-container {
-        overflow-x: visible !important;
+        overflow-x: hidden !important;
         overflow-y: hidden !important;
     }
 
     .swiper-slide {
-        overflow-x: visible !important;
+        overflow-x: hidden !important;
         overflow-y: hidden !important;
     }
+
+    // Líneas horizontales en color morado oscuro
+    .header-menu-btn span {
+        background-color: #27222C !important;
+    }
+
+    // Estilos de paginación del slider
+    .hero-slider-pagination {
+        position: absolute;
+        bottom: 20px !important;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+        
+        @media (max-width: 768px) {
+            bottom: 10px !important;
+        }
+
+        &:before,
+        &:after {
+            background-color: #6B4E71 !important;
+        }
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: rgba(107, 78, 113, 0.5);  // #6B4E71 con opacidad
+            opacity: 1;
+            transition: all 0.3s ease;
+            
+            @media (max-width: 768px) {
+                width: 8px;
+                height: 8px;
+                margin: 0 4px;
+            }
+            
+            @media (max-width: 576px) {
+                width: 6px;
+                height: 6px;
+                margin: 0 3px;
+            }
+            
+            &.swiper-pagination-bullet-active {
+                background-color: #6B4E71 !important;
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    // Ajustar posición de los botones de navegación
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 50%;
+        
+        &:after {
+            font-size: 20px;
+            color: #6B4E71;
+        }
+        
+        @media (max-width: 992px) {
+            width: 35px;
+            height: 35px;
+            
+            &:after {
+                font-size: 18px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            display: none;  // Ocultar en móvil
+        }
+    }
+
+    .swiper-button-prev {
+        left: 20px;
+        
+        @media (max-width: 992px) {
+            left: 15px;
+        }
+    }
+
+    .swiper-button-next {
+        right: 20px;
+        
+        @media (max-width: 992px) {
+            right: 15px;
+        }
+    }
+}
+
+// Ajustes específicos para el segundo slide
+.hero-slide-item:nth-child(2) {
+    .hero-slide-content {
+        padding: 2rem;  // Reducido de 4rem a 2rem
+        text-align: left;
+        max-width: 100%;  // Aumentado para usar más espacio
+        
+        @media (min-width: 992px) {
+            padding-left: 2rem;  // Reducido de 4rem a 2rem
+        }
+        
+        .hero-slide-title {
+            font-size: 4.5rem;
+            margin-bottom: 1rem;  // Reducido de 1.5rem a 1rem
+            line-height: 1.1;
+            
+            @media (max-width: 768px) {
+                font-size: 3rem;
+                text-align: center;
+            }
+        }
+        
+        .hero-slide-desc {
+            font-size: 32px;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;  // Reducido de 2rem a 1.5rem
+            max-width: 100%;  // Aumentado para usar más espacio
+            
+            @media (max-width: 768px) {
+                text-align: center;
+                margin: 0 auto 1.5rem;
+            }
+        }
+
+        .download-button {
+            margin-top: 1.5rem;  // Reducido de 2rem a 1.5rem
+            
+            .btn {
+                background-color: #27222C;
+                color: white;
+                padding: 1rem 2rem;
+                border-radius: 8px;
+                font-size: 1.1rem;
+                border: 2px solid #27222C;
+                transition: all 0.3s ease;
+                white-space: nowrap;  // Evitar que el texto se rompa
+                
+                i {
+                    margin-right: 10px;
+                }
+                
+                &:hover {
+                    background-color: white;
+                    color: #27222C;
+                }
+            }
+            
+            @media (max-width: 768px) {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                
+                .btn {
+                    padding: 0.8rem 1.5rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .hero-slide-thumb {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        
+        img {
+            max-height: 75vh;
+            width: auto;
+            object-fit: contain;
+            margin: 0 auto;
+        }
+    }
+}
+
+// Estilos del footer
+.footer-area {
+    .footer-main {
+        @media (max-width: 991px) {
+            text-align: center;
+            
+            .widget-item {
+                .widget-about {
+                    text-align: center;
+                    margin-bottom: 2rem;
+                    
+                    .widget-logo {
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 1rem;
+                    }
+                    
+                    .desc {
+                        text-align: center;
+                        max-width: 80%;
+                        margin: 0 auto;
+                        line-height: 1.6;
+                    }
+                }
+
+                .widget-title {
+                    text-align: center;
+                    margin-bottom: 1.5rem;
+                }
+
+                // Redes sociales
+                .widget-social {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2rem;
+                    margin-top: 2rem;
+                    
+                    a {
+                        font-size: 1.5rem;
+                        color: #27222C;
+                        transition: all 0.3s ease;
+                        
+                        &:hover {
+                            color: #6B4E71;
+                            transform: translateY(-2px);
+                        }
+                    }
+                }
+                
+                // Navegación
+                .widget-nav {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    margin-top: 1rem;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    
+                    li {
+                        margin: 0.25rem;
+                        
+                        a {
+                            font-size: 1.1rem;
+                            color: #27222C;
+                            transition: all 0.3s ease;
+                            
+                            &:hover {
+                                color: #6B4E71;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    // Centrar el copyright en el footer bottom
+    .footer-bottom {
+        @media (max-width: 991px) {
+            .footer-bottom-content {
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// Ajustar z-index del menú offcanvas
+.offcanvas {
+    z-index: 10000 !important;  // Aumentar z-index para que esté por encima de todo
+}
+
+// También asegurar que el backdrop tenga un z-index menor pero adecuado
+.offcanvas-backdrop {
+    z-index: 9999 !important;
 }
