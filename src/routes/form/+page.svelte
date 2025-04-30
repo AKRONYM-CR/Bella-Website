@@ -132,11 +132,13 @@
 <nav class="bg-[#FDF7FA] shadow-sm px-4">
 	<div class="max-w-6xl mx-auto">
 		<div class="flex items-center">
-			<img 
-				src="https://bellaApp.b-cdn.net/LOGO%20BELLA-02.png"
-				alt="Bella Logo"
-				class="h-20"
-			/>
+			<a href="/">
+				<img 
+					src="https://bellaApp.b-cdn.net/LOGO%20BELLA-02.png"
+					alt="Bella Logo"
+					class="h-20"
+				/>
+			</a>
 		</div>
 	</div>
 </nav>
