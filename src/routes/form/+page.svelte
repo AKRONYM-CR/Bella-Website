@@ -129,33 +129,33 @@
 </script>
 
 <!-- Navbar -->
-<nav class="bg-[#FDF7FA] shadow-sm px-4">
-	<div class="max-w-6xl mx-auto">
-		<div class="flex items-center">
+<nav class="bg-[#FDF7FA] shadow-sm px-4 w-full">
+	<div class="max-w-6xl mx-auto w-full">
+		<div class="flex items-center justify-center sm:justify-start">
 			<a href="/">
 				<img 
 					src="https://bellaApp.b-cdn.net/LOGO%20BELLA-02.png"
 					alt="Bella Logo"
-					class="h-20"
+					class="h-16 sm:h-20"
 				/>
 			</a>
 		</div>
 	</div>
 </nav>
 
-<div class="flex flex-col bg-[#FDF7FA] items-center min-h-screen py-6">
+<div class="flex flex-col bg-[#FDF7FA] items-center min-h-screen p-4 sm:p-6">
   <!-- Header Card -->
-  <div class="bg-white rounded-xl shadow-md px-6 py-4 mb-6 w-[350px] md:w-[600px] flex flex-col items-center">
-    <h2 class="text-2xl font-semibold text-gray-900 mb-1 text-center">Queremos conocerte mejor</h2>
-    <p class="text-gray-500 text-sm text-center">Este formulario nos permite entender tu perfil profesional y tu visión como posible aliado inversionista de Bela.</p>
+  <div class="bg-white rounded-xl shadow-md px-4 sm:px-6 py-4 mb-6 w-full max-w-[350px] sm:max-w-[600px] flex flex-col items-center">
+    <h2 class="text-xl sm:text-2xl font-semibold text-gray-900 mb-1 text-center">Queremos conocerte mejor</h2>
+    <p class="text-gray-500 text-xs sm:text-sm text-center">Este formulario nos permite entender tu perfil profesional y tu visión como posible aliado inversionista de Bela.</p>
   </div>
 
   <!-- Form Card -->
-  <form class="bg-white rounded-2xl shadow-md px-6 py-8 w-[350px] md:w-[600px] flex flex-col gap-4"
+  <form class="bg-white rounded-2xl shadow-md px-4 sm:px-6 py-6 sm:py-8 w-full max-w-[350px] sm:max-w-[600px] flex flex-col gap-4"
     on:submit|preventDefault={handleSubmit}
     enctype="multipart/form-data"
   >
-    <h3 class="text-center text-base font-semibold text-gray-800 mb-2">Información General</h3>
+    <h3 class="text-center text-sm sm:text-base font-semibold text-gray-800 mb-2">Información General</h3>
     
 		<div class="flex flex-col gap-2">
       <label for="nombre" class="text-xs text-gray-700 font-medium">Nombre <span class="text-red-500">*</span></label>
@@ -205,7 +205,7 @@
 		<div class="flex flex-col gap-4">
       <label for="educacion_reconocimientos" class="text-xs text-gray-700 font-medium">Educación y reconocimientos <span class="text-red-500">*</span></label>
       
-      <div class="flex gap-2">
+      <div class="flex flex-col sm:flex-row gap-2">
         <input 
           placeholder="Educación" 
           class="flex-1 px-4 py-2 text-sm text-gray-900 border border-gray-200 rounded-full focus:outline-none focus:border-gray-400 transition-colors" 
@@ -230,7 +230,7 @@
       {#if form.educacion_reconocimientos.length > 0}
         <div class="flex flex-col gap-2">
           {#each form.educacion_reconocimientos as item, i}
-            <div class="flex items-center gap-2 bg-gray-50 p-3 rounded-lg">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2 bg-gray-50 p-3 rounded-lg">
               <div class="flex-1">
                 <p class="text-sm font-medium">{item.educacion}</p>
                 <p class="text-sm text-gray-500">{item.reconocimiento}</p>
@@ -278,7 +278,7 @@
       <input id="website" class="w-full px-4 py-2 text-sm text-gray-900 border border-gray-200 rounded-full focus:outline-none focus:border-gray-400 transition-colors" type="text" bind:value={form.website} />
     </div>
 
-		<button type="submit" class="bg-gray-900 mt-5 text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-colors">
+		<button type="submit" class="bg-gray-900 mt-5 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-gray-800 transition-colors w-full sm:w-auto sm:self-center">
 			{loading ? 'Enviando...' : 'Enviar'}
 		</button>
 
