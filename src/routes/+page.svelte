@@ -24,7 +24,7 @@
       <div class="w-full md:w-1/2 flex justify-center">
         <div class="relative w-[280px]">
           <img 
-            src="https://bellaApp.b-cdn.net/phone-1.png" 
+            src="https://bellaApp.b-cdn.net/phone-2.png" 
             alt="Bella App Preview" 
             class="w-full h-auto"
           />

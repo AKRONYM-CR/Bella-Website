@@ -3,11 +3,6 @@
   import { goto } from '$app/navigation';
 	import Swal from 'sweetalert2';
 
-  interface EducacionReconocimiento {
-    educacion: string;
-    reconocimiento: string;
-  }
-
   interface FormData {
     nombre: string;
     apellido: string;
@@ -20,7 +15,8 @@
 		direccion_consultorio: string;
     descripcion: string;
     anos_experiencia: string;
-    educacion_reconocimientos: EducacionReconocimiento[];
+    educacion: string[];
+    reconocimientos: string[];
 		foto_perfil: File | null;
     instagram: string;
     tiktok: string;
@@ -39,7 +35,8 @@
 		direccion_consultorio: '',
     descripcion: '',
     anos_experiencia: '',
-    educacion_reconocimientos: [],
+    educacion: [],
+    reconocimientos: [],
 		foto_perfil: null,
     instagram: '',
     tiktok: '',
@@ -51,19 +48,26 @@
   let newEducacion = '';
   let newReconocimiento = '';
 
-  function agregarEducacionReconocimiento() {
-    if (newEducacion && newReconocimiento) {
-      form.educacion_reconocimientos = [...form.educacion_reconocimientos, {
-        educacion: newEducacion,
-        reconocimiento: newReconocimiento
-      }];
+  function agregarEducacion() {
+    if (newEducacion) {
+      form.educacion = [...form.educacion, newEducacion];
       newEducacion = '';
+    }
+  }
+
+  function agregarReconocimiento() {
+    if (newReconocimiento) {
+      form.reconocimientos = [...form.reconocimientos, newReconocimiento];
       newReconocimiento = '';
     }
   }
 
-  function eliminarEducacionReconocimiento(index: number) {
-    form.educacion_reconocimientos = form.educacion_reconocimientos.filter((_, i) => i !== index);
+  function eliminarEducacion(index: number) {
+    form.educacion = form.educacion.filter((_, i) => i !== index);
+  }
+
+  function eliminarReconocimiento(index: number) {
+    form.reconocimientos = form.reconocimientos.filter((_, i) => i !== index);
   }
 
   // For file input
@@ -94,7 +98,7 @@
     
     // Manejar campos normales
     Object.entries(form).forEach(([key, value]) => {
-      if (key !== 'foto_perfil' && key !== 'educacion_reconocimientos' && value) {
+      if (key !== 'foto_perfil' && key !== 'educacion' && key !== 'reconocimientos' && value) {
         data.append(key, value);
       }
     });
@@ -104,9 +108,12 @@
       data.append('foto_perfil', form.foto_perfil);
     }
 
-    // Manejar educación y reconocimientos
-    if (form.educacion_reconocimientos.length > 0) {
-      data.append('educacion_reconocimientos', JSON.stringify(form.educacion_reconocimientos));
+    // Manejar educación y reconocimientos por separado
+    if (form.educacion.length > 0) {
+      data.append('educacion', JSON.stringify(form.educacion));
+    }
+    if (form.reconocimientos.length > 0) {
+      data.append('reconocimientos', JSON.stringify(form.reconocimientos));
     }
 
     try {
@@ -215,49 +222,75 @@
     </div>
 
 		<div class="flex flex-col gap-4">
-      <label for="educacion_reconocimientos" class="text-xs text-gray-700 font-medium">Educación y reconocimientos <span class="text-red-500">*</span></label>
-      
-      <div class="flex flex-col sm:flex-row gap-2">
-        <input 
-          placeholder="Educación" 
-          class="flex-1 px-4 py-2 text-sm text-gray-900 border border-gray-200 rounded-full focus:outline-none focus:border-gray-400 transition-colors" 
-          type="text" 
-          bind:value={newEducacion}
-        />
-        <input 
-          placeholder="Reconocimiento" 
-          class="flex-1 px-4 py-2 text-sm text-gray-900 border border-gray-200 rounded-full focus:outline-none focus:border-gray-400 transition-colors" 
-          type="text" 
-          bind:value={newReconocimiento}
-        />
-        <button 
-          type="button"
-          class="px-4 py-2 bg-gray-900 text-white text-xs rounded-full hover:bg-gray-800 transition-colors"
-          on:click={agregarEducacionReconocimiento}
-        >
-          Agregar
-        </button>
+      <div>
+        <label class="text-xs text-gray-700 font-medium">Educación <span class="text-red-500">*</span></label>
+        <div class="flex flex-col sm:flex-row gap-2 mt-2">
+          <input 
+            placeholder="Agregar educación" 
+            class="flex-1 px-4 py-2 text-sm text-gray-900 border border-gray-200 rounded-full focus:outline-none focus:border-gray-400 transition-colors" 
+            type="text" 
+            bind:value={newEducacion}
+          />
+          <button 
+            type="button"
+            class="px-4 py-2 bg-gray-900 text-white text-xs rounded-full hover:bg-gray-800 transition-colors"
+            on:click={agregarEducacion}
+          >
+            Agregar
+          </button>
+        </div>
+        {#if form.educacion.length > 0}
+          <div class="mt-2">
+            {#each form.educacion as item, i}
+              <div class="flex items-center justify-between bg-gray-50 p-3 rounded-lg mb-2">
+                <p class="text-sm">{item}</p>
+                <button 
+                  type="button"
+                  class="text-red-500 hover:text-red-700"
+                  on:click={() => eliminarEducacion(i)}
+                >
+                  Eliminar
+                </button>
+              </div>
+            {/each}
+          </div>
+        {/if}
       </div>
 
-      {#if form.educacion_reconocimientos.length > 0}
-        <div class="flex flex-col gap-2">
-          {#each form.educacion_reconocimientos as item, i}
-            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2 bg-gray-50 p-3 rounded-lg">
-              <div class="flex-1">
-                <p class="text-sm font-medium">{item.educacion}</p>
-                <p class="text-sm text-gray-500">{item.reconocimiento}</p>
-              </div>
-              <button 
-                type="button"
-                class="text-red-500 hover:text-red-700"
-                on:click={() => eliminarEducacionReconocimiento(i)}
-              >
-                Eliminar
-              </button>
-            </div>
-          {/each}
+      <div>
+        <label class="text-xs text-gray-700 font-medium">Reconocimientos <span class="text-red-500">*</span></label>
+        <div class="flex flex-col sm:flex-row gap-2 mt-2">
+          <input 
+            placeholder="Agregar reconocimiento" 
+            class="flex-1 px-4 py-2 text-sm text-gray-900 border border-gray-200 rounded-full focus:outline-none focus:border-gray-400 transition-colors" 
+            type="text" 
+            bind:value={newReconocimiento}
+          />
+          <button 
+            type="button"
+            class="px-4 py-2 bg-gray-900 text-white text-xs rounded-full hover:bg-gray-800 transition-colors"
+            on:click={agregarReconocimiento}
+          >
+            Agregar
+          </button>
         </div>
-      {/if}
+        {#if form.reconocimientos.length > 0}
+          <div class="mt-2">
+            {#each form.reconocimientos as item, i}
+              <div class="flex items-center justify-between bg-gray-50 p-3 rounded-lg mb-2">
+                <p class="text-sm">{item}</p>
+                <button 
+                  type="button"
+                  class="text-red-500 hover:text-red-700"
+                  on:click={() => eliminarReconocimiento(i)}
+                >
+                  Eliminar
+                </button>
+              </div>
+            {/each}
+          </div>
+        {/if}
+      </div>
     </div>
 
 		<div class="flex flex-col gap-2">
