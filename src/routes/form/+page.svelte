@@ -86,7 +86,7 @@
 
     try {
       // Cambia la URL por la de tu backend real
-      const res = await fetch('http://localhost:3000/forms', {
+      const res = await fetch('https://bella-backend-testing-6a7ce2262e7e.herokuapp.com/forms', {
         method: 'POST',
         body: data
       });
