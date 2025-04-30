@@ -278,7 +278,7 @@
       <input id="website" class="w-full px-4 py-2 text-sm text-gray-900 border border-gray-200 rounded-full focus:outline-none focus:border-gray-400 transition-colors" type="text" bind:value={form.website} />
     </div>
 
-		<button type="submit" class="bg-gray-900 mt-5 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-gray-800 transition-colors w-full sm:w-auto sm:self-center">
+		<button type="submit" class="bg-gray-900 mt-5 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-gray-800 transition-colors w-full">
 			{loading ? 'Enviando...' : 'Enviar'}
 		</button>
 
