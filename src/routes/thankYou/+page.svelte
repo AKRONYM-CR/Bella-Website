@@ -29,8 +29,8 @@
       En Bela creemos en las alianzas que transforman industrias y vidas, estamos felices de que quieras ser parte de esta misión.
     </p>
 
-    <a href="https://bella-backoffice.vercel.app/" class="submit-button">
-      Ir a la página de Bela
+    <a href="https://bela.vip" class="submit-button">
+      Volver al inicio
     </a>
   </div>
 </div>
