@@ -25,9 +25,17 @@
       class="email-icon"
     />
 
-    <p class="message">
-      En Bela creemos en las alianzas que transforman industrias y vidas, estamos felices de que quieras ser parte de esta misión.
-    </p>
+    <div class="space-y-4">
+      <p class="text-gray-600 text-lg message">
+       Estamos muy emocionados de que quieras ser parte de Bela. Nuestro equipo revisará
+       cuidadosamente tu perfil profesional y experiencia.
+     </p>
+
+     <p class="text-gray-600 text-lg message">
+       Pronto te contactaremos para informarte si has sido seleccionado para ser parte de nuestra
+       red exclusiva de profesionales en Bela.
+     </p>
+   </div>
 
     <a href="https://bela.vip" class="submit-button">
       Volver al inicio
