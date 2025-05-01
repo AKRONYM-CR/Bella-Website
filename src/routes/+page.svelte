@@ -32,7 +32,7 @@
       </div>
   
       <!-- Content Section -->
-      <div class="w-full md:w-1/2 space-y-4 px-8 py-6">
+      <div class="w-full md:w-1/2 space-y-4 px-6 md:px-8 py-6">
         <h1 class="text-4xl md:text-5xl font-bold text-gray-900">
           Bienvenido a Bela
         </h1>
