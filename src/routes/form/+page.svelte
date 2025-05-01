@@ -108,11 +108,13 @@
         throw new Error('Error al enviar el formulario');
       }
 
-			Swal.fire({
-				title: '¡Gracias!',
-				text: 'Tu formulario ha sido enviado correctamente.',
-				icon: 'success',
-			});
+			goto('/thankYou');
+
+			// Swal.fire({
+			// 	title: '¡Gracias!',
+			// 	text: 'Tu formulario ha sido enviado correctamente.',
+			// 	icon: 'success',
+			// });
       
 			// Limpiar el formulario
 			form = {
