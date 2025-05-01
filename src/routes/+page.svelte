@@ -18,21 +18,21 @@
     </div>
   </nav>
 
-  <div class="h-[calc(100vh-4rem)] bg-[#FDF7FA] flex items-center justify-center">
-    <div class="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-8">
+  <div class="min-h-screen bg-[#FDF7FA] flex items-center justify-center p-4">
+    <div class="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-12 py-8">
       <!-- Phone Image Section -->
       <div class="w-full md:w-1/2 flex justify-center">
-        <div class="relative w-[240px]">
+        <div class="relative w-[300px] md:w-[380px]">
           <img 
             src="https://bellaApp.b-cdn.net/phone-2.png" 
             alt="Bella App Preview" 
-            class="w-full h-auto"
+            class="w-full h-auto object-contain"
           />
         </div>
       </div>
   
       <!-- Content Section -->
-      <div class="w-full md:w-1/2 space-y-4">
+      <div class="w-full md:w-1/2 space-y-4 px-8 py-6">
         <h1 class="text-4xl md:text-5xl font-bold text-gray-900">
           Bienvenido a Bela
         </h1>
