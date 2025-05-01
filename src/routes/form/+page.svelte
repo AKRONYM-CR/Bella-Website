@@ -150,7 +150,7 @@
 				<img 
 					src="https://bellaApp.b-cdn.net/LOGO%20BELLA-02.png"
 					alt="Bella Logo"
-					class="h-16 sm:h-20"
+					class="h-16"
 				/>
 			</a>
 		</div>

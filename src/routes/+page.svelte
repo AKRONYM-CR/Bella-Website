@@ -9,20 +9,20 @@
       <div class="flex items-center">
         <a href="/">
             <img 
-                src="https://bellaApp.b-cdn.net/LOGO%20BELLA-02.png"
-                alt="Bella Logo"
-                class="h-20"
+              src="https://bellaApp.b-cdn.net/LOGO%20BELLA-02.png"
+              alt="Bella Logo"
+              class="h-16"
             />
         </a>
       </div>
     </div>
   </nav>
 
-  <div class="min-h-screen bg-[#FDF7FA] flex items-center justify-center p-4">
-    <div class="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-12">
+  <div class="h-[calc(100vh-4rem)] bg-[#FDF7FA] flex items-center justify-center">
+    <div class="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-8">
       <!-- Phone Image Section -->
       <div class="w-full md:w-1/2 flex justify-center">
-        <div class="relative w-[280px]">
+        <div class="relative w-[240px]">
           <img 
             src="https://bellaApp.b-cdn.net/phone-2.png" 
             alt="Bella App Preview" 
@@ -32,12 +32,12 @@
       </div>
   
       <!-- Content Section -->
-      <div class="w-full md:w-1/2 space-y-6">
+      <div class="w-full md:w-1/2 space-y-4">
         <h1 class="text-4xl md:text-5xl font-bold text-gray-900">
           Bienvenido a Bela
         </h1>
         
-        <div class="space-y-4">
+        <div class="space-y-3">
           <p class="text-gray-600 text-lg">
             Estamos construyendo la plataforma <span class="font-semibold">líder de estética médica en Latinoamérica</span>, conectando experiencia médica con tecnología, confianza y propósito.
           </p>
@@ -47,7 +47,7 @@
           </p>
         </div>
   
-        <button class="cursor-pointer bg-gray-900 text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-colors" onclick={() => goto('/form')}>
+        <button class="cursor-pointer bg-gray-900 text-white px-8 py-3 rounded-full hover:bg-gray-800 transition-colors" onclick={() => goto('/form')}>
           Quiero ser parte de esta revolución
         </button>
       </div>
