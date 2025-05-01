@@ -223,9 +223,10 @@
 
 		<div class="flex flex-col gap-4">
       <div>
-        <label class="text-xs text-gray-700 font-medium">Educación <span class="text-red-500">*</span></label>
+        <label for="educacion" class="text-xs text-gray-700 font-medium">Educación <span class="text-red-500">*</span></label>
         <div class="flex flex-col sm:flex-row gap-2 mt-2">
           <input 
+            id="educacion"
             placeholder="Agregar educación" 
             class="flex-1 px-4 py-2 text-sm text-gray-900 border border-gray-200 rounded-full focus:outline-none focus:border-gray-400 transition-colors" 
             type="text" 
